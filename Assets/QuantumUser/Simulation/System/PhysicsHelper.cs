@@ -23,6 +23,26 @@ namespace Quantum
 			var hits = frame.Physics2D.LinecastAll(projectileTransform->Position, nextPosition, _layerMask,
 				QueryOptions.ComputeDetailedInfo | QueryOptions.HitKinematics | QueryOptions.HitStatics);
 			return hits;
+			
+		}
+		
+		public static HitCollection HitScanCollision(Frame frame, Transform2D* hitScanTransform, FP distance)
+		{
+			if(_layerMask == -1)
+			{
+				_layerMask = frame.Layers.GetLayerMask("Static", "Character");
+			}
+
+			var nextPosition = hitScanTransform->Position + hitScanTransform->Up * distance;
+			if (FPVector2.DistanceSquared(hitScanTransform->Position, nextPosition) == 0)
+			{
+				return default;
+			}
+			
+			var hitScan = frame.Physics2D.RaycastAll(hitScanTransform->Position, hitScanTransform->Up, distance, _layerMask,
+				QueryOptions.ComputeDetailedInfo | QueryOptions.HitKinematics | QueryOptions.HitStatics);
+			return hitScan;
+			
 		}
 
 		public static HitCollection OverlapShape(Frame frame, Transform2D* transform, int layerMask, Shape2DConfig shape) {
