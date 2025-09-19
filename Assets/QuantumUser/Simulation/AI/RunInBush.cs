@@ -19,16 +19,16 @@ namespace Quantum
 			if (targetEntity == default)
 				return;
 			FPVector2 enemyPosition = frame.Unsafe.GetPointer<Transform2D>(targetEntity)->Position;
-
-			NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
-			NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+			
 			AISteering* aiSteering = frame.Unsafe.GetPointer<AISteering>(entity);
-
 			if (FPVector2.Distance(agentPosition, enemyPosition) > MinRunawayDistance)
 			{
 				aiSteering->MainSteeringData.SteeringEntryNavMesh->SetData(default);
 				return;
 			}
+			
+			NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
+			NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
 			pathfinder->IsActive = true;
 
 			FPVector2 runawayDirection = enemyPosition - agentPosition;
