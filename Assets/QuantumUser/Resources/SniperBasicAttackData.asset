@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bb6d2c0c33458a9210c4cea5580e19, type: 3}
+  m_Name: SniperBasicAttackData
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/SniperBasicAttackData
+    Guid:
+      Value: 438178594795551512
+  SFX:
+    Clip: {fileID: 0}
+    Volume: 1
+  TTL:
+    RawValue: 0
+  IgnoreOwner: 0
+  HitEnemies: 0
+  HitAlies: 0
+  DestroyOnHitDynamic: 0
+  DestroyOnHitStatic: 0
+  EffectsOnOthers: []
+  EffectsOnSource: []
+  Distance:
+    RawValue: 0
