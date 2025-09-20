@@ -53,28 +53,32 @@ namespace TwinStickShooter
 
     private void Update()
     {
-      if (_attackPreview != null
-
-          && (_playerInput.actions["Fire"].IsPressed() == false
-              && _playerInput.actions["Special"].IsPressed() == false)
-
-
-          && (_playerInput.actions["MouseFire"].IsPressed() == false
-              && _playerInput.actions["MouseSpecial"].IsPressed() == false)
-
-         )
-      {
-        _attackPreview.gameObject.SetActive(false);
-      }
-
       if (GamepadIsActuated() && !_isUsingGamepad)
       {
+        Debug.Log("Switching to Gamepad");
         _isUsingGamepad = true;
       }
       else if(MouseIsActuated() && _isUsingGamepad)
       {
+        Debug.Log("Switching to KB");
         _isUsingGamepad = false;
       }
+
+      bool noAttackPressed = (_playerInput.actions["Fire"].IsPressed() == false
+                              && _playerInput.actions["Special"].IsPressed() == false)
+                             && (_playerInput.actions["MouseFire"].IsPressed() == false
+                                 && _playerInput.actions["MouseSpecial"].IsPressed() == false);
+      
+      bool isAiming = _isUsingGamepad == false || (_isUsingGamepad  &&
+                                                   (_playerInput.actions["AimBasic"].ReadValue<Vector2>() != Vector2.zero 
+                                                    || _playerInput.actions["AimSpecial"].ReadValue<Vector2>() != Vector2.zero));
+      
+      if (_attackPreview != null && noAttackPressed)
+      {
+          _attackPreview.gameObject.SetActive(false);  
+      }
+
+      
 
     }
 
@@ -107,12 +111,12 @@ namespace TwinStickShooter
       }
 
       FPVector2 actionVector = default;
-      if (_isUsingGamepad)
+      /*if (_isUsingGamepad)
       {
         actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
         input.AimDirection = actionVector;
       }
-      else
+      else*/
       {
         actionVector = GetDirectionToMouse();
         input.AimDirection = actionVector;
