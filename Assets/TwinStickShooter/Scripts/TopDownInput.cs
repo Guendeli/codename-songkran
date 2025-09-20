@@ -20,13 +20,6 @@ namespace TwinStickShooter
     private void Start()
     {
       _playerInput = GetComponent<PlayerInput>();
-      _playerInput.onControlsChanged += OnControlsChanged;
-
-    }
-
-    private void OnControlsChanged(PlayerInput obj)
-    {
-       Debug.Log("Controls changed");
     }
 
     private void OnEnable()
