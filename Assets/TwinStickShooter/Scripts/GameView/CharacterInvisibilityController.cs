@@ -3,6 +3,9 @@ namespace TwinStickShooter
   using Quantum;
   using Photon.Deterministic;
 
+  /// <summary>
+  ///  TODO - Should use Events from the simulation instead of an Update ? Check quantum-br repository
+  /// </summary>
   public unsafe class CharacterInvisibilityController : QuantumCallbacks
   {
     public static System.Action<bool, EntityRef> OnCharacterVisibilityChange;

@@ -36,7 +36,7 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "9f677dce-ade9-41f0-9936-acfca61d17ee",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +45,7 @@
                     "name": "MouseFire",
                     "type": "Button",
                     "id": "37a1b8f9-d73c-4eb9-b948-23f938d008b8",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -54,7 +54,7 @@
                     "name": "Special",
                     "type": "Button",
                     "id": "a4d1cf37-9555-4d8c-b77f-07e77bdf4cca",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -63,7 +63,7 @@
                     "name": "MouseSpecial",
                     "type": "Button",
                     "id": "825ff964-2fd5-4f07-a309-366236f886e3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -336,7 +336,7 @@
                 {
                     "name": "",
                     "id": "87c38082-0674-4f1f-bebb-7cd8015e3614",
-                    "path": "<Joystick>/stick",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

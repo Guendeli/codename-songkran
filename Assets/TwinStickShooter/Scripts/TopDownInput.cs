@@ -15,10 +15,18 @@ namespace TwinStickShooter
     private PlayerInput _playerInput;
 
     public bool IsInverseControl { get; set; } = false;
-
+    private bool _isUsingGamepad;
+    
     private void Start()
     {
       _playerInput = GetComponent<PlayerInput>();
+      _playerInput.onControlsChanged += OnControlsChanged;
+
+    }
+
+    private void OnControlsChanged(PlayerInput obj)
+    {
+       Debug.Log("Controls changed");
     }
 
     private void OnEnable()
@@ -46,18 +54,28 @@ namespace TwinStickShooter
     private void Update()
     {
       if (_attackPreview != null
-#if UNITY_ANDROID
-			&& _playerInput.actions["Fire"].IsPressed() == false
-			&& _playerInput.actions["Special"].IsPressed() == false
-#endif
-#if UNITY_STANDALONE || UNITY_WEBGL
-          && _playerInput.actions["MouseFire"].IsPressed() == false
-          && _playerInput.actions["MouseSpecial"].IsPressed() == false
-#endif
+
+          && (_playerInput.actions["Fire"].IsPressed() == false
+              && _playerInput.actions["Special"].IsPressed() == false)
+
+
+          && (_playerInput.actions["MouseFire"].IsPressed() == false
+              && _playerInput.actions["MouseSpecial"].IsPressed() == false)
+
          )
       {
         _attackPreview.gameObject.SetActive(false);
       }
+
+      if (GamepadIsActuated() && !_isUsingGamepad)
+      {
+        _isUsingGamepad = true;
+      }
+      else if(MouseIsActuated() && _isUsingGamepad)
+      {
+        _isUsingGamepad = false;
+      }
+
     }
 
     public void PollInput(CallbackPollInput callback)
@@ -72,8 +90,8 @@ namespace TwinStickShooter
 		input.AltFire = _playerInput.actions["Special"].IsPressed();
 #endif
 #if UNITY_STANDALONE || UNITY_WEBGL
-      input.Fire = _playerInput.actions["MouseFire"].IsPressed();
-      input.AltFire = _playerInput.actions["MouseSpecial"].IsPressed();
+      input.Fire = _playerInput.actions["MouseFire"].IsPressed() || _playerInput.actions["Fire"].IsPressed();
+      input.AltFire = _playerInput.actions["MouseSpecial"].IsPressed() || _playerInput.actions["Special"].IsPressed();
 #endif
 
       if (input.Fire == true)
@@ -89,9 +107,7 @@ namespace TwinStickShooter
       }
 
       FPVector2 actionVector = default;
-#if UNITY_STANDALONE || UNITY_WEBGL
-      if (_playerInput.currentControlScheme != null
-          && _playerInput.currentControlScheme.Contains("Joystick"))
+      if (_isUsingGamepad)
       {
         actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
         input.AimDirection = actionVector;
@@ -110,17 +126,16 @@ namespace TwinStickShooter
 
       callback.SetInput(input, DeterministicInputFlags.Repeatable);
 
-#elif UNITY_ANDROID
-		actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
-    input.AimDirection = actionVector;
+		// actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
+  //   input.AimDirection = actionVector;
+  //
+		// if ((input.Fire == true || input.AltFire == true) && actionVector != FPVector2.Zero)
+		// {
+		// 	_attackPreview.gameObject.SetActive(true);
+		// 	_attackPreview.UpdateAttackPreview(actionVector, input.AltFire);
+		// }
+		// callback.SetInput(input, DeterministicInputFlags.Repeatable);
 
-		if ((input.Fire == true || input.AltFire == true) && actionVector != FPVector2.Zero)
-		{
-			_attackPreview.gameObject.SetActive(true);
-			_attackPreview.UpdateAttackPreview(actionVector, input.AltFire);
-		}
-		callback.SetInput(input, DeterministicInputFlags.Repeatable);
-#endif
     }
 
     private FPVector2 GetDirectionToMouse()
@@ -149,6 +164,26 @@ namespace TwinStickShooter
       }
 
       return default;
+    }
+    
+    private bool GamepadIsActuated()
+    {
+      if (Gamepad.current == null)
+        return false;
+      
+      return true;
+    }
+
+    private bool MouseIsActuated()
+    {
+      bool isMouse = false;
+      if (Mouse.current != null)
+      {
+        isMouse = Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.middleButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame;
+        isMouse |= Mouse.current.delta.value != Vector2.zero;
+      }
+
+      return isMouse || (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame);
     }
   }
 }
