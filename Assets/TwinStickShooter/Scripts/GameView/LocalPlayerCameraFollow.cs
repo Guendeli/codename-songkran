@@ -60,6 +60,7 @@ namespace TwinStickShooter
       }
     }
 
+    // TODO - Should i make it Async and grab my AsyncUtils from another repo (or maybe early overengeneering)?
     private IEnumerator PresentArenaCoroutine()
     {
       CanMove = false;
@@ -102,7 +103,7 @@ namespace TwinStickShooter
     public void InvertCamera()
     {
       _isCameraInverted = true;
-      transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, 0);
+      transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, 0); // TODO - Get rid of magic numbers dude
       BaseOffset.z = -BaseOffset.z;
     }
 
