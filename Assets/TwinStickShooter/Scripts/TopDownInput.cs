@@ -70,9 +70,6 @@ namespace TwinStickShooter
       {
           _attackPreview.gameObject.SetActive(false);  
       }
-
-      
-
     }
 
     public void PollInput(CallbackPollInput callback)

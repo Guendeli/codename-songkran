@@ -915,8 +915,12 @@ namespace Quantum.Prototypes {
   [Quantum.Prototypes.Prototype(typeof(Quantum.SniperBasicAttackRD))]
   public unsafe class SniperBasicAttackRDPrototype : StructPrototype {
     public MapEntityId SkillEntity;
+    public FP StartPosition;
+    public FP EndPosition;
     public void Materialize(Frame frame, ref Quantum.SniperBasicAttackRD result, in PrototypeMaterializationContext context = default) {
         PrototypeValidator.FindMapEntity(this.SkillEntity, in context, out result.SkillEntity);
+        result.StartPosition = this.StartPosition;
+        result.EndPosition = this.EndPosition;
     }
   }
   [System.SerializableAttribute()]

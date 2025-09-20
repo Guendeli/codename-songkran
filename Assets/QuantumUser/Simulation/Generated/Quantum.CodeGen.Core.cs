@@ -1227,20 +1227,28 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct SniperBasicAttackRD {
-    public const Int32 SIZE = 8;
+    public const Int32 SIZE = 24;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public EntityRef SkillEntity;
+    [FieldOffset(16)]
+    public FP StartPosition;
+    [FieldOffset(8)]
+    public FP EndPosition;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 20261;
         hash = hash * 31 + SkillEntity.GetHashCode();
+        hash = hash * 31 + StartPosition.GetHashCode();
+        hash = hash * 31 + EndPosition.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (SniperBasicAttackRD*)ptr;
         EntityRef.Serialize(&p->SkillEntity, serializer);
+        FP.Serialize(&p->EndPosition, serializer);
+        FP.Serialize(&p->StartPosition, serializer);
     }
   }
   [StructLayout(LayoutKind.Explicit)]
@@ -1618,7 +1626,7 @@ namespace Quantum {
       get {
         fixed (SniperBasicAttackRD* p = &_SniperBasicAttackRD) {
           if (_field_used_ != SNIPERBASICATTACKRD) {
-            Native.Utils.Clear(p, 8);
+            Native.Utils.Clear(p, 24);
             _field_used_ = SNIPERBASICATTACKRD;
           }
           return p;

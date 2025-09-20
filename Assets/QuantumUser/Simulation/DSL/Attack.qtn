@@ -67,6 +67,8 @@ struct KnightSpecialAttackRD
 struct SniperBasicAttackRD
 {
     EntityRef SkillEntity;
+    FP StartPosition;       // The position the attack started
+    FP EndPosition;         // the position of the rist hitscan hit
 }
 
 // -- SIGNALS

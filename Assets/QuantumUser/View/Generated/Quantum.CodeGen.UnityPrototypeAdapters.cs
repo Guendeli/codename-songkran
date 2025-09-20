@@ -295,10 +295,14 @@ namespace Quantum.Prototypes.Unity {
   [System.SerializableAttribute()]
   public unsafe partial class SniperBasicAttackRDPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.SniperBasicAttackRDPrototype> {
     public Quantum.QuantumEntityPrototype SkillEntity;
+    public FP StartPosition;
+    public FP EndPosition;
     partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.SniperBasicAttackRDPrototype prototype);
     public override Quantum.Prototypes.SniperBasicAttackRDPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
       var result = new Quantum.Prototypes.SniperBasicAttackRDPrototype();
       converter.Convert(this.SkillEntity, out result.SkillEntity);
+      converter.Convert(this.StartPosition, out result.StartPosition);
+      converter.Convert(this.EndPosition, out result.EndPosition);
       ConvertUser(converter, ref result);
       return result;
     }
