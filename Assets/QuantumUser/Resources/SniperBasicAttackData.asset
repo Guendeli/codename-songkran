@@ -21,12 +21,28 @@ MonoBehaviour:
     Volume: 1
   TTL:
     RawValue: 0
-  IgnoreOwner: 0
-  HitEnemies: 0
+  IgnoreOwner: 1
+  HitEnemies: 1
   HitAlies: 0
-  DestroyOnHitDynamic: 0
-  DestroyOnHitStatic: 0
-  EffectsOnOthers: []
-  EffectsOnSource: []
+  DestroyOnHitDynamic: 1
+  DestroyOnHitStatic: 1
+  EffectsOnOthers:
+  - Value:
+      RawValue: 22937600
+    AttributeType: 1
+    Appliance: 1
+    Operation: 2
+    Duration:
+      RawValue: 0
+    ApplyOnSummonParent: 0
+  EffectsOnSource:
+  - Value:
+      RawValue: 9830
+    AttributeType: 3
+    Appliance: 1
+    Operation: 1
+    Duration:
+      RawValue: 0
+    ApplyOnSummonParent: 0
   Distance:
-    RawValue: 0
+    RawValue: 655360

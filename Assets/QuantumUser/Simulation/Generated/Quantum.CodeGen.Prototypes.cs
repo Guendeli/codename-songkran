@@ -198,6 +198,7 @@ namespace Quantum.Prototypes {
     public Quantum.Prototypes.SpellcasterSpecialAttackRDPrototype SpellcasterSpecialAttackRD;
     public Quantum.Prototypes.KnightBasicAttackRDPrototype KnightBasicAttackRD;
     public Quantum.Prototypes.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
+    public Quantum.Prototypes.SniperBasicAttackRDPrototype SniperBasicAttackRD;
     public void Materialize(Frame frame, ref Quantum.AttackRuntimeData result, in PrototypeMaterializationContext context = default) {
         switch (_field_used_) {
           case "ARCHERSPECIALATTACKRD": this.ArcherSpecialAttackRD.Materialize(frame, ref *result.ArcherSpecialAttackRD, in context); break;
@@ -205,6 +206,7 @@ namespace Quantum.Prototypes {
           case "SPELLCASTERSPECIALATTACKRD": this.SpellcasterSpecialAttackRD.Materialize(frame, ref *result.SpellcasterSpecialAttackRD, in context); break;
           case "KNIGHTBASICATTACKRD": this.KnightBasicAttackRD.Materialize(frame, ref *result.KnightBasicAttackRD, in context); break;
           case "KNIGHTSPECIALATTACKRD": this.KnightSpecialAttackRD.Materialize(frame, ref *result.KnightSpecialAttackRD, in context); break;
+          case "SNIPERBASICATTACKRD": this.SniperBasicAttackRD.Materialize(frame, ref *result.SniperBasicAttackRD, in context); break;
           case "": case null: break;
           default: PrototypeValidator.UnknownUnionField(_field_used_, in context); break;
         }
@@ -907,6 +909,14 @@ namespace Quantum.Prototypes {
           case "": case null: break;
           default: PrototypeValidator.UnknownUnionField(_field_used_, in context); break;
         }
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.SniperBasicAttackRD))]
+  public unsafe class SniperBasicAttackRDPrototype : StructPrototype {
+    public MapEntityId SkillEntity;
+    public void Materialize(Frame frame, ref Quantum.SniperBasicAttackRD result, in PrototypeMaterializationContext context = default) {
+        PrototypeValidator.FindMapEntity(this.SkillEntity, in context, out result.SkillEntity);
     }
   }
   [System.SerializableAttribute()]

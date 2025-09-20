@@ -27,6 +27,8 @@ union AttackRuntimeData
 
 	KnightBasicAttackRD KnightBasicAttackRD;
 	KnightSpecialAttackRD KnightSpecialAttackRD;
+	
+	SniperBasicAttackRD SniperBasicAttackRD;
 }
 
 // -- Archer
@@ -59,6 +61,12 @@ struct KnightBasicAttackRD
 struct KnightSpecialAttackRD
 {
 	list<EntityRef> Targets;
+}
+
+// -- Sniper
+struct SniperBasicAttackRD
+{
+    EntityRef SkillEntity;
 }
 
 // -- SIGNALS

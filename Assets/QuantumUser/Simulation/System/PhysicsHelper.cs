@@ -41,8 +41,8 @@ namespace Quantum
 			
 			var hitScan = frame.Physics2D.RaycastAll(hitScanTransform->Position, hitScanTransform->Up, distance, _layerMask,
 				QueryOptions.ComputeDetailedInfo | QueryOptions.HitKinematics | QueryOptions.HitStatics);
-			return hitScan;
 			
+			return hitScan;
 		}
 
 		public static HitCollection OverlapShape(Frame frame, Transform2D* transform, int layerMask, Shape2DConfig shape) {

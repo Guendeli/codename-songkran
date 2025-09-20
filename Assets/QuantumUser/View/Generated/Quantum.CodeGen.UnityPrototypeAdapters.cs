@@ -143,6 +143,7 @@ namespace Quantum.Prototypes.Unity {
     public Quantum.Prototypes.SpellcasterSpecialAttackRDPrototype SpellcasterSpecialAttackRD;
     public Quantum.Prototypes.Unity.KnightBasicAttackRDPrototype KnightBasicAttackRD;
     public Quantum.Prototypes.Unity.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
+    public Quantum.Prototypes.Unity.SniperBasicAttackRDPrototype SniperBasicAttackRD;
     partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.AttackRuntimeDataPrototype prototype);
     public override Quantum.Prototypes.AttackRuntimeDataPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
       var result = new Quantum.Prototypes.AttackRuntimeDataPrototype();
@@ -152,6 +153,7 @@ namespace Quantum.Prototypes.Unity {
       converter.Convert(this.SpellcasterSpecialAttackRD, out result.SpellcasterSpecialAttackRD);
       converter.Convert(this.KnightBasicAttackRD, out result.KnightBasicAttackRD);
       converter.Convert(this.KnightSpecialAttackRD, out result.KnightSpecialAttackRD);
+      converter.Convert(this.SniperBasicAttackRD, out result.SniperBasicAttackRD);
       ConvertUser(converter, ref result);
       return result;
     }
@@ -286,6 +288,17 @@ namespace Quantum.Prototypes.Unity {
       converter.Convert(this._field_used_, out result._field_used_);
       converter.Convert(this.KnightBasicSkillRD, out result.KnightBasicSkillRD);
       converter.Convert(this.SpellcasterSpecialSkillRD, out result.SpellcasterSpecialSkillRD);
+      ConvertUser(converter, ref result);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
+  public unsafe partial class SniperBasicAttackRDPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.SniperBasicAttackRDPrototype> {
+    public Quantum.QuantumEntityPrototype SkillEntity;
+    partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.SniperBasicAttackRDPrototype prototype);
+    public override Quantum.Prototypes.SniperBasicAttackRDPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.SniperBasicAttackRDPrototype();
+      converter.Convert(this.SkillEntity, out result.SkillEntity);
       ConvertUser(converter, ref result);
       return result;
     }

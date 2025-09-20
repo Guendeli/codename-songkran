@@ -12,11 +12,15 @@ namespace TwinStickShooter
 
     public override void SetLocal()
     {
+      if (_meshRenderer == null) return;
+      
       _meshRenderer.materials[_targetMaterialId].color = GetLocalColor(ColorId);
     }
 
     public override void SetRemote(bool isFriendly)
     {
+      if (_meshRenderer == null) return;
+
       _meshRenderer.materials[_targetMaterialId].color = GetRemoteColor(ColorId, isFriendly);
     }
   }

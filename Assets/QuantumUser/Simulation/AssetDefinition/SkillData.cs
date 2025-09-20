@@ -56,6 +56,7 @@ namespace Quantum
 
 		public virtual EntityRef OnAction(Frame frame, EntityRef source, EntityRef skillEntity, Skill* skill)
 		{
+			
 			EntityRef attackEntity = frame.Create(AttackPrototype);
 			Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
 

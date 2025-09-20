@@ -9,30 +9,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2894768dd200a26499a0bb6e1771456b, type: 3}
+  m_Script: {fileID: 11500000, guid: b58a0ee9bfd04954ad14f32618d29299, type: 3}
   m_Name: SniperBasicSkillData
   m_EditorClassIdentifier: 
   Identifier:
     Path: QuantumUser/Resources/SniperBasicSkillData
     Guid:
-      Value: 449964636763425070
+      Value: 275677025556807079
   SFX:
-    Clip: {fileID: 8300000, guid: 08d4a8f6244910f4dab0c26558bdfae0, type: 3}
-    Volume: 0.3
+    Clip: {fileID: 0}
+    Volume: 1
   SkillPrototype:
     Id:
       Value: 1423529957020518646
   AttackPrototype:
     Id:
-      Value: 535788465813011857
+      Value: 1441297534016923587
   HasTTL: 0
   ActionInterval:
     RawValue: 0
-  ActionAmount: 1
+  ActionAmount: 0
   RotationLockDuration:
-    RawValue: 19661
+    RawValue: 16384
   MovementLockDuration:
-    RawValue: 0
+    RawValue: 16384
   AutoAimCheckSight: 1
   Cost:
     RawValue: 65536

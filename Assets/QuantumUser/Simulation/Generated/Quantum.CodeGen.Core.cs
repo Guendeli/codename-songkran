@@ -1226,6 +1226,24 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct SniperBasicAttackRD {
+    public const Int32 SIZE = 8;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public EntityRef SkillEntity;
+    public override readonly Int32 GetHashCode() {
+      unchecked { 
+        var hash = 20261;
+        hash = hash * 31 + SkillEntity.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (SniperBasicAttackRD*)ptr;
+        EntityRef.Serialize(&p->SkillEntity, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct SpellcasterBasicAttackRD {
     public const Int32 SIZE = 24;
     public const Int32 ALIGNMENT = 8;
@@ -1526,11 +1544,16 @@ namespace Quantum {
     [FieldOverlap(8)]
     [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.KNIGHTSPECIALATTACKRD)]
     private KnightSpecialAttackRD _KnightSpecialAttackRD;
+    [FieldOffset(8)]
+    [FieldOverlap(8)]
+    [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.SNIPERBASICATTACKRD)]
+    private SniperBasicAttackRD _SniperBasicAttackRD;
     public const Int32 ARCHERSPECIALATTACKRD = 1;
     public const Int32 SPELLCASTERBASICATTACKRD = 2;
     public const Int32 SPELLCASTERSPECIALATTACKRD = 3;
     public const Int32 KNIGHTBASICATTACKRD = 4;
     public const Int32 KNIGHTSPECIALATTACKRD = 5;
+    public const Int32 SNIPERBASICATTACKRD = 6;
     public readonly Int32 Field {
       get {
         return _field_used_;
@@ -1591,6 +1614,17 @@ namespace Quantum {
         }
       }
     }
+    public SniperBasicAttackRD* SniperBasicAttackRD {
+      get {
+        fixed (SniperBasicAttackRD* p = &_SniperBasicAttackRD) {
+          if (_field_used_ != SNIPERBASICATTACKRD) {
+            Native.Utils.Clear(p, 8);
+            _field_used_ = SNIPERBASICATTACKRD;
+          }
+          return p;
+        }
+      }
+    }
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 7573;
@@ -1600,6 +1634,7 @@ namespace Quantum {
         hash = hash * 31 + _SpellcasterSpecialAttackRD.GetHashCode();
         hash = hash * 31 + _KnightBasicAttackRD.GetHashCode();
         hash = hash * 31 + _KnightSpecialAttackRD.GetHashCode();
+        hash = hash * 31 + _SniperBasicAttackRD.GetHashCode();
         return hash;
       }
     }
@@ -1623,6 +1658,9 @@ namespace Quantum {
         }
         if (p->_field_used_ == KNIGHTSPECIALATTACKRD) {
           Quantum.KnightSpecialAttackRD.Serialize(&p->_KnightSpecialAttackRD, serializer);
+        }
+        if (p->_field_used_ == SNIPERBASICATTACKRD) {
+          Quantum.SniperBasicAttackRD.Serialize(&p->_SniperBasicAttackRD, serializer);
         }
         if (p->_field_used_ == SPELLCASTERBASICATTACKRD) {
           Quantum.SpellcasterBasicAttackRD.Serialize(&p->_SpellcasterBasicAttackRD, serializer);
@@ -3104,6 +3142,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Shape3D), Shape3D.SIZE);
       typeRegistry.Register(typeof(Quantum.Skill), Quantum.Skill.SIZE);
       typeRegistry.Register(typeof(Quantum.SkillRuntimeData), Quantum.SkillRuntimeData.SIZE);
+      typeRegistry.Register(typeof(Quantum.SniperBasicAttackRD), Quantum.SniperBasicAttackRD.SIZE);
       typeRegistry.Register(typeof(Quantum.SpawnPoint), Quantum.SpawnPoint.SIZE);
       typeRegistry.Register(typeof(Quantum.SpellcasterBasicAttackRD), Quantum.SpellcasterBasicAttackRD.SIZE);
       typeRegistry.Register(typeof(Quantum.SpellcasterSpecialAttackRD), Quantum.SpellcasterSpecialAttackRD.SIZE);

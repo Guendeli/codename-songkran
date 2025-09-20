@@ -9,9 +9,9 @@ namespace Quantum
     public unsafe abstract partial class HitscanAttackData : AttackData
     {
         public FP Distance;     // For LineCast attacks
-        public override void OnUpdate(Frame frame, EntityRef attackEntity, Attack* attack)
+        public override void OnCreate(Frame frame, EntityRef attackEntity, EntityRef source, Attack* attack)
         {
-            base.OnUpdate(frame, attackEntity, attack);
+            base.OnCreate(frame, attackEntity, source, attack);
             bool wasDisabled = CheckHit(frame, attackEntity, attack);
 
             if(wasDisabled == true)
