@@ -43,7 +43,7 @@ namespace TwinStickShooter
             Vector3 startPos = new Vector3(start.X.AsFloat, heightOffset.AsFloat, start.Y.AsFloat);
             Vector3 endPos = new Vector3(end.X.AsFloat, heightOffset.AsFloat, end.Y.AsFloat);
             
-            GameObject vfxObj = Instantiate(prefab, startPos, Quaternion.identity);
+            GameObject vfxObj = Instantiate(prefab, startPos, Quaternion.identity); // TODO - Pool later on bro
             LineRenderer lineRenderer = vfxObj.GetComponentInChildren<LineRenderer>();
             if(lineRenderer != null)
             {

@@ -182,4 +182,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _disableBehaviour: 0
-  _lifetime: 0.35
+  _lifetime: 0.25

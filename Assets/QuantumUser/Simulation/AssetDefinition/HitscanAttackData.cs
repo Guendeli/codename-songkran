@@ -22,6 +22,8 @@ namespace Quantum
 
         private bool CheckHit(Frame frame, EntityRef attackEntity, Attack* attack) {
             Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
+            FPVector2 sourcePos = attackTransform->Position; // Store it becquse the transform might change during the hit scan
+            
             var hits = PhysicsHelper.HitScanCollision(frame, attackTransform, Distance);
             if (hits.Count == 0)
             {
@@ -31,13 +33,16 @@ namespace Quantum
             }
 
             EntityRef targetEntity = CheckHits(frame, hits, attackEntity, attack, attackTransform, out bool wasDisabled);
+            var targetPos = targetEntity != default ? 
+                frame.Unsafe.GetPointer<Transform2D>(targetEntity)->Position : hits[0].Point;
+            
             if (targetEntity != default)
             {
                 OnApplyEffect(frame, attack->Source, targetEntity);
             }
             
             
-            frame.Events.OnCreateHitscanAttack(Guid, attackTransform->Position, hits[0].Point);
+            frame.Events.OnCreateHitscanAttack(Guid, sourcePos, targetPos);
             
             return wasDisabled;
         }
