@@ -77,3 +77,4 @@ signal OnDisableAttack(EntityRef attackEntity);
 
 // -- EVENTS
 event OnCreateAttack{ AssetGuid skillData; }
+event OnCreateHitscanAttack : OnCreateAttack { FPVector2 startPosition; FPVector2 endPosition; }

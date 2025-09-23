@@ -16,9 +16,7 @@ MonoBehaviour:
     Path: QuantumUser/Resources/SniperBasicAttackData
     Guid:
       Value: 438178594795551512
-  SFX:
-    Clip: {fileID: 0}
-    Volume: 1
+  CosmeticData: {fileID: 11400000, guid: 14b68fa964e892b4a85323c31776feef, type: 2}
   TTL:
     RawValue: 0
   IgnoreOwner: 1

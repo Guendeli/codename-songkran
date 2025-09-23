@@ -12,7 +12,7 @@ namespace Quantum
 	{
 #if QUANTUM_UNITY
 		[Header("View Configuration", order = 9)]
-		public Sound SFX;
+		public BaseAttackCosmeticData CosmeticData;
 #endif
 		
 		// For how many time the Attack is activated

@@ -25,6 +25,8 @@ namespace Quantum
             var hits = PhysicsHelper.HitScanCollision(frame, attackTransform, Distance);
             if (hits.Count == 0)
             {
+                frame.Events.OnCreateHitscanAttack(Guid, attackTransform->Position, 
+                    attackTransform->Position + attackTransform->Up * Distance);
                 return false;
             }
 
@@ -33,7 +35,10 @@ namespace Quantum
             {
                 OnApplyEffect(frame, attack->Source, targetEntity);
             }
-
+            
+            
+            frame.Events.OnCreateHitscanAttack(Guid, attackTransform->Position, hits[0].Point);
+            
             return wasDisabled;
         }
         

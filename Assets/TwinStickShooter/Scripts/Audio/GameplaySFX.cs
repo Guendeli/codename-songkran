@@ -23,9 +23,9 @@
     private void OnCreateAttack(EventOnCreateAttack e)
     {
       AttackData asset = QuantumUnityDB.GetGlobalAsset<AttackData>(e.skillData);
-      if (asset.SFX != null)
+      if (asset.CosmeticData != null && asset.CosmeticData.SFX != null)
       {
-        AudioManager.Instance.Play(asset.SFX);
+        AudioManager.Instance.Play(asset.CosmeticData.SFX);
       }
     }
   }
