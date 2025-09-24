@@ -2,7 +2,7 @@ name: Build & Deploy Itch.IO
 on: workflow_dispatch
 jobs:
   build:
-    name: Build Win-Dev
+    name: Build WebGL
     runs-on: ubuntu-latest
     steps:
       # Checkout (without LFS)
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: build-WebGL
           path: build/WebGL
