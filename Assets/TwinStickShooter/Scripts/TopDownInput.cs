@@ -62,12 +62,11 @@ namespace TwinStickShooter
     {
       if (GamepadIsActuated() && !_isUsingGamepad)
       {
-        Debug.Log("Switching to Gamepad");
         _isUsingGamepad = true;
-      }
-      else if(MouseIsActuated() && _isUsingGamepad)
+      } 
+      
+      if(MouseIsActuated() && _isUsingGamepad)
       {
-        Debug.Log("Switching to KB");
         _isUsingGamepad = false;
       }
 
@@ -115,18 +114,18 @@ namespace TwinStickShooter
       }
 
       FPVector2 actionVector = default;
-      /*if (_isUsingGamepad)
+      if (_isUsingGamepad)
       {
         actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
         input.AimDirection = actionVector;
       }
-      else*/
+      else
       {
         actionVector = GetDirectionToMouse();
         input.AimDirection = actionVector;
       }
 
-      if ((input.Fire == true || input.AltFire == true) && input.AimDirection != FPVector2.Zero)
+      if ((input.Fire == true || input.AltFire == true))
       {
         _attackPreview.gameObject.SetActive(true);
         _attackPreview.UpdateAttackPreview(actionVector, input.AltFire);
@@ -179,7 +178,7 @@ namespace TwinStickShooter
       if (Gamepad.current == null)
         return false;
       
-      return true;
+      return Gamepad.current.wasUpdatedThisFrame;
     }
 
     private bool MouseIsActuated()
@@ -191,7 +190,7 @@ namespace TwinStickShooter
         isMouse |= Mouse.current.delta.value != Vector2.zero;
       }
 
-      return isMouse || (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame);
+      return (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame);
     }
   }
 }
