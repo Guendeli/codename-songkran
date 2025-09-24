@@ -1,4 +1,12 @@
-﻿using Photon.Deterministic;
+﻿/*
+ * SensorHealth.cs
+ *
+ * Desc: Sensor that set the HealthStatus in the AI memory based on the health percentage
+ * Will affect changing the HSFM Tactics to Run if its low
+ *
+ * Author: Omar Guendeli
+ */
+using Photon.Deterministic;
 
 namespace Quantum
 {

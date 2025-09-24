@@ -1,4 +1,14 @@
-﻿using Photon.Deterministic;
+﻿/*
+ * SensorEyes.cs
+ *
+ * Desc: Eye sensor, will set either the closest enemy or the most valuable one depending on the opposing team winning status:
+ *
+ * Team is getting yeeted: set the most valuable enemy in memory (3x visibility range)
+ * else! sets the closest one
+ * 
+ * Author: Omar Guendeli
+ */
+using Photon.Deterministic;
 
 namespace Quantum
 {

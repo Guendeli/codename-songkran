@@ -1,4 +1,13 @@
-﻿using Photon.Deterministic;
+﻿/*
+ * SensorThreats.cs
+ *
+ * Desc: Gets Executed by the opposing team everytime a linear or circular attack is created.
+ * The sensor will then add a memory entry to the bot's AI memory to avoid the threat.
+ *
+ * Author: Omar Guendeli
+ */
+
+using Photon.Deterministic;
 
 namespace Quantum
 {

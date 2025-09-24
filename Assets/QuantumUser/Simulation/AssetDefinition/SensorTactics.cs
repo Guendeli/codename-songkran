@@ -1,4 +1,15 @@
-﻿using Photon.Deterministic;
+﻿/*
+ * SensorTactics.cs
+ *
+ * Desc: The class dynamically evaluates and assigns tactics to bots based on the conditions defined in the TacticalSensor objects.
+ * It ensures that tactics are only updated periodically and respects a commitment duration to avoid frequent changes.
+ *
+ * cf. TacticalSensor inheritors
+ *
+ * Author: Omar Guendeli
+ */
+
+using Photon.Deterministic;
 
 namespace Quantum
 {
