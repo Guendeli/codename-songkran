@@ -115,7 +115,7 @@ namespace Quantum
 			movementPack.Direction = direction;
 			Shape2D shape = Shape2D.CreateCircle(Radius);
 
-			var layer = f.Layers.GetLayerMask("Static");
+			var layer = f.Layers.GetLayerMask(AIConstants.LAYER_STATIC);
 			var hits = f.Physics2D.OverlapShape(transform->Position, FP._0, shape, layer, options: QueryOptions.HitStatics | QueryOptions.ComputeDetailedInfo);
 			int count = Math.Min(MaxContacts, hits.Count);
 

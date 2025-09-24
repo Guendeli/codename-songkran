@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Name: Character_Playable_ArcherEntityView
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/Character_Playable_Archer|EntityView
+    Path: QuantumUser/Resources/GameplayData/PlayableCharacters/Character_Playable_Archer|EntityView
     Guid:
       Value: 1227435502144986712
   Prefab: {fileID: 2425977884706838370}

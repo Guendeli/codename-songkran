@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_Name: Character_Base_PlayableEntityView
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/Character_Base_Playable|EntityView
+    Path: QuantumUser/Resources/GameplayData/PlayableCharacters/Character_Base_Playable|EntityView
     Guid:
       Value: 232002454397344813
   Prefab: {fileID: 3947553037201855658}

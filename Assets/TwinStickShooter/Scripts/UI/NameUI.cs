@@ -7,6 +7,7 @@ namespace TwinStickShooter
   public class NameUI : QuantumEntityViewComponent<CustomViewContext>
   {
     public TextMeshProUGUI NameText;
+    public TextAsset DefaultTextAsset;
 
     private CharacterUIFollow _characterFollow;
 
@@ -36,6 +37,9 @@ namespace TwinStickShooter
     private string GetNameFromFile(int id)
     {
       TextAsset asset = Resources.Load("BotsNames") as TextAsset;
+      if (asset == null)
+        asset = DefaultTextAsset;
+      
       string[] names = asset.text.Split(';');
       return names[id];
     }

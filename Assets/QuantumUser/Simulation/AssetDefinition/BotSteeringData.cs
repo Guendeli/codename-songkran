@@ -76,7 +76,7 @@ namespace Quantum
 
 			if (distToTargetSquared < runDistance * runDistance)
 			{
-				var hit = frame.Physics2D.Raycast(agentPosition, -dirToTarget, 3, frame.Layers.GetLayerMask("Static"), QueryOptions.HitStatics);
+				var hit = frame.Physics2D.Raycast(agentPosition, -dirToTarget, 3, frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC), QueryOptions.HitStatics);
 
 				if (Debug == true)
 				{
@@ -154,7 +154,7 @@ namespace Quantum
 
 				if(EvasionDirection != 0)
 				{
-					var hit = frame.Physics2D.Raycast(agentTransform->Position, EvasionDirectionVector, 5, frame.Layers.GetLayerMask("Static"), QueryOptions.HitStatics);
+					var hit = frame.Physics2D.Raycast(agentTransform->Position, EvasionDirectionVector, 5, frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC), QueryOptions.HitStatics);
 					if (Debug == true)
 					{
 						Draw.Line(agentTransform->Position, agentTransform->Position + EvasionDirectionVector * 5);
@@ -183,7 +183,7 @@ namespace Quantum
 				}
 				evasionDir = new FPVector2(FPMath.Sin(angle), FPMath.Cos(angle));
 
-				var hit = frame.Physics2D.Raycast(agentTransform->Position, evasionDir, 4, frame.Layers.GetLayerMask("Static"), QueryOptions.HitStatics);
+				var hit = frame.Physics2D.Raycast(agentTransform->Position, evasionDir, 4, frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC), QueryOptions.HitStatics);
 				if (Debug == true)
 				{
 					Draw.Line(agentTransform->Position, agentTransform->Position + evasionDir * 4);
@@ -263,7 +263,7 @@ namespace Quantum
 
 			if (distToTargetSquared < runDistance * runDistance)
 			{
-				var hit = frame.Physics2D.Raycast(agentPosition, -dirToTarget, 3, frame.Layers.GetLayerMask("Static"), QueryOptions.HitStatics);
+				var hit = frame.Physics2D.Raycast(agentPosition, -dirToTarget, 3, frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC), QueryOptions.HitStatics);
 
 				if (Debug == true)
 				{

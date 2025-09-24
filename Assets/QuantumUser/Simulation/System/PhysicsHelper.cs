@@ -11,7 +11,7 @@ namespace Quantum
 		{
 			if(_layerMask == -1)
 			{
-				_layerMask = frame.Layers.GetLayerMask("Static", "Character");
+				_layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC, AIConstants.LAYER_CHARACTER);
 			}
 
 			var nextPosition = projectileTransform->Position + projectileTransform->Up * frame.DeltaTime * velocity;
@@ -30,7 +30,7 @@ namespace Quantum
 		{
 			if(_layerMask == -1)
 			{
-				_layerMask = frame.Layers.GetLayerMask("Static", "Character");
+				_layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC, AIConstants.LAYER_CHARACTER);
 			}
 
 			var nextPosition = hitScanTransform->Position + hitScanTransform->Up * distance;

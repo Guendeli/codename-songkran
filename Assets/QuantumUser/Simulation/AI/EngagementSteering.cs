@@ -28,7 +28,7 @@ namespace Quantum
 			if (hit.HasValue == true)
 			{
 				NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
-				NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+				NavMesh navMesh = frame.Map.GetNavMesh(AIConstants.NAV_MESH_TAG);
 				pathfinder->SetTarget(frame, enemyPosition.XOY, navMesh);
 
 				aiSteering->SetNavMeshSteeringEntry(frame, entity);

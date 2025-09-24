@@ -19,7 +19,7 @@ namespace Quantum
 			FPVector2 collectiblePosition = frame.Get<Transform2D>(targetCollectible).Position;
 
 			NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
-			NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+			NavMesh navMesh = frame.Map.GetNavMesh(AIConstants.NAV_MESH_TAG);
 			pathfinder->SetTarget(frame, collectiblePosition.XOY, navMesh);
 
 			AISteering* aiSteering = frame.Unsafe.GetPointer<AISteering>(entity);

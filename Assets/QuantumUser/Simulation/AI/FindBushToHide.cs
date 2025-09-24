@@ -20,7 +20,7 @@ namespace Quantum
 			Transform2D agentTransform = frame.Get<Transform2D>(entity);
 			FPVector2 closestEnemyPosition = frame.Get<Transform2D>(closestEnemy).Position;
 			HitCollection bushes = frame.Physics2D.OverlapShape(agentTransform, Shape2D.CreateCircle(10),
-				frame.Layers.GetLayerMask("InvisibilityPoint"), QueryOptions.HitStatics | QueryOptions.ComputeDetailedInfo | QueryOptions.HitTriggers);
+				frame.Layers.GetLayerMask(AIConstants.LAYER_INVISIBILITY_POINT), QueryOptions.HitStatics | QueryOptions.ComputeDetailedInfo | QueryOptions.HitTriggers);
 
 			for (int i = 0; i < bushes.Count; i++)
 			{

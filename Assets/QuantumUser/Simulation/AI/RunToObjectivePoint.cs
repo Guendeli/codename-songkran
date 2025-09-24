@@ -14,7 +14,7 @@ namespace Quantum
 			FPVector2 escapePosition = blackboard->GetVector2(frame, ObjectivePoint.Key);
 
 			NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
-			NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+			NavMesh navMesh = frame.Map.GetNavMesh(AIConstants.NAV_MESH_TAG);
 			pathfinder->SetTarget(frame, escapePosition.XOY, navMesh);
 
 			AISteering* aiSteering = frame.Unsafe.GetPointer<AISteering>(entity);

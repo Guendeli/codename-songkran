@@ -52,7 +52,7 @@ namespace Quantum
 		{
 			Transform2D* projectileTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
 
-			var layerMask = frame.Layers.GetLayerMask("Static", "Character");
+			var layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC, AIConstants.LAYER_CHARACTER);
 			var hits = PhysicsHelper.OverlapShape(frame, projectileTransform, layerMask, Shape);
 			return CheckHits(frame, hits, attackEntity, attack, projectileTransform, out bool wasDisabled);
 		}

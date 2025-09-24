@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Name: Character_Playable_SpellcasterEntityView
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/Character_Playable_Spellcaster|EntityView
+    Path: QuantumUser/Resources/GameplayData/PlayableCharacters/Character_Playable_Spellcaster|EntityView
     Guid:
       Value: 227337610502657207
   Prefab: {fileID: 1251894023237447587}

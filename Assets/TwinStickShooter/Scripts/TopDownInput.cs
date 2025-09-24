@@ -17,6 +17,20 @@ namespace TwinStickShooter
     public bool IsInverseControl { get; set; } = false;
     private bool _isUsingGamepad;
     
+    #region Input Names
+    
+    public const string BUTTON_FIRE = "Fire";
+    public const string BUTTON_SPECIAL = "Special";
+    public const string BUTTON_MOUSE_FIRE = "MouseFire";
+    public const string BUTTON_MOUSE_SPECIAL = "MouseSpecial";
+    
+    public const string VECTOR_MOVE = "Move";
+    public const string VECTOR_AIM_BASIC = "AimBasic";
+    public const string VECTOR_AIM_SPECIAL = "AimSpecial";
+    public const string VECTOR_POINT = "Point";
+    
+    #endregion
+    
     private void Start()
     {
       _playerInput = GetComponent<PlayerInput>();
@@ -57,14 +71,14 @@ namespace TwinStickShooter
         _isUsingGamepad = false;
       }
 
-      bool noAttackPressed = (_playerInput.actions["Fire"].IsPressed() == false
-                              && _playerInput.actions["Special"].IsPressed() == false)
-                             && (_playerInput.actions["MouseFire"].IsPressed() == false
-                                 && _playerInput.actions["MouseSpecial"].IsPressed() == false);
+      bool noAttackPressed = (_playerInput.actions[BUTTON_FIRE].IsPressed() == false
+                              && _playerInput.actions[BUTTON_SPECIAL].IsPressed() == false)
+                             && (_playerInput.actions[BUTTON_MOUSE_FIRE].IsPressed() == false
+                                 && _playerInput.actions[BUTTON_MOUSE_SPECIAL].IsPressed() == false);
       
       bool isAiming = _isUsingGamepad == false || (_isUsingGamepad  &&
-                                                   (_playerInput.actions["AimBasic"].ReadValue<Vector2>() != Vector2.zero 
-                                                    || _playerInput.actions["AimSpecial"].ReadValue<Vector2>() != Vector2.zero));
+                                                   (_playerInput.actions[VECTOR_AIM_BASIC].ReadValue<Vector2>() != Vector2.zero 
+                                                    || _playerInput.actions[VECTOR_AIM_SPECIAL].ReadValue<Vector2>() != Vector2.zero));
       
       if (_attackPreview != null && noAttackPressed)
       {
@@ -76,7 +90,7 @@ namespace TwinStickShooter
     {
       Quantum.QuantumDemoInputTopDown input = new Quantum.QuantumDemoInputTopDown();
 
-      FPVector2 directional = _playerInput.actions["Move"].ReadValue<Vector2>().ToFPVector2();
+      FPVector2 directional = _playerInput.actions[VECTOR_MOVE].ReadValue<Vector2>().ToFPVector2();
       input.MoveDirection = IsInverseControl == true ? -directional : directional;
 
 #if UNITY_ANDROID
@@ -84,19 +98,19 @@ namespace TwinStickShooter
 		input.AltFire = _playerInput.actions["Special"].IsPressed();
 #endif
 #if UNITY_STANDALONE || UNITY_WEBGL
-      input.Fire = _playerInput.actions["MouseFire"].IsPressed() || _playerInput.actions["Fire"].IsPressed();
-      input.AltFire = _playerInput.actions["MouseSpecial"].IsPressed() || _playerInput.actions["Special"].IsPressed();
+      input.Fire = _playerInput.actions[BUTTON_MOUSE_FIRE].IsPressed() || _playerInput.actions[BUTTON_FIRE].IsPressed();
+      input.AltFire = _playerInput.actions[BUTTON_MOUSE_SPECIAL].IsPressed() || _playerInput.actions[BUTTON_SPECIAL].IsPressed();
 #endif
 
       if (input.Fire == true)
       {
-        _lastDirection = _playerInput.actions["AimBasic"].ReadValue<Vector2>().ToFPVector2();
+        _lastDirection = _playerInput.actions[VECTOR_AIM_BASIC].ReadValue<Vector2>().ToFPVector2();
         _lastDirection *= AimSensitivity;
       }
 
       if (input.AltFire == true)
       {
-        _lastDirection = _playerInput.actions["AimSpecial"].ReadValue<Vector2>().ToFPVector2();
+        _lastDirection = _playerInput.actions[VECTOR_AIM_SPECIAL].ReadValue<Vector2>().ToFPVector2();
         _lastDirection *= AimSensitivity;
       }
 
@@ -147,7 +161,7 @@ namespace TwinStickShooter
 
       FPVector2 localCharacterPosition = frame.Get<Transform2D>(ViewContext.LocalView.EntityRef).Position;
 
-      Vector2 mousePosition = _playerInput.actions["Point"].ReadValue<Vector2>();
+      Vector2 mousePosition = _playerInput.actions[VECTOR_POINT].ReadValue<Vector2>();
       Ray ray = Camera.main.ScreenPointToRay(mousePosition);
       UnityEngine.Plane plane = new UnityEngine.Plane(Vector3.up, Vector3.zero);
 

@@ -20,7 +20,7 @@ namespace Quantum
 			if (distanceToAgent > FP._0_50)
 			{
 				NavMeshPathfinder* pathfinder = frame.Unsafe.GetPointer<NavMeshPathfinder>(entity);
-				NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+				NavMesh navMesh = frame.Map.GetNavMesh(AIConstants.NAV_MESH_TAG);
 				pathfinder->SetTarget(frame, closestCoverPoint.XOY, navMesh);
 
 				AISteering* aiSteering = frame.Unsafe.GetPointer<AISteering>(entity);

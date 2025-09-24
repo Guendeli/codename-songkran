@@ -987,7 +987,7 @@ MonoBehaviour:
   m_Name: Character_Playable_KnightEntityView
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/Character_Playable_Knight|EntityView
+    Path: QuantumUser/Resources/GameplayData/PlayableCharacters/Character_Playable_Knight|EntityView
     Guid:
       Value: 1187895015396058456
   Prefab: {fileID: 3115355351971021200}

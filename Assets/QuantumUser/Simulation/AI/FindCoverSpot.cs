@@ -25,7 +25,7 @@ namespace Quantum
 			FPVector2 enemyPosition = frame.Unsafe.GetPointer<Transform2D>(targetEntity)->Position;
 
 			FPVector2 agentPosition = frame.Unsafe.GetPointer<Transform2D>(entity)->Position;
-			var hits = frame.Physics2D.OverlapShape(agentPosition, 0, Shape2D.CreateCircle(8), frame.Layers.GetLayerMask("CoverPoint"),
+			var hits = frame.Physics2D.OverlapShape(agentPosition, 0, Shape2D.CreateCircle(8), frame.Layers.GetLayerMask(AIConstants.LAYER_COVER_POINT),
 				QueryOptions.HitStatics | QueryOptions.ComputeDetailedInfo);
 
 			FPVector2 closestCoverPoint = default;

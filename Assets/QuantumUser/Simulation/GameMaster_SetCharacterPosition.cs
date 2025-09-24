@@ -27,7 +27,7 @@ namespace Quantum
 
 					if(frame.Unsafe.TryGetPointer<NavMeshPathfinder>(entity, out var pathfinder) == true)
 					{
-						NavMesh navMesh = frame.Map.GetNavMesh("NavMesh");
+						NavMesh navMesh = frame.Map.GetNavMesh(AIConstants.NAV_MESH_TAG);
 						pathfinder->SetTarget(frame, TargetPosition.XOY, navMesh);
 					}
 				}

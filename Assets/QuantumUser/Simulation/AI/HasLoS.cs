@@ -26,7 +26,7 @@ namespace Quantum
 
 			FPVector2 dirToTarget = (targetPosition - agentPosition).Normalized;
 
-			var hit = frame.Physics2D.Raycast(agentPosition, dirToTarget, 8, frame.Layers.GetLayerMask("Character", "Static"));
+			var hit = frame.Physics2D.Raycast(agentPosition, dirToTarget, 8, frame.Layers.GetLayerMask(AIConstants.LAYER_CHARACTER, AIConstants.LAYER_STATIC));
 			if (hit.HasValue == true && hit.Value.IsDynamic == true)
 			{
 				return true;

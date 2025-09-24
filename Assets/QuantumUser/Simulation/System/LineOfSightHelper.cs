@@ -9,7 +9,7 @@ namespace Quantum
 		// Returns true if there's no static collider between source and target
 		public static bool HasLineOfSight(Frame frame, FPVector2 source, FPVector2 target)
 		{
-			var layerMask = frame.Layers.GetLayerMask("Static");
+			var layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC);
 			Physics2D.HitCollection hits = frame.Physics2D.LinecastAll(source, target, layerMask, QueryOptions.HitStatics);
 			for (var i = 0; i < hits.Count; i++)
 			{

@@ -77,7 +77,7 @@ namespace Quantum
 			wasDisabled = false;
 
 			Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
-			var layerMask = frame.Layers.GetLayerMask("Static", "Character");
+			var layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC, AIConstants.LAYER_CHARACTER);
 			var hits = PhysicsHelper.OverlapShape(frame, attackTransform, layerMask, Shape);
 			if (hits.Count == 0)
 			{

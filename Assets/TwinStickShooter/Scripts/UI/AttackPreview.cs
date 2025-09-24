@@ -130,7 +130,7 @@ namespace TwinStickShooter
     {
       Transform2D characterTransform = frame.Get<Transform2D>(ViewContext.LocalView.EntityRef);
       var hit = frame.Physics2D.Raycast(characterTransform.Position, aimDirection, _maxDistance,
-        frame.Layers.GetLayerMask("Static"));
+        frame.Layers.GetLayerMask(AIConstants.LAYER_STATIC));
       if (hit.HasValue == false)
       {
         return _maxDistance.AsFloat;

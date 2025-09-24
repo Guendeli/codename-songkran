@@ -19,7 +19,7 @@ namespace Quantum
 			TeamInfo sourceTeamInfo = frame.Get<TeamInfo>(attack.Source);
 			Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
 
-			var layerMask = frame.Layers.GetLayerMask("Character");
+			var layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_CHARACTER);
 			var hits = PhysicsHelper.OverlapShape(frame, attackTransform, layerMask, Shape);
 			for (int i = 0; i < hits.Count; i++)
 			{
