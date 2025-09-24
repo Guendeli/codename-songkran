@@ -103,14 +103,23 @@ namespace TwinStickShooter
 
       if (input.Fire == true)
       {
-        _lastDirection = _playerInput.actions[VECTOR_AIM_BASIC].ReadValue<Vector2>().ToFPVector2();
-        _lastDirection *= AimSensitivity;
+        Vector2 tempDir = _playerInput.actions[VECTOR_AIM_BASIC].ReadValue<Vector2>();
+        if (!Mathf.Approximately(tempDir.sqrMagnitude, 0f))
+        {
+          _lastDirection = tempDir.ToFPVector2();
+          _lastDirection *= AimSensitivity;
+        }
+        
       }
 
       if (input.AltFire == true)
       {
-        _lastDirection = _playerInput.actions[VECTOR_AIM_SPECIAL].ReadValue<Vector2>().ToFPVector2();
-        _lastDirection *= AimSensitivity;
+        Vector2 tempDir = _playerInput.actions[VECTOR_AIM_SPECIAL].ReadValue<Vector2>();
+        if (!Mathf.Approximately(tempDir.sqrMagnitude, 0f))
+        {
+          _lastDirection = tempDir.ToFPVector2();
+          _lastDirection *= AimSensitivity;
+        }
       }
 
       FPVector2 actionVector = default;
