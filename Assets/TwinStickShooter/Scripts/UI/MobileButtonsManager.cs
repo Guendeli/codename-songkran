@@ -13,9 +13,16 @@ public class MobileButtonsManager : MonoBehaviour
       gameObject.SetActive(false);
     }
     return;
+    
 #endif
 #pragma warning disable CS0162
-    gameObject.SetActive(false);
+      if(Application.isMobilePlatform)
+      {
+          gameObject.SetActive(true);
+          return;
+      }
+     
+      gameObject.SetActive(false);
 #pragma warning restore CS0162
 #endif
   }
