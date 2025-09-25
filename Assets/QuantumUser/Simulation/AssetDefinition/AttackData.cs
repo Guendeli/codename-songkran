@@ -74,7 +74,7 @@ namespace Quantum
 			}
 		}
 		
-		public virtual void OnApplyEffectSource(Frame frame, EntityRef source, EntityRef target)
+		public virtual void OnApplyEffectSource(Frame frame, EntityRef source)
 		{
 			
 			for (int i = 0; i < EffectsOnSource.Length; i++)
