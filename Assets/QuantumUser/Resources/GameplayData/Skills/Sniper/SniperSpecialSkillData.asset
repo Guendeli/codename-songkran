@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58a0ee9bfd04954ad14f32618d29299, type: 3}
+  m_Name: SniperSpecialSkillData
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/GameplayData/Skills/Sniper/SniperSpecialSkillData
+    Guid:
+      Value: 496707729779833205
+  SFX:
+    Clip: {fileID: 0}
+    Volume: 1
+  SkillPrototype:
+    Id:
+      Value: 1277301024639856304
+  AttackPrototype:
+    Id:
+      Value: 1390651390315069956
+  HasTTL: 0
+  ActionInterval:
+    RawValue: 0
+  ActionAmount: 0
+  RotationLockDuration:
+    RawValue: 65536
+  MovementLockDuration:
+    RawValue: 0
+  AutoAimCheckSight: 1
+  Cost:
+    RawValue: 65536
+  CostType: 2
+  AutoAimRadius:
+    RawValue: 655360
