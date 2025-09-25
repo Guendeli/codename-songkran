@@ -61,5 +61,6 @@ struct AttributeModifier
 	EModifierOperation ModifierOperation;
 	FP Amount;
 	FP Duration;
+	Boolean IgnoreMaxValue;
 	[HideInInspector] FP Timer;
 }

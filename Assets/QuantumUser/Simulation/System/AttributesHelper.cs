@@ -4,7 +4,7 @@ namespace Quantum
 {
 	public static unsafe class AttributesHelper
 	{
-		public static void ChangeAttribute(Frame frame, EntityRef entity, EAttributeType type, EModifierAppliance appliance, EModifierOperation operation, FP value, FP duration)
+		public static void ChangeAttribute(Frame frame, EntityRef entity, EAttributeType type, EModifierAppliance appliance, EModifierOperation operation, FP value, FP duration, bool ignoreMaxValue = false)
 		{
 			if (type == EAttributeType.Health && operation == EModifierOperation.Subtract)
 			{
@@ -30,6 +30,7 @@ namespace Quantum
 				ModifierAppliance = appliance,
 				ModifierOperation = operation,
 				Duration = duration,
+				IgnoreMaxValue = ignoreMaxValue
 			};
 			attribute->AddModifier(frame, modifier);
 		}

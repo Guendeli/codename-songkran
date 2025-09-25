@@ -246,6 +246,7 @@ namespace Quantum.Prototypes {
     public Quantum.QEnum8<EModifierOperation> ModifierOperation;
     public FP Amount;
     public FP Duration;
+    public QBoolean IgnoreMaxValue;
     [HideInInspector()]
     public FP Timer;
     partial void MaterializeUser(Frame frame, ref Quantum.AttributeModifier result, in PrototypeMaterializationContext context);
@@ -254,6 +255,7 @@ namespace Quantum.Prototypes {
         result.ModifierOperation = this.ModifierOperation;
         result.Amount = this.Amount;
         result.Duration = this.Duration;
+        result.IgnoreMaxValue = this.IgnoreMaxValue;
         result.Timer = this.Timer;
         MaterializeUser(frame, ref result, in context);
     }

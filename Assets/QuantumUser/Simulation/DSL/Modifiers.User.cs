@@ -33,7 +33,8 @@ namespace Quantum
 			switch (operation)
 			{
 				case EModifierOperation.Add:
-					attributeValue = FPMath.Clamp(attributeValue + valueToApply, 0, maxValue);
+					attributeValue = IgnoreMaxValue == false ? FPMath.Clamp(attributeValue + valueToApply, 0, maxValue):
+						FPMath.Max(attributeValue + valueToApply, 0);
 					break;
 				case EModifierOperation.Subtract:
 					attributeValue = FPMath.Clamp(attributeValue - valueToApply, 0, maxValue);

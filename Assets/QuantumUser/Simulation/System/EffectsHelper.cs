@@ -12,6 +12,7 @@ namespace Quantum
 		public EModifierOperation Operation;
 		public FP Duration;
 		public bool ApplyOnSummonParent;
+		public bool IgnoreMaxValue;
 	}
 
 	public static unsafe class EffectsHelper
@@ -36,7 +37,7 @@ namespace Quantum
 				return;
 			}
 
-			AttributesHelper.ChangeAttribute(frame, targetCharacter, effect.AttributeType, effect.Appliance, effect.Operation, value, effect.Duration);
+			AttributesHelper.ChangeAttribute(frame, targetCharacter, effect.AttributeType, effect.Appliance, effect.Operation, value, effect.Duration, effect.IgnoreMaxValue);
 		}
 	}
 }

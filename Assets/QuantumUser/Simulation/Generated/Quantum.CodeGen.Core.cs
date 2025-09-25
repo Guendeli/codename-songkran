@@ -730,6 +730,8 @@ namespace Quantum {
     public FP Amount;
     [FieldOffset(16)]
     public FP Duration;
+    [FieldOffset(4)]
+    public QBoolean IgnoreMaxValue;
     [FieldOffset(24)]
     [HideInInspector()]
     public FP Timer;
@@ -740,6 +742,7 @@ namespace Quantum {
         hash = hash * 31 + (Byte)ModifierOperation;
         hash = hash * 31 + Amount.GetHashCode();
         hash = hash * 31 + Duration.GetHashCode();
+        hash = hash * 31 + IgnoreMaxValue.GetHashCode();
         hash = hash * 31 + Timer.GetHashCode();
         return hash;
       }
@@ -748,6 +751,7 @@ namespace Quantum {
         var p = (AttributeModifier*)ptr;
         serializer.Stream.Serialize((Byte*)&p->ModifierAppliance);
         serializer.Stream.Serialize((Byte*)&p->ModifierOperation);
+        QBoolean.Serialize(&p->IgnoreMaxValue, serializer);
         FP.Serialize(&p->Amount, serializer);
         FP.Serialize(&p->Duration, serializer);
         FP.Serialize(&p->Timer, serializer);
