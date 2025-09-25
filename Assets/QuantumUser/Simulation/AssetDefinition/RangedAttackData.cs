@@ -34,7 +34,7 @@ namespace Quantum
 			EntityRef targetEntity = CheckHits(frame, hits, attackEntity, attack, attackTransform, out bool wasDisabled);
 			if (targetEntity != default)
 			{
-				OnApplyEffect(frame, attack->Source, targetEntity);
+				OnApplyEffectAll(frame, attack->Source, targetEntity);
 			}
 
 			return wasDisabled;

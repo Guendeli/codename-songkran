@@ -60,7 +60,7 @@ namespace Quantum
 		}
 
 		// Apply the effects, defined in the Unity inspector
-		public virtual void OnApplyEffect(Frame frame, EntityRef source, EntityRef target)
+		public virtual void OnApplyEffectAll(Frame frame, EntityRef source, EntityRef target)
 		{
 			foreach (var effect in EffectsOnOthers)
 			{
@@ -71,6 +71,26 @@ namespace Quantum
 			{
 				Effect effect = EffectsOnSource[i];
 				EffectsHelper.OnApply(frame, source, source, effect);
+			}
+		}
+		
+		public virtual void OnApplyEffectSource(Frame frame, EntityRef source, EntityRef target)
+		{
+			
+			for (int i = 0; i < EffectsOnSource.Length; i++)
+			{
+				Effect effect = EffectsOnSource[i];
+				EffectsHelper.OnApply(frame, source, source, effect);
+			}
+		}
+		
+		public virtual void OnApplyEffectTarget(Frame frame, EntityRef source, EntityRef target)
+		{
+			
+			for (int i = 0; i < EffectsOnOthers.Length; i++)
+			{
+				Effect effect = EffectsOnOthers[i];
+				EffectsHelper.OnApply(frame, source, target, effect);
 			}
 		}
 

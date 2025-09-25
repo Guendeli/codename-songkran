@@ -31,9 +31,12 @@ namespace Quantum
       FP characterSpeed = AttributesHelper.GetCurrentValue(frame, filter.Entity, EAttributeType.Speed);
       filter.KCC->MaxSpeed = characterSpeed;
 
+      FPVector2 direction = filter.MovementData->IsForcedMovement ? filter.MovementData->LastAutoAimDirection :
+        filter.InputContainer->Input.MoveDirection.Normalized;
+      
       KCCSettings kccSettings = frame.FindAsset<KCCSettings>(filter.KCC->Settings.Id);
       KCCMovementData kccMovementData = kccSettings.ComputeRawMovement(frame,
-        filter.Entity, filter.InputContainer->Input.MoveDirection.Normalized);
+        filter.Entity, direction);
       kccSettings.SteerAndMove(frame, filter.Entity, in kccMovementData);
     }
   }

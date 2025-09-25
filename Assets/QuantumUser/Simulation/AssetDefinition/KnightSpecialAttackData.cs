@@ -44,7 +44,7 @@ namespace Quantum
 			if (targetEntity != default && ignoreEntity == false)
 			{
 				targeted.Add(targetEntity);
-				OnApplyEffect(frame, attack->Source, targetEntity);
+				OnApplyEffectAll(frame, attack->Source, targetEntity);
 			}
 		}
 

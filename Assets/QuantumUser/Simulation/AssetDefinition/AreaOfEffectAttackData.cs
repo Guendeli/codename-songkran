@@ -35,7 +35,7 @@ namespace Quantum
 				{
 					continue;
 				}
-				OnApplyEffect(frame, attack.Source, target);
+				OnApplyEffectAll(frame, attack.Source, target);
 			}
 		}
 	}

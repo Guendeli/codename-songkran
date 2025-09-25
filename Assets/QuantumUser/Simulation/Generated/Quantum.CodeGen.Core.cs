@@ -2456,28 +2456,32 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct MovementData : Quantum.IComponent {
-    public const Int32 SIZE = 32;
+    public const Int32 SIZE = 40;
     public const Int32 ALIGNMENT = 8;
-    [FieldOffset(0)]
-    [HideInInspector()]
-    public FP DirectionTimer;
     [FieldOffset(8)]
     [HideInInspector()]
-    public FP MovementTimer;
+    public FP DirectionTimer;
     [FieldOffset(16)]
     [HideInInspector()]
+    public FP MovementTimer;
+    [FieldOffset(24)]
+    [HideInInspector()]
     public FPVector2 LastAutoAimDirection;
+    [FieldOffset(0)]
+    public QBoolean IsForcedMovement;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 19213;
         hash = hash * 31 + DirectionTimer.GetHashCode();
         hash = hash * 31 + MovementTimer.GetHashCode();
         hash = hash * 31 + LastAutoAimDirection.GetHashCode();
+        hash = hash * 31 + IsForcedMovement.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (MovementData*)ptr;
+        QBoolean.Serialize(&p->IsForcedMovement, serializer);
         FP.Serialize(&p->DirectionTimer, serializer);
         FP.Serialize(&p->MovementTimer, serializer);
         FPVector2.Serialize(&p->LastAutoAimDirection, serializer);

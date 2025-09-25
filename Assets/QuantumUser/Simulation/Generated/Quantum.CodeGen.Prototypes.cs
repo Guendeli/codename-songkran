@@ -677,6 +677,7 @@ namespace Quantum.Prototypes {
     public FP MovementTimer;
     [HideInInspector()]
     public FPVector2 LastAutoAimDirection;
+    public QBoolean IsForcedMovement;
     partial void MaterializeUser(Frame frame, ref Quantum.MovementData result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.MovementData component = default;
@@ -687,6 +688,7 @@ namespace Quantum.Prototypes {
         result.DirectionTimer = this.DirectionTimer;
         result.MovementTimer = this.MovementTimer;
         result.LastAutoAimDirection = this.LastAutoAimDirection;
+        result.IsForcedMovement = this.IsForcedMovement;
         MaterializeUser(frame, ref result, in context);
     }
   }

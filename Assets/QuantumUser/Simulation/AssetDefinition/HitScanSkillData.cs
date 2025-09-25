@@ -36,6 +36,7 @@ namespace Quantum
             AttackData data = frame.FindAsset<AttackData>(attack->AttackData.Id);
 
             data.OnCreate(frame, attackEntity, source, attack);
+            
             frame.Events.SkillAction(skill->SkillData.Id);
             OnDeactivate(frame, skillEntity, skill);
             return attackEntity;

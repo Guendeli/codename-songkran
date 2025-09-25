@@ -38,7 +38,7 @@ namespace Quantum
             
             if (targetEntity != default)
             {
-                OnApplyEffect(frame, attack->Source, targetEntity);
+                OnApplyEffectAll(frame, attack->Source, targetEntity);
             }
             
             
