@@ -41,6 +41,7 @@ namespace Quantum
 			frame.Global->ControllersEnabled = value;
 		}
 
+		// TODO - This a good approach to botify a former actor after the player left the room, wont work on State Sync games but tell the guys anyway
 		private bool IsControlledByAI(Frame frame, Filter filter, int playerRef)
 		{
 			// If the player is not connected, we turn it into a bot
