@@ -141,17 +141,7 @@ namespace TwinStickShooter
       }
 
       callback.SetInput(input, DeterministicInputFlags.Repeatable);
-
-		// actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
-  //   input.AimDirection = actionVector;
-  //
-		// if ((input.Fire == true || input.AltFire == true) && actionVector != FPVector2.Zero)
-		// {
-		// 	_attackPreview.gameObject.SetActive(true);
-		// 	_attackPreview.UpdateAttackPreview(actionVector, input.AltFire);
-		// }
-		// callback.SetInput(input, DeterministicInputFlags.Repeatable);
-
+      
     }
 
     private FPVector2 GetDirectionToMouse()

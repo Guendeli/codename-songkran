@@ -119,6 +119,18 @@ namespace Quantum
 			return false;
 		}
 
+		/// <summary>
+		/// Get the opposite team character entity with the most collectibles in the area
+		/// Specific to Coin Grab Mode
+		/// </summary>
+		/// <param name="frame"></param>
+		/// <param name="character"></param>
+		/// <param name="characterTransform"></param>
+		/// <param name="maxDistance"></param>
+		/// <param name="checkLineSight"></param>
+		/// <param name="ignoreSameTeam"></param>
+		/// <param name="targetCharacter"></param>
+		/// <returns></returns>
 		public static bool TryGetMostValuableCharacter(Frame frame, EntityRef character, Transform2D characterTransform, FP maxDistance, bool checkLineSight, bool ignoreSameTeam, out EntityRef targetCharacter)
 		{
 			TeamInfo characterTeamInfo = frame.Get<TeamInfo>(character);

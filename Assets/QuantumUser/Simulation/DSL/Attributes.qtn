@@ -10,7 +10,8 @@ enum EAttributeType : Byte
 	Special = 4,
 	Stun = 5,
 	Rage = 6,
-	Power = 7
+	Power = 7,
+	Stamina = 8,
 }
 
 
