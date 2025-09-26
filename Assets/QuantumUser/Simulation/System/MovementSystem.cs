@@ -41,6 +41,7 @@ namespace Quantum
       KCCMovementData kccMovementData = kccSettings.ComputeRawMovement(frame,
         filter.Entity, direction);
       kccSettings.SteerAndMove(frame, filter.Entity, in kccMovementData);
+      
     }
   }
 }

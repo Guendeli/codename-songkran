@@ -23,12 +23,12 @@ namespace Quantum
       var movementData = filter.MovementData;
       var characterAttacks = filter.CharacterAttacks;
 
+      
       ApplyAttackInput(frame,
         input,
         input.Fire,
         entity,
         entityPos,
-        EAttributeType.Energy,
         movementData,
         characterAttacks->BasicSkillData);
 
@@ -37,20 +37,20 @@ namespace Quantum
         input.AltFire,
         entity,
         entityPos,
-        EAttributeType.Special,
         movementData,
         characterAttacks->SpecialSkillData);
     }
 
-    private void ApplyAttackInput(Frame frame, QuantumDemoInputTopDown input, Button button, EntityRef entity, FPVector2 entityPos, EAttributeType type, MovementData* movementData, AssetRef<SkillData> dataRef)
+    private void ApplyAttackInput(Frame frame, QuantumDemoInputTopDown input, Button button, EntityRef entity, FPVector2 entityPos, MovementData* movementData, AssetRef<SkillData> dataRef)
     {
       bool actionReleased = button.WasReleased;
 
       if (actionReleased == true && movementData->IsOnAttackLock == false)
       {
         SkillData data = frame.FindAsset<SkillData>(dataRef.Id);
-
-        FP energyAttribute = AttributesHelper.GetCurrentValue(frame, entity, type);
+        EAttributeType costType = data.CostType;
+        
+        FP energyAttribute = AttributesHelper.GetCurrentValue(frame, entity, costType);
         if (energyAttribute >= data.Cost)
         {
           movementData->DirectionTimer = data.RotationLockDuration;
