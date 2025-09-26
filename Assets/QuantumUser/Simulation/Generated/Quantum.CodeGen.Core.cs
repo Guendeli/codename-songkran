@@ -59,6 +59,7 @@ namespace Quantum {
     Rage = 6,
     Power = 7,
     Stamina = 8,
+    Acceleration = 10,
   }
   public enum EHealthStatus : byte {
     None,

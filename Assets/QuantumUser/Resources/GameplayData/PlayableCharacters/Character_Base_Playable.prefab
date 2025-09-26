@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
@@ -186,6 +186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[6].Key.Value
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Key.Value
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
@@ -249,12 +254,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.MaxValue.RawValue
+      value: 983040
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[1].Value.Modifiers.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[6].Value.Modifiers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.Modifiers.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
@@ -286,6 +301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[6].Value.InitialValue.RawValue
       value: 65536
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.InitialValue.RawValue
+      value: 983040
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
@@ -354,6 +374,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.Modifiers.Array.data[0].Amount.RawValue
+      value: 6554
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
       propertyPath: Prototype.DataDictionaryTest.Array.data[1].Value.Modifiers.Array.data[0].Amount.RawValue
       value: 85196
       objectReference: {fileID: 0}
@@ -375,6 +400,16 @@ PrefabInstance:
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[6].Value.Modifiers.Array.data[0].ModifierOperation.Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.Modifiers.Array.data[0].ModifierAppliance.Value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.Modifiers.Array.data[0].ModifierOperation.Value
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 216084472708747050, guid: 269787b2e70c2e0488bd1bff38ee7c6f,

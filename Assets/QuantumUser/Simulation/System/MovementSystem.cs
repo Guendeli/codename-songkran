@@ -30,6 +30,9 @@ namespace Quantum
 
       FP characterSpeed = AttributesHelper.GetCurrentValue(frame, filter.Entity, EAttributeType.Speed);
       filter.KCC->MaxSpeed = characterSpeed;
+      
+      FP acceleration = AttributesHelper.GetCurrentValue(frame, filter.Entity, EAttributeType.Acceleration);
+      filter.KCC->Acceleration = acceleration;
 
       FPVector2 direction = filter.MovementData->IsForcedMovement ? filter.MovementData->LastAutoAimDirection :
         filter.InputContainer->Input.MoveDirection.Normalized;

@@ -12,6 +12,7 @@ enum EAttributeType : Byte
 	Rage = 6,
 	Power = 7,
 	Stamina = 8,
+	Acceleration = 10
 }
 
 
