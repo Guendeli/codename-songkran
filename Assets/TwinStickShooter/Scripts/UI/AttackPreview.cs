@@ -103,7 +103,7 @@ namespace TwinStickShooter
           new Vector3(circlePosition.X.AsFloat, .2f, circlePosition.Y.AsFloat);
       }
 
-      EAttributeType type = isSpecial ? EAttributeType.Special : EAttributeType.Energy;
+      EAttributeType type = GetSkillAttribute(frame, ViewContext.LocalView.EntityRef, isSpecial);
       float attackLoad = AttributesHelper.GetCurrentValue(frame, ViewContext.LocalView.EntityRef, type).AsFloat;
       foreach (var mesh in _meshRenderer)
       {
@@ -124,6 +124,14 @@ namespace TwinStickShooter
       if (isSpecial)
         return frame.FindAsset<SkillData>(attack.SpecialSkillData.Id).Cost.AsFloat;
       return frame.FindAsset<SkillData>(attack.BasicSkillData.Id).Cost.AsFloat;
+    }
+    
+    private EAttributeType GetSkillAttribute(Frame frame, EntityRef character, bool isSpecial)
+    {
+      CharacterAttacks attack = frame.Get<CharacterAttacks>(character);
+      if (isSpecial)
+        return frame.FindAsset<SkillData>(attack.SpecialSkillData.Id).CostType;
+      return frame.FindAsset<SkillData>(attack.BasicSkillData.Id).CostType;
     }
 
     private float GetPreviewSizeLinear(Frame frame, FPVector2 aimDirection)
