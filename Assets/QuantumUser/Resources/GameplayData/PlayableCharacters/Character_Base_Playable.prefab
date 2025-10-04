@@ -738,6 +738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AttackPreview
       objectReference: {fileID: 0}
+    - target: {fileID: 7715657575284830373, guid: 9759d66bddd5ad14dba7d8eb35f2bc67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

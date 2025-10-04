@@ -55,7 +55,6 @@ namespace TwinStickShooter
         Destroy(_attackPreview.gameObject);
       }
       _attackPreview = ViewContext.LocalView.GetComponentInChildren<AttackPreview>(true);
-      _attackPreview.transform.parent = null;
     }
 
     private void Update()

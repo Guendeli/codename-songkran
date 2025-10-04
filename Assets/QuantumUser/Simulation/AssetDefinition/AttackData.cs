@@ -8,6 +8,14 @@ namespace Quantum
 {
 	// Base class for all attack assets
 
+	public enum EPreviewType : int
+	{
+		None = 0,
+		Linear,
+		Ballistic,
+		Angle
+	}
+	
 	public unsafe abstract partial class AttackData : AssetObject
 	{
 #if QUANTUM_UNITY

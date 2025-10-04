@@ -8,8 +8,9 @@ namespace Quantum
 #if QUANTUM_UNITY
 		[Header("View Configuration", order = 9)]
 		public Sound SFX;
+		public EPreviewType AttackPreviewType;
+		[Header("Quantum Simulation Configuration", order = 10)]
 #endif
-
 		public AssetRef<EntityPrototype> SkillPrototype;
 		public AssetRef<EntityPrototype> AttackPrototype;
 

@@ -1,21 +1,39 @@
+using System;
+
 namespace TwinStickShooter
 {
   using UnityEngine;
   using Quantum;
   using Photon.Deterministic;
-
-  public enum EPreviewType
-  {
-    None,
-    Linear,
-    Ballistic,
-    Angle
-  }
-
+  
   public unsafe class AttackPreview : QuantumSceneViewComponent<CustomViewContext>
   {
-    public EPreviewType PreviewType;
-    public EPreviewType SpecialPreviewType;
+    private EPreviewType m_PreviewType;
+    private EPreviewType m_SpecialPreviewType;
+    
+    private EPreviewType PreviewType
+    {
+
+      get => m_PreviewType;
+      set
+      {
+          m_PreviewType = value;
+          Debug.Log("Setting preview type to " + value);
+      }
+    }
+
+
+
+    private EPreviewType SpecialPreviewType
+    {
+
+      get => m_SpecialPreviewType;
+      set
+      {
+          m_SpecialPreviewType = value;
+          Debug.Log("Setting Special preview type to " + value);
+      }
+    }
 
     [SerializeField] private FP _maxDistance;
 
@@ -34,8 +52,32 @@ namespace TwinStickShooter
     private void Awake()
     {
       _meshRenderer = GetComponentsInChildren<MeshRenderer>(true);
+      CharacterView.OnLocalPlayerInstantiated += OnLocalPlayerInstantiated;
+      
     }
 
+    public override void OnEnable()
+    {
+      base.OnEnable();
+    }
+
+    private void OnLocalPlayerInstantiated(CharacterView obj)
+    {
+      EntityRef playerEntity = obj.ViewContext.LocalView.EntityRef;
+      Frame frame = QuantumRunner.Default.Game.Frames.Verified;
+      if (playerEntity.IsValid && frame.TryGet(playerEntity, out CharacterAttacks characterAttacks))
+      {
+        var basicSkill = QuantumUnityDB.GetGlobalAsset<SkillData>(characterAttacks.BasicSkillData.Id);
+        var specialSkill = QuantumUnityDB.GetGlobalAsset<SkillData>(characterAttacks.SpecialSkillData.Id);
+
+
+        PreviewType = basicSkill.AttackPreviewType;
+        SpecialPreviewType = specialSkill.AttackPreviewType;
+
+        transform.SetParent(null, true);
+      }
+    }
+    
     private void TogglePreviews(EPreviewType previewType)
     {
       switch (previewType)
@@ -145,7 +187,7 @@ namespace TwinStickShooter
       }
 
       var previewSize =
-        Vector2.Distance(characterTransform.Position.ToUnityVector2(), hit.Value.Point.ToUnityVector2());
+        Vector2.Distance(characterTransform.Position.ToUnityVector2(), hit.Value.Point.ToUnityVector2()); 
       return previewSize;
     }
 
@@ -153,5 +195,12 @@ namespace TwinStickShooter
     {
       return Mathf.Clamp(aim.Magnitude.AsFloat, 0, _maxDistance.AsFloat);
     }
+
+
+    private void OnDestroy()
+    {
+      CharacterView.OnLocalPlayerInstantiated -= OnLocalPlayerInstantiated;
+    }
+
   }
 }

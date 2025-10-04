@@ -19,6 +19,7 @@ MonoBehaviour:
   SFX:
     Clip: {fileID: 8300000, guid: 4dbf3cf91c2d0ea43b68a4ca03cf5d85, type: 3}
     Volume: 1
+  AttackPreviewType: 2
   SkillPrototype:
     Id:
       Value: 1217988919021384834

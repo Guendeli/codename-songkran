@@ -19,6 +19,7 @@ MonoBehaviour:
   SFX:
     Clip: {fileID: 0}
     Volume: 1
+  AttackPreviewType: 1
   SkillPrototype:
     Id:
       Value: 1423529957020518646

@@ -6,7 +6,7 @@ namespace TwinStickShooter
   public sealed unsafe class CharacterView : QuantumEntityViewComponent<CustomViewContext>
   {
     public static System.Action<CharacterView> OnLocalPlayerInstantiated;
-
+    public static System.Action<CharacterView> OnRemotePlayerInstantiated;
     public GameObject Model;
     public GameObject ImmunityVFX;
 
@@ -26,6 +26,11 @@ namespace TwinStickShooter
       {
         ViewContext.LocalView = this;
         OnLocalPlayerInstantiated?.Invoke(this);
+      }
+      else
+      {
+        OnRemotePlayerInstantiated?.Invoke(this);
+        HandleRemotePlayer();
       }
 
       _materialController = GetComponentsInChildren<CharacterMaterialController>();
@@ -117,6 +122,12 @@ namespace TwinStickShooter
       }
 
       Model.SetActive(true);
+    }
+
+    private void HandleRemotePlayer()
+    {
+      var attackPreview = GetComponentInChildren<AttackPreview>(true);
+      attackPreview.gameObject.SetActive(false);
     }
 
     public override void OnDeactivate()
