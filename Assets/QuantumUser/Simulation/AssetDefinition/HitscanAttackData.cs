@@ -9,6 +9,7 @@ namespace Quantum
     public unsafe abstract partial class HitscanAttackData : AttackData
     {
         public FP Distance;     // For LineCast attacks
+        
         public override void OnCreate(Frame frame, EntityRef attackEntity, EntityRef source, Attack* attack)
         {
             base.OnCreate(frame, attackEntity, source, attack);

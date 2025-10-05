@@ -60,7 +60,7 @@ namespace Quantum
 			attack->TTL += frame.DeltaTime;
 		}
 
-		// Polymorphic OnUpdate logic
+		// Polymorphic OnDeactivate logic
 		public virtual void OnDeactivate(Frame frame, EntityRef attackEntity)
 		{
 			frame.Signals.OnDisableAttack(attackEntity);

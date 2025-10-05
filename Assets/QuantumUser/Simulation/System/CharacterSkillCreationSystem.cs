@@ -23,7 +23,14 @@ namespace Quantum
       var movementData = filter.MovementData;
       var characterAttacks = filter.CharacterAttacks;
 
+      // Stun - Silence checks here
+      FP stun = AttributesHelper.GetCurrentValue(frame, filter.Entity, EAttributeType.Stun);
+      if (stun > 0 || filter.MovementData->IsOnAttackMovementLock == true)
+      {
+        return;
+      }
       
+      // Skill Logic
       ApplyAttackInput(frame,
         input,
         input.Fire,
