@@ -25,7 +25,7 @@ namespace Quantum
 
       // Stun - Silence checks here
       FP stun = AttributesHelper.GetCurrentValue(frame, filter.Entity, EAttributeType.Stun);
-      if (stun > 0 || filter.MovementData->IsOnAttackMovementLock == true)
+      if (stun > 0)
       {
         return;
       }
