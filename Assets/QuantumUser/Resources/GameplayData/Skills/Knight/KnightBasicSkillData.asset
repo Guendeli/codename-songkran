@@ -33,7 +33,7 @@ MonoBehaviour:
   RotationLockDuration:
     RawValue: 49152
   MovementLockDuration:
-    RawValue: 19660
+    RawValue: 65536
   AutoAimCheckSight: 1
   Cost:
     RawValue: 65536

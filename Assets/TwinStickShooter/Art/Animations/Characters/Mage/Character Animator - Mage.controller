@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: af946330bfebe1a48b6acd398b72159f, type: 2}
+  m_Motion: {fileID: 7400000, guid: f012889354a3c684b8a53e3d5b3dcecb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -222,7 +222,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character Animator - Knight
+  m_Name: Character Animator - Mage
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -389,7 +389,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a5eb649efd978b945bde78d603649379, type: 2}
+  m_Motion: {fileID: 7400000, guid: c884b3bede0b129489fe8a2c95b8427e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
