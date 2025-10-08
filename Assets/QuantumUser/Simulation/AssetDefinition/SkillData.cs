@@ -3,6 +3,14 @@ using UnityEngine;
 
 namespace Quantum
 {
+	public enum EPreviewType : int
+	{
+		None = 0,
+		Linear,
+		Ballistic,
+		Angle
+	}
+	
 	public abstract unsafe  partial class SkillData : AssetObject
 	{
 #if QUANTUM_UNITY

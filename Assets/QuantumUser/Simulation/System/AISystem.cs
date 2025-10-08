@@ -149,7 +149,7 @@ namespace Quantum
 		}
 
 		// Similar to OnCreateAttack, used to register data for the avoidance
-		// This is used to be aware of projectile attacks, such as the Archer basic hability
+		// This is used to be aware of projectile and hit scan attacks
 		public void OnCreateSkill(Frame frame, EntityRef attacker, FPVector2 characterPos, SkillData data, FPVector2 actionDirection)
 		{
 			var bots = frame.Filter<Bot, TeamInfo>();
