@@ -18,7 +18,7 @@ namespace TwinStickShooter
       Dictionary<int, List<MonoBehaviour>> groupsDict = new Dictionary<int, List<MonoBehaviour>>();
       FillGroupsIds(data, mapAsset, groupsDict);
 
-      QuantumUnityDB.TryGetGlobalAsset("QuantumUser/Resources/InvisibilityGroups", out InvisibilityGroups asset);
+      QuantumUnityDB.TryGetGlobalAsset("QuantumUser/Resources/GameplayData/MapData/InvisibilityGroups", out InvisibilityGroups asset);
 
       var groupsList = new List<Group>();
 
