@@ -11508,7 +11508,7 @@ MonoBehaviour:
         Value: 3466109437456970911
     RoomFillInterval:
       RawValue: 6554
-    FillWithBots: 1
+    FillWithBots: 0
   UseRandomSeed: 0
   SessionConfig: {fileID: 11400000, guid: a5e4bad82ac5a1743880cbac1223a7df, type: 2}
   LocalPlayers:
@@ -75878,6 +75878,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1832767322}
     m_Modifications:
+    - target: {fileID: 122324821218406628, guid: cf270c8bd7369414eb203974ebbdd8ed,
+        type: 3}
+      propertyPath: _controlPath
+      value: <Gamepad>/rightStick
+      objectReference: {fileID: 0}
     - target: {fileID: 1090855937676501962, guid: cf270c8bd7369414eb203974ebbdd8ed,
         type: 3}
       propertyPath: m_Pivot.x
@@ -75987,6 +75992,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MobileLayout
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454084579920227743, guid: cf270c8bd7369414eb203974ebbdd8ed,
+        type: 3}
+      propertyPath: ShowOnEditor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
