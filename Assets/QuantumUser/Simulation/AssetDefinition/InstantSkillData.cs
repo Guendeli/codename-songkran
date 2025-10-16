@@ -9,7 +9,7 @@ namespace Quantum
     /// A Hit Scan Skill Data should be a Fire and Forget skill, calls OnDeactivate the moment OnAction is done
     /// </summary>
     [System.Serializable]
-    public unsafe partial class HitScanSkillData : SkillData
+    public unsafe partial class InstantSkillData : SkillData
     {
         public override EntityRef OnAction(Frame frame, EntityRef source, EntityRef skillEntity, Skill* skill)
         {

@@ -62,6 +62,11 @@ namespace Quantum.Menu {
     /// </summary>
     [InlineHelp, SerializeField] protected UnityEngine.UI.Button _settingsButton;
 
+    /// <summary>
+    /// The name for the Quantum Debug Runner scene
+    /// </summary>
+    [SerializeField] protected string OfflineSceneName;
+    
     partial void AwakeUser();
     partial void InitUser();
     partial void ShowUser();
@@ -199,6 +204,18 @@ namespace Quantum.Menu {
       var result = await Connection.ConnectAsync(ConnectionArgs);
 
       await Controller.HandleConnectionResult(result, this.Controller);
+    }
+    
+    /// <summary>
+    /// Is called when the <see cref="_Offline"/> is pressed using SendMessage() from the UI object.
+    /// Directly Loads the scene with Quantum Debug Runner
+    /// </summary>
+    protected virtual async void OnOfflineModePressed()
+    {
+      if(string.IsNullOrEmpty(OfflineSceneName))
+        return;
+      
+      UnityEngine.SceneManagement.SceneManager.LoadScene(OfflineSceneName);
     }
 
     
