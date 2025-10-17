@@ -759,6 +759,24 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct DruidSpecialAttackRD {
+    public const Int32 SIZE = 8;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public FP EffectInterval;
+    public override readonly Int32 GetHashCode() {
+      unchecked { 
+        var hash = 10687;
+        hash = hash * 31 + EffectInterval.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (DruidSpecialAttackRD*)ptr;
+        FP.Serialize(&p->EffectInterval, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Input {
     public const Int32 SIZE = 160;
     public const Int32 ALIGNMENT = 4;
@@ -1562,12 +1580,17 @@ namespace Quantum {
     [FieldOverlap(8)]
     [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.SNIPERBASICATTACKRD)]
     private SniperBasicAttackRD _SniperBasicAttackRD;
+    [FieldOffset(8)]
+    [FieldOverlap(8)]
+    [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.DRUIDSPECIALATTACKRD)]
+    private DruidSpecialAttackRD _DruidSpecialAttackRD;
     public const Int32 ARCHERSPECIALATTACKRD = 1;
     public const Int32 SPELLCASTERBASICATTACKRD = 2;
     public const Int32 SPELLCASTERSPECIALATTACKRD = 3;
     public const Int32 KNIGHTBASICATTACKRD = 4;
     public const Int32 KNIGHTSPECIALATTACKRD = 5;
     public const Int32 SNIPERBASICATTACKRD = 6;
+    public const Int32 DRUIDSPECIALATTACKRD = 7;
     public readonly Int32 Field {
       get {
         return _field_used_;
@@ -1639,6 +1662,17 @@ namespace Quantum {
         }
       }
     }
+    public DruidSpecialAttackRD* DruidSpecialAttackRD {
+      get {
+        fixed (DruidSpecialAttackRD* p = &_DruidSpecialAttackRD) {
+          if (_field_used_ != DRUIDSPECIALATTACKRD) {
+            Native.Utils.Clear(p, 8);
+            _field_used_ = DRUIDSPECIALATTACKRD;
+          }
+          return p;
+        }
+      }
+    }
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 7573;
@@ -1649,6 +1683,7 @@ namespace Quantum {
         hash = hash * 31 + _KnightBasicAttackRD.GetHashCode();
         hash = hash * 31 + _KnightSpecialAttackRD.GetHashCode();
         hash = hash * 31 + _SniperBasicAttackRD.GetHashCode();
+        hash = hash * 31 + _DruidSpecialAttackRD.GetHashCode();
         return hash;
       }
     }
@@ -1666,6 +1701,9 @@ namespace Quantum {
         serializer.Stream.Serialize(&p->_field_used_);
         if (p->_field_used_ == ARCHERSPECIALATTACKRD) {
           Quantum.ArcherSpecialAttackRD.Serialize(&p->_ArcherSpecialAttackRD, serializer);
+        }
+        if (p->_field_used_ == DRUIDSPECIALATTACKRD) {
+          Quantum.DruidSpecialAttackRD.Serialize(&p->_DruidSpecialAttackRD, serializer);
         }
         if (p->_field_used_ == KNIGHTBASICATTACKRD) {
           Quantum.KnightBasicAttackRD.Serialize(&p->_KnightBasicAttackRD, serializer);
@@ -3066,6 +3104,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(ComponentTypeRef), ComponentTypeRef.SIZE);
       typeRegistry.Register(typeof(DistanceJoint), DistanceJoint.SIZE);
       typeRegistry.Register(typeof(DistanceJoint3D), DistanceJoint3D.SIZE);
+      typeRegistry.Register(typeof(Quantum.DruidSpecialAttackRD), Quantum.DruidSpecialAttackRD.SIZE);
       typeRegistry.Register(typeof(Quantum.EAttributeType), 1);
       typeRegistry.Register(typeof(Quantum.EHealthStatus), 1);
       typeRegistry.Register(typeof(Quantum.EMemoryType), 1);

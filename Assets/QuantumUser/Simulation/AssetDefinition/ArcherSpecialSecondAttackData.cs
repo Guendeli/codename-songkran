@@ -23,7 +23,7 @@ namespace Quantum
 			if (attackRuntimeData->EffectInterval <= 0)
 			{
 				attackRuntimeData->EffectInterval = EffectInterval;
-				PerformDamage(frame, attackEntity, *attack);
+				Execute(frame, attackEntity, *attack);
 			}
 		}
 	}

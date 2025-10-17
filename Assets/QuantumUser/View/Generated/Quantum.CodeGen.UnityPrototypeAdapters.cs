@@ -144,6 +144,7 @@ namespace Quantum.Prototypes.Unity {
     public Quantum.Prototypes.Unity.KnightBasicAttackRDPrototype KnightBasicAttackRD;
     public Quantum.Prototypes.Unity.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
     public Quantum.Prototypes.Unity.SniperBasicAttackRDPrototype SniperBasicAttackRD;
+    public Quantum.Prototypes.DruidSpecialAttackRDPrototype DruidSpecialAttackRD;
     partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.AttackRuntimeDataPrototype prototype);
     public override Quantum.Prototypes.AttackRuntimeDataPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
       var result = new Quantum.Prototypes.AttackRuntimeDataPrototype();
@@ -154,6 +155,7 @@ namespace Quantum.Prototypes.Unity {
       converter.Convert(this.KnightBasicAttackRD, out result.KnightBasicAttackRD);
       converter.Convert(this.KnightSpecialAttackRD, out result.KnightSpecialAttackRD);
       converter.Convert(this.SniperBasicAttackRD, out result.SniperBasicAttackRD);
+      converter.Convert(this.DruidSpecialAttackRD, out result.DruidSpecialAttackRD);
       ConvertUser(converter, ref result);
       return result;
     }

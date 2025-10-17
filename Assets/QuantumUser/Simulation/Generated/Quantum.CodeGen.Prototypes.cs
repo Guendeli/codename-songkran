@@ -199,6 +199,7 @@ namespace Quantum.Prototypes {
     public Quantum.Prototypes.KnightBasicAttackRDPrototype KnightBasicAttackRD;
     public Quantum.Prototypes.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
     public Quantum.Prototypes.SniperBasicAttackRDPrototype SniperBasicAttackRD;
+    public Quantum.Prototypes.DruidSpecialAttackRDPrototype DruidSpecialAttackRD;
     public void Materialize(Frame frame, ref Quantum.AttackRuntimeData result, in PrototypeMaterializationContext context = default) {
         switch (_field_used_) {
           case "ARCHERSPECIALATTACKRD": this.ArcherSpecialAttackRD.Materialize(frame, ref *result.ArcherSpecialAttackRD, in context); break;
@@ -207,6 +208,7 @@ namespace Quantum.Prototypes {
           case "KNIGHTBASICATTACKRD": this.KnightBasicAttackRD.Materialize(frame, ref *result.KnightBasicAttackRD, in context); break;
           case "KNIGHTSPECIALATTACKRD": this.KnightSpecialAttackRD.Materialize(frame, ref *result.KnightSpecialAttackRD, in context); break;
           case "SNIPERBASICATTACKRD": this.SniperBasicAttackRD.Materialize(frame, ref *result.SniperBasicAttackRD, in context); break;
+          case "DRUIDSPECIALATTACKRD": this.DruidSpecialAttackRD.Materialize(frame, ref *result.DruidSpecialAttackRD, in context); break;
           case "": case null: break;
           default: PrototypeValidator.UnknownUnionField(_field_used_, in context); break;
         }
@@ -362,6 +364,16 @@ namespace Quantum.Prototypes {
     }
     public void Materialize(Frame frame, ref Quantum.Collectible result, in PrototypeMaterializationContext context = default) {
         result.CollectibleData = this.CollectibleData;
+        MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.DruidSpecialAttackRD))]
+  public unsafe partial class DruidSpecialAttackRDPrototype : StructPrototype {
+    public FP EffectInterval;
+    partial void MaterializeUser(Frame frame, ref Quantum.DruidSpecialAttackRD result, in PrototypeMaterializationContext context);
+    public void Materialize(Frame frame, ref Quantum.DruidSpecialAttackRD result, in PrototypeMaterializationContext context = default) {
+        result.EffectInterval = this.EffectInterval;
         MaterializeUser(frame, ref result, in context);
     }
   }

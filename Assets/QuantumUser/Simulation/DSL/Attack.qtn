@@ -29,6 +29,8 @@ union AttackRuntimeData
 	KnightSpecialAttackRD KnightSpecialAttackRD;
 	
 	SniperBasicAttackRD SniperBasicAttackRD;
+	
+	DruidSpecialAttackRD DruidSpecialAttackRD;
 }
 
 // -- Archer
@@ -61,6 +63,12 @@ struct KnightBasicAttackRD
 struct KnightSpecialAttackRD
 {
 	list<EntityRef> Targets;
+}
+
+// -- Drood
+struct DruidSpecialAttackRD
+{
+    FP EffectInterval;
 }
 
 // -- Sniper

@@ -14,7 +14,7 @@ namespace Quantum
 
 		protected abstract void UpdateEffectInterval(Frame frame, EntityRef attackEntity, Attack* attack);
 
-		protected void PerformDamage(Frame frame, EntityRef attackEntity, Attack attack)
+		protected void Execute(Frame frame, EntityRef attackEntity, Attack attack)
 		{
 			TeamInfo sourceTeamInfo = frame.Get<TeamInfo>(attack.Source);
 			Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
