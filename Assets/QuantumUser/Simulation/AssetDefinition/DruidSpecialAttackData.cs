@@ -1,9 +1,9 @@
 ﻿namespace Quantum
 {
     /// <summary>
-    /// This is an AoE attack data that follows the source
+    /// This is an AoE attack data that follows the source and applies effects on intervals
     /// </summary>
-    public class DruidSpecialAttackData : AreaOfEffectAttackData
+    public unsafe class DruidSpecialAttackData : AreaOfEffectAttackData
     {
         public override unsafe void OnUpdate(Frame frame, EntityRef attackEntity, Attack* attack)
         {

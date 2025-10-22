@@ -27,13 +27,23 @@ MonoBehaviour:
   EffectsOnOthers: []
   EffectsOnSource:
   - Value:
-      RawValue: 196608
+      RawValue: 655360
     AttributeType: 3
     Appliance: 4
     Operation: 1
     Duration:
       RawValue: 65536
     ApplyOnSummonParent: 0
+    IgnoreMaxValue: 1
+  - Value:
+      RawValue: 13107200
+    AttributeType: 10
+    Appliance: 4
+    Operation: 1
+    Duration:
+      RawValue: 65536
+    ApplyOnSummonParent: 0
+    IgnoreMaxValue: 1
   Shape:
     ShapeType: 1
     PolygonCollider:

@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b58a0ee9bfd04954ad14f32618d29299, type: 3}
-  m_Name: SniperSpecialSkillData
+  m_Name: DruidSpecialSkillData
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/GameplayData/Skills/Sniper/SniperSpecialSkillData
+    Path: QuantumUser/Resources/GameplayData/Skills/Druid/DruidSpecialSkillData
     Guid:
-      Value: 496707729779833205
+      Value: 518894756588238370
   SFX:
     Clip: {fileID: 0}
     Volume: 1
   AttackPreviewType: 1
   SkillPrototype:
     Id:
-      Value: 1277301024639856304
+      Value: 1453428013509854888
   AttackPrototype:
     Id:
-      Value: 1390651390315069956
+      Value: 1423250773138637833
   HasTTL: 0
   ActionInterval:
     RawValue: 0

@@ -4,7 +4,7 @@ using System;
 namespace Quantum
 {
 	[System.Serializable]
-	public unsafe abstract partial class AreaOfEffectAttackData : AttackData
+	public abstract unsafe partial class AreaOfEffectAttackData : AttackData
 	{
 		// Applies effects on an area accordingly to some intervaled repetitions
 
