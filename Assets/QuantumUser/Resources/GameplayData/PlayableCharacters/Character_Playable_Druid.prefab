@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.BasicSkillData.Id.Value
-      value: 4493800784340734526
+      value: 530909615354710699
       objectReference: {fileID: 0}
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
