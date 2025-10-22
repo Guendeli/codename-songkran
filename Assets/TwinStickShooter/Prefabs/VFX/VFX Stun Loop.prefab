@@ -4777,7 +4777,7 @@ GameObject:
   - component: {fileID: 5842043908589490519}
   - component: {fileID: 7122026747107825659}
   m_Layer: 0
-  m_Name: CFXR2 Expression Stun (Loop)
+  m_Name: VFX Stun Loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

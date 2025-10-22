@@ -9,7 +9,8 @@ namespace TwinStickShooter
     public static System.Action<CharacterView> OnRemotePlayerInstantiated;
     public GameObject Model;
     public GameObject ImmunityVFX;
-
+    public GameObject StunVFX;
+    
     private CharacterMaterialController[] _materialController;
 
     public override void OnInitialize()
@@ -54,6 +55,13 @@ namespace TwinStickShooter
       {
         HandleImmunity(immunity);
       }
+      
+      //  Solve Crash in character Selection
+      if (PredictedFrame.TryGet<PlayerLink>(EntityRef, out var playerLink))
+      {
+        HandleStun();
+        
+      }
     }
 
     private void HandleInvisibility(Invisibility invisibility)
@@ -92,6 +100,29 @@ namespace TwinStickShooter
           ImmunityVFX.SetActive(false);
         }
       }
+    }
+
+    private void HandleStun()
+    {
+      if (StunVFX == null)
+        return;
+      
+      bool isStunned = EffectsHelper.IsStunned(PredictedFrame, EntityRef);
+      if (isStunned)
+      {
+        if (StunVFX.activeSelf == false)
+        {
+          StunVFX.SetActive(true);
+        }
+      }
+      else
+      {
+        if (StunVFX.activeSelf == true)
+        {
+          StunVFX.SetActive(false);
+        }
+      }
+      
     }
 
     private void OnCharacterVisibilityChange(bool value, EntityRef target)

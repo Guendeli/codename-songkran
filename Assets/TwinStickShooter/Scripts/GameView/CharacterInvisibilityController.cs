@@ -82,7 +82,7 @@ namespace TwinStickShooter
           continue;
         }
 
-        if (FPVector2.Distance(currentTransform->Position, enemyPosition) < 5)
+        if (FPVector2.Distance(currentTransform->Position, enemyPosition) < 5) // TODO - REMOVE MAGIC NUMBERS DUDE !
         {
           return true;
         }

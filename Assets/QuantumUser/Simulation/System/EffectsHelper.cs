@@ -39,5 +39,16 @@ namespace Quantum
 
 			AttributesHelper.ChangeAttribute(frame, targetCharacter, effect.AttributeType, effect.Appliance, effect.Operation, value, effect.Duration, effect.IgnoreMaxValue);
 		}
+
+		public static bool IsStunned(Frame frame, EntityRef target)
+		{
+			FP stun = AttributesHelper.GetCurrentValue(frame, target, EAttributeType.Stun);
+			if (stun > 0)
+			{
+				return true;
+			}
+
+			return false;
+		}
 	}
 }
