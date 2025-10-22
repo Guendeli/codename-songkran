@@ -24,7 +24,8 @@ MonoBehaviour:
   HitAlies: 1
   DestroyOnHitDynamic: 0
   DestroyOnHitStatic: 0
-  EffectsOnOthers:
+  EffectsOnTargetHostiles: []
+  EffectsOnTargetAllies:
   - Value:
       RawValue: 24576000
     AttributeType: 1
@@ -54,7 +55,7 @@ MonoBehaviour:
       Id:
         Value: 0
     CircleRadius:
-      RawValue: 98304
+      RawValue: 131072
     CapsuleSize:
       X:
         RawValue: 65536
