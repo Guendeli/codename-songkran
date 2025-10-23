@@ -2177,6 +2177,22 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct Ball : Quantum.IComponent {
+    public const Int32 SIZE = 4;
+    public const Int32 ALIGNMENT = 4;
+    [FieldOffset(0)]
+    private fixed Byte _alignment_padding_[4];
+    public override readonly Int32 GetHashCode() {
+      unchecked { 
+        var hash = 4003;
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (Ball*)ptr;
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Bot : Quantum.IComponent {
     public const Int32 SIZE = 192;
     public const Int32 ALIGNMENT = 8;
@@ -2779,6 +2795,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<Quantum.Attributes>();
       BuildSignalsArrayOnComponentAdded<BTAgent>();
       BuildSignalsArrayOnComponentRemoved<BTAgent>();
+      BuildSignalsArrayOnComponentAdded<Quantum.Ball>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.Ball>();
       BuildSignalsArrayOnComponentAdded<Quantum.Bot>();
       BuildSignalsArrayOnComponentRemoved<Quantum.Bot>();
       BuildSignalsArrayOnComponentAdded<BotSDKGlobals>();
@@ -3083,6 +3101,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum.AttributeModifier), Quantum.AttributeModifier.SIZE);
       typeRegistry.Register(typeof(Quantum.Attributes), Quantum.Attributes.SIZE);
       typeRegistry.Register(typeof(BTAgent), BTAgent.SIZE);
+      typeRegistry.Register(typeof(Quantum.Ball), Quantum.Ball.SIZE);
       typeRegistry.Register(typeof(Quantum.BitSet1024), Quantum.BitSet1024.SIZE);
       typeRegistry.Register(typeof(Quantum.BitSet128), Quantum.BitSet128.SIZE);
       typeRegistry.Register(typeof(Quantum.BitSet2048), Quantum.BitSet2048.SIZE);
@@ -3219,7 +3238,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum._globals_), Quantum._globals_.SIZE);
     }
     static partial void InitComponentTypeIdGen() {
-      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 28)
+      ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 29)
         .AddBuiltInComponents()
         .Add<AIBlackboardComponent>(AIBlackboardComponent.Serialize, AIBlackboardComponent.OnAdded, AIBlackboardComponent.OnRemoved, ComponentFlags.None)
         .Add<Quantum.AIMemory>(Quantum.AIMemory.Serialize, null, Quantum.AIMemory.OnRemoved, ComponentFlags.None)
@@ -3227,6 +3246,7 @@ namespace Quantum {
         .Add<Quantum.Attack>(Quantum.Attack.Serialize, null, Quantum.Attack.OnRemoved, ComponentFlags.None)
         .Add<Quantum.Attributes>(Quantum.Attributes.Serialize, null, Quantum.Attributes.OnRemoved, ComponentFlags.None)
         .Add<BTAgent>(BTAgent.Serialize, BTAgent.OnAdded, BTAgent.OnRemoved, ComponentFlags.None)
+        .Add<Quantum.Ball>(Quantum.Ball.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Bot>(Quantum.Bot.Serialize, null, null, ComponentFlags.None)
         .Add<BotSDKGlobals>(BotSDKGlobals.Serialize, BotSDKGlobals.OnAdded, BotSDKGlobals.OnRemoved, ComponentFlags.Singleton)
         .Add<Quantum.Character>(Quantum.Character.Serialize, null, null, ComponentFlags.None)

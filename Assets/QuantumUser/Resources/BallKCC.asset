@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02cbd3463c8038d449931ce3d7a60269, type: 3}
-  m_Name: BaseKCC
+  m_Name: BallKCC
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/BaseKCC
+    Path: QuantumUser/Resources/BallKCC
     Guid:
-      Value: 2999427438683022857
+      Value: 291331357659789245
   Radius:
     RawValue: 32768
   MaxContacts: 3
@@ -24,9 +24,9 @@ MonoBehaviour:
   CorrectionSpeed:
     RawValue: 32768
   BaseSpeed:
-    RawValue: 65536
+    RawValue: 196608
   Acceleration:
     RawValue: 983040
   Debug: 0
   Brake:
-    RawValue: 655360
+    RawValue: 131072
