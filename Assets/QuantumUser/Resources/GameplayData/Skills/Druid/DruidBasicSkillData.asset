@@ -22,14 +22,14 @@ MonoBehaviour:
   AttackPreviewType: 1
   SkillPrototype:
     Id:
-      Value: 1214909417581777367
+      Value: 1492301761541256529
   AttackPrototype:
     Id:
-      Value: 535788465813011857
+      Value: 1282511593179442579
   HasTTL: 1
   ActionInterval:
-    RawValue: 4915
-  ActionAmount: 7
+    RawValue: 9175
+  ActionAmount: 4
   RotationLockDuration:
     RawValue: 65536
   MovementLockDuration:
