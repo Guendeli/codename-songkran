@@ -72,6 +72,18 @@ namespace Quantum
 			}
 			return value;
 		}
+		
+		public static bool TryGetClosestCharacterDirectionRaw(Frame frame, EntityRef character, Transform2D characterTransform, FP maxDistance, bool checkTeam, bool checkLineSight, out FPVector2 enemyDirection)
+		{
+			bool value = TryGetClosestCharacter(frame, character, maxDistance, checkLineSight, true, out var targetCharacter);
+			enemyDirection = FPVector2.Zero;
+			if (targetCharacter != EntityRef.None)
+			{
+				Transform2D targetTransform = frame.Get<Transform2D>(targetCharacter);
+				enemyDirection = (targetTransform.Position - characterTransform.Position);
+			}
+			return value;
+		}
 
 		public static bool TryGetClosestEnemyCharacter(Frame frame, EntityRef characterEntity, FP maxDistance, FP angle, out EntityRef targetCharacter)
 		{
