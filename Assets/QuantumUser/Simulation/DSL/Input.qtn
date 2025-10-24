@@ -1,4 +1,5 @@
 ﻿component InputContainer
 {
     [HideInInspector] QuantumDemoInputTopDown Input;
+    FP TimeSinceAutoAim;
 }

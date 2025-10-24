@@ -44,11 +44,13 @@ namespace TwinStickShooter
     [SerializeField] private GameObject _anglePreview;
 
     [SerializeField] private GameObject _ballisticPreviewCircle;
+    [SerializeField] private GameObject _autoAttackPreview;
 
     private MeshRenderer[] _meshRenderer;
     [SerializeField] private Color _standardAimMaterialColor;
     [SerializeField] private Color _blockedMaterialColor;
 
+    private bool _enableUpdate = true;
     private void Awake()
     {
       _meshRenderer = GetComponentsInChildren<MeshRenderer>(true);
@@ -73,8 +75,18 @@ namespace TwinStickShooter
 
         PreviewType = basicSkill.AttackPreviewType;
         SpecialPreviewType = specialSkill.AttackPreviewType;
-
-        transform.SetParent(null, true);
+        if (basicSkill.AutoAimCheckSight)
+        {
+          _autoAttackPreview.SetActive(true);
+          _autoAttackPreview.transform.localScale = new Vector3(basicSkill.AutoAimRadius.AsFloat,1,basicSkill.AutoAimRadius.AsFloat);
+          _enableUpdate = false;
+        }
+        else
+        {
+          _enableUpdate = true;
+          _autoAttackPreview.SetActive(false);
+          transform.SetParent(null, true);
+        }
       }
     }
     
@@ -113,6 +125,9 @@ namespace TwinStickShooter
 
     public void UpdateAttackPreview(FPVector2 aim, bool isSpecial)
     {
+      if (!_enableUpdate)
+        return;
+      
       EPreviewType previewType = isSpecial ? SpecialPreviewType : PreviewType;
       TogglePreviews(previewType);
 

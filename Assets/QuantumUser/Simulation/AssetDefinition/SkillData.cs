@@ -31,6 +31,7 @@ namespace Quantum
 		public FP Cost = 1;
 		public EAttributeType CostType;
 		public FP AutoAimRadius = 10;
+		public FP AutoAimInterval = 1;
 
 		public virtual EntityRef OnCreate(Frame frame, EntityRef source, SkillData data,
 			FPVector2 characterPos, FPVector2 actionVector)

@@ -40,3 +40,5 @@ MonoBehaviour:
   CostType: 2
   AutoAimRadius:
     RawValue: 655360
+  AutoAimInterval:
+    RawValue: 65536

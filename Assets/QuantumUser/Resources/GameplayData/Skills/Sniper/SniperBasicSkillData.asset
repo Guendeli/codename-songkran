@@ -34,9 +34,11 @@ MonoBehaviour:
     RawValue: 16384
   MovementLockDuration:
     RawValue: 16384
-  AutoAimCheckSight: 1
+  AutoAimCheckSight: 0
   Cost:
     RawValue: 65536
   CostType: 2
   AutoAimRadius:
     RawValue: 655360
+  AutoAimInterval:
+    RawValue: 65536
