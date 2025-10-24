@@ -20,6 +20,9 @@ namespace Quantum
       if (filter.MovementData->IsOnAttackLock == false)
       {
         FPVector2 moveDirection = filter.InputContainer->Input.MoveDirection.Normalized;
+        SkillData skillData = frame.FindAsset<SkillData>(filter.CharacterAttacks->BasicSkillData.Id);
+        bool canAutoAim = CharacterHelpers.CanAutoAim(frame, filter.Entity, skillData, filter.InputContainer);
+
         if (moveDirection != default)
         {
           filter.Transform->Rotation = FPVector2.RadiansSignedSkipNormalize(FPVector2.Up, moveDirection);
@@ -27,15 +30,18 @@ namespace Quantum
 
         if (filter.InputContainer->Input.Fire.WasReleased == true || filter.InputContainer->Input.AltFire.WasReleased == true)
         {
-          SkillData attackData = frame.FindAsset<SkillData>(filter.CharacterAttacks->BasicSkillData.Id);
 
           if (filter.InputContainer->Input.AimDirection.Magnitude >= FP._0_10) // FIXED POINT DEAD ZONE
           {
             filter.MovementData->LastAutoAimDirection = filter.InputContainer->Input.AimDirection.Normalized;
           }
-          else
-          {
-            bool foundTarget = EnemyPositionsHelper.TryGetClosestCharacterDirection(frame, filter.Entity, *filter.Transform, attackData.AutoAimRadius, true, attackData.AutoAimCheckSight, out var direction);
+          
+          filter.Transform->Rotation = FPVector2.RadiansSignedSkipNormalize(FPVector2.Up, filter.MovementData->LastAutoAimDirection);
+        }
+        
+        if (canAutoAim)
+        {
+            bool foundTarget = EnemyPositionsHelper.TryGetClosestCharacterDirectionRaw(frame, filter.Entity, *filter.Transform, skillData.AutoAimRadius, true, skillData.AutoAimCheckSight, out var direction);
             if (foundTarget == true)
             {
               if (direction == FPVector2.Zero)
@@ -43,10 +49,8 @@ namespace Quantum
                 direction = filter.Transform->Up;
               }
               filter.MovementData->LastAutoAimDirection = direction;
+              filter.Transform->Rotation = FPVector2.RadiansSignedSkipNormalize(FPVector2.Up, filter.MovementData->LastAutoAimDirection.Normalized);
             }
-          }
-
-          filter.Transform->Rotation = FPVector2.RadiansSignedSkipNormalize(FPVector2.Up, filter.MovementData->LastAutoAimDirection);
         }
       }
     }
