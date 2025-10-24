@@ -53,8 +53,10 @@ namespace Quantum
       SkillData data = frame.FindAsset<SkillData>(dataRef.Id);
       if(filter.InputContainer->TimeSinceAutoAim > 0)
         filter.InputContainer->TimeSinceAutoAim -= frame.DeltaTime;
+      bool canAutoAim = CharacterHelpers.CanAutoAim(frame, entity, data, filter.InputContainer);
+      bool shouldCast = EnemyPositionsHelper.TryGetClosestCharacterDirection(frame, filter.Entity, *filter.Transform, data.AutoAimRadius, true, data.AutoAimCheckSight, out var direction);
       
-      bool actionReleased = button.WasReleased || CanAutoAim(frame, entity, data, filter.InputContainer);
+      bool actionReleased = button.WasReleased || (shouldCast && canAutoAim);
 
       if (actionReleased == true && movementData->IsOnAttackLock == false)
       {
@@ -63,22 +65,7 @@ namespace Quantum
         FP energyAttribute = AttributesHelper.GetCurrentValue(frame, entity, costType);
         if (energyAttribute >= data.Cost)
         {
-          FPVector2 aimDirection = input.AimDirection;
-          if (CanAutoAim(frame, entity, data, filter.InputContainer))
-          {
-            EntityRef closestEnemy = default;
-            EnemyPositionsHelper.TryGetClosestCharacter(frame, entity,
-              data.AutoAimRadius, checkLineSight: true, ignoreSameTeam: true, out closestEnemy);
-            if (closestEnemy == default)
-              return;
-            
-            Transform2D* targetTransform = frame.Unsafe.GetPointer<Transform2D>(closestEnemy);
-            
-            aimDirection = (targetTransform->Position - entityPos);
-            Log.Debug(string.Format("Casting auto-aim towards {0} at direction {1}", closestEnemy.Index, aimDirection));
-          }
-          
-          
+          FPVector2 aimDirection = canAutoAim ? movementData->LastAutoAimDirection : input.AimDirection;
           movementData->DirectionTimer = data.RotationLockDuration;
           frame.Signals.OnCreateSkill(entity, entityPos, data, aimDirection);
           movementData->MovementTimer = data.MovementLockDuration;
@@ -96,19 +83,7 @@ namespace Quantum
       }
     }
 
-    private bool CanAutoAim(Frame frame, EntityRef source, SkillData skillData, InputContainer* inputContainer)
-    {
-      Bot* bot = frame.Unsafe.GetPointer<Bot>(source);
-      if (bot->IsActive)
-        return false;
-
-      if (skillData.AutoAimCheckSight && inputContainer->TimeSinceAutoAim <= 0)
-      {
-        return true;
-      }
-      
-      return false;
-    }
+    
     private bool GetClosestEnemyDirection(Frame frame, EntityRef source, FPVector2 sourcePos, FP radius)
     {
       // TeamInfo sourceTeamInfo = frame.Get<TeamInfo>(source);
