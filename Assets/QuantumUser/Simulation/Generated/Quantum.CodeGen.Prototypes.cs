@@ -474,6 +474,7 @@ namespace Quantum.Prototypes {
   public unsafe partial class InputContainerPrototype : ComponentPrototype<Quantum.InputContainer> {
     [HideInInspector()]
     public Quantum.Prototypes.QuantumDemoInputTopDownPrototype Input;
+    public FP TimeSinceAutoAim;
     partial void MaterializeUser(Frame frame, ref Quantum.InputContainer result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.InputContainer component = default;
@@ -482,6 +483,7 @@ namespace Quantum.Prototypes {
     }
     public void Materialize(Frame frame, ref Quantum.InputContainer result, in PrototypeMaterializationContext context = default) {
         this.Input.Materialize(frame, ref result.Input, in context);
+        result.TimeSinceAutoAim = this.TimeSinceAutoAim;
         MaterializeUser(frame, ref result, in context);
     }
   }
