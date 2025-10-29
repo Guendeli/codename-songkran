@@ -20228,7 +20228,7 @@ MonoBehaviour:
     - rid: 4804244144782311425
       type: {class: PayloadObjectivePointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
       data:
-        TeamId: 1
+        TeamId: 0
     - rid: 4908980098423586816
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:

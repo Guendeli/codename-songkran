@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Xml: "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<Document>\r\n  <Id>1c0e0ae6-888e-4709-89de-417d5f9dc355</Id>\r\n 
     <Version>2</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n 
-    <DebugKey>32d45489-e48c-4d73-ab26-fa7e571b786f</DebugKey>\r\n  <Flags>0</Flags>\r\n 
+    <DebugKey>4480932f-70ed-4d93-a614-09efedd7d350</DebugKey>\r\n  <Flags>0</Flags>\r\n 
     <Parent>$statemachine</Parent>\r\n  <Error Count=\"0\" />\r\n  <Comments Count=\"1\">\r\n   
     <Key>cd05d78d-c88f-4578-979b-4f2d7122cf88</Key>\r\n    <Comment>\r\n      <Id>cd05d78d-c88f-4578-979b-4f2d7122cf88</Id>\r\n     
     <Text>Always choosing stuff: character entry, point entry, nav mesh entry</Text>\r\n     

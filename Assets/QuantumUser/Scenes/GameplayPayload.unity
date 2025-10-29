@@ -11670,7 +11670,7 @@ MonoBehaviour:
     ShowIntroduction: 1
     GameManagerHFSM:
       Id:
-        Value: 2936509112808977188
+        Value: 4441402220649971078
     RoomFillBots:
     - Id:
         Value: 3101334269603457031
@@ -27335,7 +27335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
-    TeamId: 1
+    TeamId: 0
 --- !u!114 &884975810
 MonoBehaviour:
   m_ObjectHideFlags: 0
