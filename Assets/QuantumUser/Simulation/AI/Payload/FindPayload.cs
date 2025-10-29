@@ -10,9 +10,7 @@ namespace Quantum
         public override void Execute(Frame frame, EntityRef entity, ref AIContext aiContext)
         {
             AIBlackboardComponent* blackboard = frame.Unsafe.GetPointer<AIBlackboardComponent>(entity);
-
-            FPVector2 myPosition = frame.Get<Transform2D>(entity).Position;
-
+            
             var payloadEntity = frame.Global->PayloadEntity;
             if (!payloadEntity.IsValid)
             {

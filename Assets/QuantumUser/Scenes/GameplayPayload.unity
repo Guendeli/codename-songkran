@@ -47296,6 +47296,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1416201392}
     m_Modifications:
+    - target: {fileID: 733875453959809299, guid: 4b43de11b109eaa4aa29b90fbf334565,
+        type: 3}
+      propertyPath: m_text
+      value: Touchdown !
+      objectReference: {fileID: 0}
+    - target: {fileID: 3138148646838191748, guid: 4b43de11b109eaa4aa29b90fbf334565,
+        type: 3}
+      propertyPath: m_text
+      value: Push the payload to the enemy base !
+      objectReference: {fileID: 0}
     - target: {fileID: 4982575720385280153, guid: 4b43de11b109eaa4aa29b90fbf334565,
         type: 3}
       propertyPath: m_Pivot.x
