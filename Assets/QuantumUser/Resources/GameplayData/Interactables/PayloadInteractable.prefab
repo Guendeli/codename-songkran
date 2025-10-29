@@ -342,8 +342,7 @@ MonoBehaviour:
   Prototype:
     PayloadData:
       Id:
-        Value: 0
-    TeamCount: []
+        Value: 443970950816721300
 --- !u!1 &1165706148109122471
 GameObject:
   m_ObjectHideFlags: 0

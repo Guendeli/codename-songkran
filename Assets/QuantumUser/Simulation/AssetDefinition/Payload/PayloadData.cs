@@ -4,7 +4,7 @@ namespace Quantum
 {
     public unsafe partial class PayloadData : AssetObject
     {
-        public FP TriggerRadius;
+        public Shape2DConfig Shape;
         public FP MoveSpeed;
     }
 }

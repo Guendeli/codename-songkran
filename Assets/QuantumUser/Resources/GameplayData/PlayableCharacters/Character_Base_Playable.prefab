@@ -497,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 6844810604077156814, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}
       propertyPath: PhysicsCollider.CallbackFlags.Value
-      value: 3712
+      value: 3968
       objectReference: {fileID: 0}
     - target: {fileID: 6844810604077156814, guid: 269787b2e70c2e0488bd1bff38ee7c6f,
         type: 3}

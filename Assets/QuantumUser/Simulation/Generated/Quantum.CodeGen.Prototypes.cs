@@ -56,12 +56,6 @@ namespace Quantum.Prototypes {
     public Quantum.Prototypes.AttributeDataPrototype Value;
   }
   [System.SerializableAttribute()]
-  [Quantum.Prototypes.Prototype(typeof(System.Collections.Generic.KeyValuePair<Int32, Int32>))]
-  public unsafe class DictionaryEntry_Int32_Int32 : Quantum.Prototypes.DictionaryEntry {
-    public Int32 Key;
-    public Int32 Value;
-  }
-  [System.SerializableAttribute()]
   [Quantum.Prototypes.Prototype(typeof(Quantum.AIDirector))]
   public unsafe partial class AIDirectorPrototype : StructPrototype {
     public Byte TickInterval;
@@ -731,9 +725,6 @@ namespace Quantum.Prototypes {
   [Quantum.Prototypes.Prototype(typeof(Quantum.Payload))]
   public unsafe partial class PayloadPrototype : ComponentPrototype<Quantum.Payload> {
     public AssetRef<PayloadData> PayloadData;
-    [DictionaryAttribute()]
-    [DynamicCollectionAttribute()]
-    public DictionaryEntry_Int32_Int32[] TeamCount = {};
     partial void MaterializeUser(Frame frame, ref Quantum.Payload result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.Payload component = default;
@@ -742,18 +733,6 @@ namespace Quantum.Prototypes {
     }
     public void Materialize(Frame frame, ref Quantum.Payload result, in PrototypeMaterializationContext context = default) {
         result.PayloadData = this.PayloadData;
-        if (this.TeamCount.Length == 0) {
-          result.TeamCount = default;
-        } else {
-          var dict = frame.AllocateDictionary(out result.TeamCount, this.TeamCount.Length);
-          for (int i = 0; i < this.TeamCount.Length; ++i) {
-            Int32 tmpKey = default;
-            Int32 tmpValue = default;
-            tmpKey = this.TeamCount[i].Key;
-            tmpValue = this.TeamCount[i].Value;
-            PrototypeValidator.AddToDictionary(dict, tmpKey, tmpValue, in context);
-          }
-        }
         MaterializeUser(frame, ref result, in context);
     }
   }

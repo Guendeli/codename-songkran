@@ -6,5 +6,4 @@ component PayloadObjectivePoint
 component Payload
 {
     AssetRef<PayloadData> PayloadData;
-    dictionary<Int32, Int32> TeamCount; // TeamId, Count
 }

@@ -2548,30 +2548,19 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Payload : Quantum.IComponent {
-    public const Int32 SIZE = 16;
+    public const Int32 SIZE = 8;
     public const Int32 ALIGNMENT = 8;
-    [FieldOffset(8)]
-    public AssetRef<PayloadData> PayloadData;
     [FieldOffset(0)]
-    public QDictionaryPtr<Int32, Int32> TeamCount;
+    public AssetRef<PayloadData> PayloadData;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 4261;
         hash = hash * 31 + PayloadData.GetHashCode();
-        hash = hash * 31 + TeamCount.GetHashCode();
         return hash;
       }
     }
-    public void ClearPointers(FrameBase f, EntityRef entity) {
-      TeamCount = default;
-    }
-    public static void OnRemoved(FrameBase frame, EntityRef entity, void* ptr) {
-      var p = (Quantum.Payload*)ptr;
-      p->ClearPointers((Frame)frame, entity);
-    }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (Payload*)ptr;
-        QDictionary.Serialize(&p->TeamCount, serializer, Statics.SerializeInt32, Statics.SerializeInt32);
         AssetRef.Serialize(&p->PayloadData, serializer);
     }
   }
@@ -3296,7 +3285,7 @@ namespace Quantum {
         .Add<Quantum.KCC>(Quantum.KCC.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.MovementData>(Quantum.MovementData.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.ObjectivePoint>(Quantum.ObjectivePoint.Serialize, null, null, ComponentFlags.None)
-        .Add<Quantum.Payload>(Quantum.Payload.Serialize, null, Quantum.Payload.OnRemoved, ComponentFlags.None)
+        .Add<Quantum.Payload>(Quantum.Payload.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.PayloadObjectivePoint>(Quantum.PayloadObjectivePoint.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.PlayerLink>(Quantum.PlayerLink.Serialize, null, null, ComponentFlags.None)
         .Add<Quantum.Respawn>(Quantum.Respawn.Serialize, null, null, ComponentFlags.None)
