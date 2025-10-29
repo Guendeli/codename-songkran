@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -796859905, guid: ac6ccf3f9f959c0478b7968b94ac9704, type: 3}
   m_Name: Payload Bot FSM
   m_EditorClassIdentifier: 
-  Xml: "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<Document>\r\n  <Id>1c0e0ae6-888e-4709-89de-417d5f9dc355</Id>\r\n 
-    <Version>2</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n 
-    <DebugKey>55e1237d-58de-46a9-bdec-a263899ffc47</DebugKey>\r\n  <Flags>0</Flags>\r\n 
+  Xml: "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<Document>\r\n  <Id>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Id>\r\n 
+    <Version>2</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>a399ae8d-9a12-4734-ada8-8f4f09663228</Graph>\r\n 
+    <DebugKey>afa6fe0a-ef4c-402d-b0e9-d9273b789968</DebugKey>\r\n  <Flags>0</Flags>\r\n 
     <Parent>$statemachine</Parent>\r\n  <Error Count=\"0\" />\r\n  <Comments Count=\"1\">\r\n   
     <Key>cd05d78d-c88f-4578-979b-4f2d7122cf88</Key>\r\n    <Comment>\r\n      <Id>cd05d78d-c88f-4578-979b-4f2d7122cf88</Id>\r\n     
     <Text>Always choosing stuff: character entry, point entry, nav mesh entry</Text>\r\n     
@@ -212,7 +212,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">834464032243535741</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2227645530651662880</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>4</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>07897c25-0ed4-423a-b52c-bbfb7ac7a01d</Key>\r\n    <Node>\r\n      <Id>07897c25-0ed4-423a-b52c-bbfb7ac7a01d</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>8e5948a6-e5ab-4789-937e-ae4457247a6e</Graph>\r\n     
@@ -267,7 +267,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">2243258228228496088</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3681922820885974282</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>093ab9b5-0823-4a13-b2a6-a0a4c223464b</Key>\r\n   
     <Node>\r\n      <Id>093ab9b5-0823-4a13-b2a6-a0a4c223464b</Id>\r\n      <Name>Actions</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>0d0b86ad-ae9b-4480-8a1f-2e0d8623d12f</Graph>\r\n     
@@ -298,7 +298,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>0b1d73c3-d32e-43f2-b766-44df8f16eeeb</Key>\r\n    <Node>\r\n     
     <Id>0b1d73c3-d32e-43f2-b766-44df8f16eeeb</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>203|79||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -333,7 +333,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2872300566014441559</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1337384820063042927</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>0ccd6dc8-26cd-4938-9cf3-6b434b1535d6</Key>\r\n    <Node>\r\n      <Id>0ccd6dc8-26cd-4938-9cf3-6b434b1535d6</Id>\r\n     
     <Name>ClearChosenBush</Name>\r\n      <Comment></Comment>\r\n      <Graph>15c45c8c-1aac-4bba-8070-b49512fb8a33</Graph>\r\n     
@@ -356,7 +356,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">3871505828118275043</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3942299695660803536</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>0d0b86ad-ae9b-4480-8a1f-2e0d8623d12f</Key>\r\n   
     <Node>\r\n      <Id>0d0b86ad-ae9b-4480-8a1f-2e0d8623d12f</Id>\r\n      <Name>Attack
     Delay</Name>\r\n      <Comment></Comment>\r\n      <Graph>4debecac-0f84-4508-b042-2c6db66e3be5</Graph>\r\n     
@@ -371,7 +371,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3202959435203337268</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4137536807548524500</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>0e1a6aed-2b29-4d83-9e3b-3372bbbc7ea2</Key>\r\n    <Node>\r\n      <Id>0e1a6aed-2b29-4d83-9e3b-3372bbbc7ea2</Id>\r\n     
     <Name>RunToCoverSpot</Name>\r\n      <Comment></Comment>\r\n      <Graph>069ac016-3ad7-42e8-8db4-264148cc5e09</Graph>\r\n     
@@ -394,10 +394,10 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">3207879346753139157</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">570335244956465206</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>0e461015-6b16-4875-8fb1-ade132943451</Key>\r\n   
     <Node>\r\n      <Id>0e461015-6b16-4875-8fb1-ade132943451</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>718|336||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -429,7 +429,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1812469334431271886</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3341409879586412481</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>105292e4-a6ce-4eed-b994-dc31fb2ea006</Key>\r\n    <Node>\r\n      <Id>105292e4-a6ce-4eed-b994-dc31fb2ea006</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>658eb666-0fb8-4efd-8022-cb6a6ff75ebc</Graph>\r\n     
@@ -477,7 +477,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>124885ed-f306-49e6-a7ea-9224766755d2</Key>\r\n   
     <Node>\r\n      <Id>124885ed-f306-49e6-a7ea-9224766755d2</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>572|185||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\"
@@ -530,7 +530,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1035324693984875233</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4142489634998045667</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>3</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>16b7e216-05e4-47ed-a858-7c35046306d3</Key>\r\n    <Node>\r\n      <Id>16b7e216-05e4-47ed-a858-7c35046306d3</Id>\r\n     
     <Name>ReleaseAttack</Name>\r\n      <Comment></Comment>\r\n      <Graph>d4d10014-918d-440f-87e5-176ac6435664</Graph>\r\n     
@@ -557,7 +557,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">195743730939300975</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3621432999656331222</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>16c1b91b-46f3-40be-8fba-ccaf5c1d62e6</Key>\r\n   
     <Node>\r\n      <Id>16c1b91b-46f3-40be-8fba-ccaf5c1d62e6</Id>\r\n      <Name>MinAttackInterval</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>76394e83-2741-4dd8-9418-b13c45974738</Graph>\r\n     
@@ -686,7 +686,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1894821734748006596</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2551506220899162583</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>1f5e3d20-bcd6-49a4-9272-35b51764e6e7</Key>\r\n    <Node>\r\n      <Id>1f5e3d20-bcd6-49a4-9272-35b51764e6e7</Id>\r\n     
     <Name>(Logical) AND</Name>\r\n      <Comment></Comment>\r\n      <Graph>9a2edde5-dc4f-457a-9f42-0c85bf75c318</Graph>\r\n     
@@ -705,11 +705,11 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">3607241854067899621</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">1203007804028441852</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>220d9fa8-65ea-4a1d-939b-dec415adf9ca</Key>\r\n    <Node>\r\n     
     <Id>220d9fa8-65ea-4a1d-939b-dec415adf9ca</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>516|124||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -742,7 +742,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">353458278692942556</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1523360386050836165</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>2562c26a-7ee8-41a5-b224-700ea63765ed</Key>\r\n    <Node>\r\n      <Id>2562c26a-7ee8-41a5-b224-700ea63765ed</Id>\r\n     
     <Name>TimerDecision</Name>\r\n      <Comment></Comment>\r\n      <Graph>eb322ce0-0c5b-4ea9-ad7d-a5ed200fa4c0</Graph>\r\n     
@@ -760,10 +760,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">162706866640985460</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2803370180632864266</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>277e745f-3bb4-437f-bbec-8a8db27d61b4</Key>\r\n    <Node>\r\n      <Id>277e745f-3bb4-437f-bbec-8a8db27d61b4</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>254|50||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -796,7 +796,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>2ee4f962-b780-4193-aeb6-88499c9b2b3f</Key>\r\n    <Node>\r\n     
     <Id>2ee4f962-b780-4193-aeb6-88499c9b2b3f</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>356|178||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -832,7 +832,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2822073835135229609</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">471736494608154367</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>2f3454a8-d7c1-42bb-814f-4fe439a03eb3</Key>\r\n    <Node>\r\n      <Id>2f3454a8-d7c1-42bb-814f-4fe439a03eb3</Id>\r\n     
     <Name>Event</Name>\r\n      <Comment></Comment>\r\n      <Graph>3f483a13-335b-49b2-8f26-f43cd92cf795</Graph>\r\n     
@@ -847,7 +847,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>2f3684c7-f6e1-403d-9998-b930c0467162</Key>\r\n    <Node>\r\n     
     <Id>2f3684c7-f6e1-403d-9998-b930c0467162</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>356|122||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -931,7 +931,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1301064794399132798</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1074344961864123245</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>34b25d11-e33b-4d85-95f3-3c10dc6d2b36</Key>\r\n    <Node>\r\n      <Id>34b25d11-e33b-4d85-95f3-3c10dc6d2b36</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>ebe04666-747a-4f32-9fae-7be34c7462bc</Graph>\r\n     
@@ -969,7 +969,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">2706407610594768409</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3046784888645730863</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>381b2c83-8d7e-460d-8900-a0d1b6a4e984</Key>\r\n   
     <Node>\r\n      <Id>381b2c83-8d7e-460d-8900-a0d1b6a4e984</Id>\r\n      <Name>Transition</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>e271451c-4834-4a67-93ef-9e94eec44618</Graph>\r\n     
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">161290365874118616</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1049853953762025318</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>3e406f06-95c2-43d4-9321-d687024fd606</Key>\r\n    <Node>\r\n      <Id>3e406f06-95c2-43d4-9321-d687024fd606</Id>\r\n     
     <Name>TargetIsInRange</Name>\r\n      <Comment></Comment>\r\n      <Graph>9a2edde5-dc4f-457a-9f42-0c85bf75c318</Graph>\r\n     
@@ -1023,10 +1023,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3248386954211174589</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">54615520042610469</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>3f3ed737-39b5-4cc1-a60f-14690f14b344</Key>\r\n    <Node>\r\n      <Id>3f3ed737-39b5-4cc1-a60f-14690f14b344</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>115|70||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -1076,7 +1076,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">980771430758485957</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3061267241582340256</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>429c1dcf-a9e9-49d5-820b-c068c997e9ab</Key>\r\n    <Node>\r\n      <Id>429c1dcf-a9e9-49d5-820b-c068c997e9ab</Id>\r\n     
     <Name>TakeCover</Name>\r\n      <Comment></Comment>\r\n      <Graph>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Graph>\r\n     
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1764475145375039716</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2984897195521779095</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>1</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>433b30a4-638b-475b-8308-d815b47f0f2e</Key>\r\n    <Node>\r\n      <Id>433b30a4-638b-475b-8308-d815b47f0f2e</Id>\r\n     
     <Name>RunToObjectivePoint</Name>\r\n      <Comment></Comment>\r\n      <Graph>a399ae8d-9a12-4734-ada8-8f4f09663228</Graph>\r\n     
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">878818207750709066</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3862719661760149733</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>4360ae1b-b820-4b98-a6cb-4df5a136e141</Key>\r\n   
     <Node>\r\n      <Id>4360ae1b-b820-4b98-a6cb-4df5a136e141</Id>\r\n      <Name>Guard
     Objective</Name>\r\n      <Comment></Comment>\r\n      <Graph>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Graph>\r\n     
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4127076369785796398</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2552956651689622734</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>1</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>45b82565-176c-4be0-89af-68056017e0c9</Key>\r\n    <Node>\r\n      <Id>45b82565-176c-4be0-89af-68056017e0c9</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>b07887b1-9352-457f-b215-87a51a3caf9f</Graph>\r\n     
@@ -1139,33 +1139,6 @@ MonoBehaviour:
     <Type>@int32</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n     
-    <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>45e2b208-69c5-46c5-aef1-258680b7d81b</Key>\r\n   
-    <Node>\r\n      <Id>45e2b208-69c5-46c5-aef1-258680b7d81b</Id>\r\n      <Name>FindObjectivePoint</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>a399ae8d-9a12-4734-ada8-8f4f09663228</Graph>\r\n     
-    <Parent>FindObjectivePoint</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
-    <Flags>0</Flags>\r\n      <Position>524|-44||0</Position>\r\n      <StaticIn
-    Count=\"4\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n          <Name></Name>\r\n         
-    <Value />\r\n          <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n         
-    <Flags>2</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
-    <Slot>\r\n          <Id>ObjectivePoint</Id>\r\n          <Name>ObjectivePoint</Name>\r\n         
-    <Value Type=\"Quantum.AIBlackboardValueKey, Quantum.BotSDK.Core\">Quantum.AIBlackboardValueKey</Value>\r\n         
-    <Type>Quantum.AIBlackboardValueKey, Quantum.BotSDK.Core</Type>\r\n          <Mode>In</Mode>\r\n         
-    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
-    <Slot>\r\n          <Id>MinDistance</Id>\r\n          <Name>MinDistance</Name>\r\n         
-    <Value Type=\"Photon.Deterministic.FP, Quantum.Deterministic\">131072</Value>\r\n         
-    <Type>Photon.Deterministic.FP, Quantum.Deterministic</Type>\r\n          <Mode>In</Mode>\r\n         
-    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
-    <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
-    <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
-    <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
-    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n         
-    <Name></Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
-    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
-    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
-    Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
-    Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
-    <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">1665011046213273803</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>471abbbc-17de-4b9e-a986-a97910edd4a7</Key>\r\n   
     <Node>\r\n      <Id>471abbbc-17de-4b9e-a986-a97910edd4a7</Id>\r\n      <Name>Actions</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>939cdd2c-7a11-4f2a-9808-41ca007dfcdd</Graph>\r\n     
@@ -1214,7 +1187,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2349294417332978725</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1097197950760366078</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>49e6ace7-6385-46ce-9103-1a6ce2510929</Key>\r\n    <Node>\r\n      <Id>49e6ace7-6385-46ce-9103-1a6ce2510929</Id>\r\n     
     <Name>Event</Name>\r\n      <Comment></Comment>\r\n      <Graph>06e8bc81-3215-4408-8b70-89ae4858fd5d</Graph>\r\n     
@@ -1266,7 +1239,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3843365515536742770</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">623515082628363324</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>4</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>4e85b5c8-dadb-4a65-8139-8f6fe644de9a</Key>\r\n    <Node>\r\n      <Id>4e85b5c8-dadb-4a65-8139-8f6fe644de9a</Id>\r\n     
     <Name>FunctionGetRandomFP</Name>\r\n      <Comment></Comment>\r\n      <Graph>cf5f1715-ad12-4a16-9960-b1c5ae5483ff</Graph>\r\n     
@@ -1291,7 +1264,7 @@ MonoBehaviour:
     <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
     <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4062830109054930181</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4437547858456868102</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>4e8e036f-26db-4464-ad15-9c1c8ccac443</Key>\r\n    <Node>\r\n      <Id>4e8e036f-26db-4464-ad15-9c1c8ccac443</Id>\r\n     
     <Name>DiceRoll</Name>\r\n      <Comment></Comment>\r\n      <Graph>735f6ab1-4c5f-4ff2-96b5-7860d94fc97f</Graph>\r\n     
@@ -1313,7 +1286,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1092803111964799969</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1933976907405031522</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>5015b64b-8e60-48cd-b053-9779e2785984</Key>\r\n    <Node>\r\n      <Id>5015b64b-8e60-48cd-b053-9779e2785984</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>d19c8406-9d74-417c-9320-dc7b8715859f</Graph>\r\n     
@@ -1384,7 +1357,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">2596925610279186443</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3236664982309112261</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>56be1d63-988a-49a6-94c0-d638d9f2f4bb</Key>\r\n   
     <Node>\r\n      <Id>56be1d63-988a-49a6-94c0-d638d9f2f4bb</Id>\r\n      <Name>ChosenBush</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>18bd98e8-8075-40b0-890e-6a49780337aa</Graph>\r\n     
@@ -1439,7 +1412,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2815592690399848989</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">385971871080069809</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>5a627f7a-8372-4a25-ac69-8aec7a87e85e</Key>\r\n    <Node>\r\n      <Id>5a627f7a-8372-4a25-ac69-8aec7a87e85e</Id>\r\n     
     <Name>ReachedEscapeRoute</Name>\r\n      <Comment></Comment>\r\n      <Graph>bb4bb129-8bea-4844-952f-f51df79013cf</Graph>\r\n     
@@ -1462,7 +1435,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3776585562776832556</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">504299618820134617</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>5bfa5d82-d3db-44db-8079-a6bcc4430ec6</Key>\r\n    <Node>\r\n      <Id>5bfa5d82-d3db-44db-8079-a6bcc4430ec6</Id>\r\n     
     <Name>ChooseRunSpotInterval</Name>\r\n      <Comment></Comment>\r\n      <Graph>25e2174d-c887-4f7a-8f6b-955c98b74e5d</Graph>\r\n     
@@ -1507,7 +1480,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2644507160372222795</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2738406748779077841</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>5d7b3ce0-2738-4bc3-9463-1a7c69b57386</Key>\r\n    <Node>\r\n      <Id>5d7b3ce0-2738-4bc3-9463-1a7c69b57386</Id>\r\n     
     <Name>ChosenBush</Name>\r\n      <Comment></Comment>\r\n      <Graph>658eb666-0fb8-4efd-8022-cb6a6ff75ebc</Graph>\r\n     
@@ -1546,7 +1519,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3103680122955876222</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1856574502547219247</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>5e587863-3402-4e4b-8415-948aba69f50c</Key>\r\n    <Node>\r\n      <Id>5e587863-3402-4e4b-8415-948aba69f50c</Id>\r\n     
     <Name>HasEnoughAttribute</Name>\r\n      <Comment></Comment>\r\n      <Graph>735f6ab1-4c5f-4ff2-96b5-7860d94fc97f</Graph>\r\n     
@@ -1572,7 +1545,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1394989627104888390</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4108818008046451545</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>61c44e6d-a1ea-4b1b-a8d1-a702b54f041f</Key>\r\n    <Node>\r\n      <Id>61c44e6d-a1ea-4b1b-a8d1-a702b54f041f</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>4360ae1b-b820-4b98-a6cb-4df5a136e141</Graph>\r\n     
@@ -1605,7 +1578,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2153018380509679994</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3456194487327193057</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>63b6f903-d00d-4b1b-b501-9a7ba475e0e5</Key>\r\n    <Node>\r\n      <Id>63b6f903-d00d-4b1b-b501-9a7ba475e0e5</Id>\r\n     
     <Name>Run</Name>\r\n      <Comment></Comment>\r\n      <Graph>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Graph>\r\n     
@@ -1617,7 +1590,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2783127370513735259</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4268181558313974882</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>1</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>63bf0b67-beff-4883-909f-0916960bd405</Key>\r\n    <Node>\r\n      <Id>63bf0b67-beff-4883-909f-0916960bd405</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>76394e83-2741-4dd8-9418-b13c45974738</Graph>\r\n     
@@ -1670,10 +1643,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">213783012292879387</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2348277800387445596</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>66032f1a-d424-4531-a837-22eae21faf27</Key>\r\n    <Node>\r\n      <Id>66032f1a-d424-4531-a837-22eae21faf27</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>151|126||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -1707,7 +1680,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2274100099985688432</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4583404226533412209</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>67d7389c-9519-455e-a923-bc13df9321fe</Key>\r\n    <Node>\r\n      <Id>67d7389c-9519-455e-a923-bc13df9321fe</Id>\r\n     
     <Name>TrueDecision</Name>\r\n      <Comment></Comment>\r\n      <Graph>c5d142f7-8c9c-4e8d-a969-ef3b98705672</Graph>\r\n     
@@ -1721,7 +1694,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1247000107034370618</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3683217494005512743</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>69361aaf-7b04-4dc6-8c60-c89957bf1536</Key>\r\n    <Node>\r\n      <Id>69361aaf-7b04-4dc6-8c60-c89957bf1536</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>3f483a13-335b-49b2-8f26-f43cd92cf795</Graph>\r\n     
@@ -1754,7 +1727,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2615781713975725481</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">900009266715815493</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>6b089211-d2ad-440f-8bc1-51d3a47e6789</Key>\r\n    <Node>\r\n      <Id>6b089211-d2ad-440f-8bc1-51d3a47e6789</Id>\r\n     
     <Name>RunToCoverSpot</Name>\r\n      <Comment></Comment>\r\n      <Graph>db01f3d0-f52a-4e51-99e1-3bd23abcd2b5</Graph>\r\n     
@@ -1777,7 +1750,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">676084516615409371</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">4020624127868631316</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>6b4d1ecf-7650-4d24-b096-7e96ea05cfaf</Key>\r\n   
     <Node>\r\n      <Id>6b4d1ecf-7650-4d24-b096-7e96ea05cfaf</Id>\r\n      <Name>(Logical)
     NOT</Name>\r\n      <Comment></Comment>\r\n      <Graph>ec7d7e67-c04f-486b-98af-ebf8c3057582</Graph>\r\n     
@@ -1790,7 +1763,7 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">85026059228179307</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">63889691467924622</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>6d08a888-89fd-41e5-98a3-bcc2e324d8e8</Key>\r\n    <Node>\r\n     
     <Id>6d08a888-89fd-41e5-98a3-bcc2e324d8e8</Id>\r\n      <Name>Actions</Name>\r\n     
@@ -1821,7 +1794,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3737086526293846152</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1969034112613492228</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>6ee54311-738d-40b8-b7c7-00183fb5fc31</Key>\r\n    <Node>\r\n      <Id>6ee54311-738d-40b8-b7c7-00183fb5fc31</Id>\r\n     
     <Name>AttackErrorBasic</Name>\r\n      <Comment></Comment>\r\n      <Graph>d4d10014-918d-440f-87e5-176ac6435664</Graph>\r\n     
@@ -1860,7 +1833,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">883920448534686221</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2440017295828204241</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>73aa6295-18b5-4404-8b3f-338e795ff55e</Key>\r\n    <Node>\r\n      <Id>73aa6295-18b5-4404-8b3f-338e795ff55e</Id>\r\n     
     <Name>AttackRange</Name>\r\n      <Comment></Comment>\r\n      <Graph>6a0aa560-18d9-4996-91bb-7d793caff0ca</Graph>\r\n     
@@ -1907,7 +1880,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>76afddf7-9904-4aff-aa6d-b1d2dd2901b9</Key>\r\n    <Node>\r\n     
     <Id>76afddf7-9904-4aff-aa6d-b1d2dd2901b9</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>583|313||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -1943,7 +1916,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>7bfdd21a-729b-469e-b8d0-39ba230c6509</Key>\r\n   
     <Node>\r\n      <Id>7bfdd21a-729b-469e-b8d0-39ba230c6509</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>193|78||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -1978,10 +1951,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2743608679630343207</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2307154329691970746</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>827cfbae-de38-46e5-b439-6079c041cdfa</Key>\r\n    <Node>\r\n      <Id>827cfbae-de38-46e5-b439-6079c041cdfa</Id>\r\n     
-    <Name>BlackboardVar</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>BlackboardVar</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>628|72||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n     
@@ -2022,7 +1995,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4408294522908895003</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2045107113794552914</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>840f02bc-0708-47a9-9e12-d28b500fcc94</Key>\r\n    <Node>\r\n      <Id>840f02bc-0708-47a9-9e12-d28b500fcc94</Id>\r\n     
     <Name>EscapeRoute</Name>\r\n      <Comment></Comment>\r\n      <Graph>8e5948a6-e5ab-4789-937e-ae4457247a6e</Graph>\r\n     
@@ -2042,7 +2015,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>84293bf1-9252-4422-9e6b-0d2681570887</Key>\r\n    <Node>\r\n     
     <Id>84293bf1-9252-4422-9e6b-0d2681570887</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>583|313||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -2087,7 +2060,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">2827529698497051459</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">4376443438257112604</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>868ad688-61a1-4fd7-b473-a143daee39fc</Key>\r\n   
     <Node>\r\n      <Id>868ad688-61a1-4fd7-b473-a143daee39fc</Id>\r\n      <Name>RecoverEnergyChance</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>735f6ab1-4c5f-4ff2-96b5-7860d94fc97f</Graph>\r\n     
@@ -2103,7 +2076,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Key>\r\n    <Node>\r\n     
     <Id>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Id>\r\n      <Name>Main</Name>\r\n     
-    <Comment>cd05d78d-c88f-4578-979b-4f2d7122cf88</Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment>cd05d78d-c88f-4578-979b-4f2d7122cf88</Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$state</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>32</Flags>\r\n     
     <Position>-227|90||0</Position>\r\n      <StaticIn Count=\"1\">\r\n        <Slot>\r\n         
     <Id>$in</Id>\r\n          <Name>In</Name>\r\n          <Value />\r\n         
@@ -2112,7 +2085,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1508715335684157818</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1497247055225815060</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>7</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>87669e18-f85e-4917-8e68-b7339057c582</Key>\r\n    <Node>\r\n      <Id>87669e18-f85e-4917-8e68-b7339057c582</Id>\r\n     
     <Name>IgnoreLoS</Name>\r\n      <Comment></Comment>\r\n      <Graph>c1e8ac84-fa0f-4c43-8fce-1aff2e290775</Graph>\r\n     
@@ -2170,7 +2143,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">178579543826290048</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">417599570899617344</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>8e5948a6-e5ab-4789-937e-ae4457247a6e</Key>\r\n    <Node>\r\n      <Id>8e5948a6-e5ab-4789-937e-ae4457247a6e</Id>\r\n     
     <Name>Run Loop</Name>\r\n      <Comment></Comment>\r\n      <Graph>63b6f903-d00d-4b1b-b501-9a7ba475e0e5</Graph>\r\n     
@@ -2185,10 +2158,10 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3746210087030962289</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">88602710256197751</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>8efb623d-829e-4d74-82a9-a46327cb987f</Key>\r\n    <Node>\r\n      <Id>8efb623d-829e-4d74-82a9-a46327cb987f</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>820|348||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n         
@@ -2235,7 +2208,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2237434249131038385</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">4296746822362431635</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>932aa6cd-a307-450b-89a9-e0df4a8938f2</Key>\r\n    <Node>\r\n      <Id>932aa6cd-a307-450b-89a9-e0df4a8938f2</Id>\r\n     
     <Name>ThreatDistance</Name>\r\n      <Comment></Comment>\r\n      <Graph>4debecac-0f84-4508-b042-2c6db66e3be5</Graph>\r\n     
@@ -2263,7 +2236,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4118773507428155270</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3776881686914360249</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>935aa53f-a73a-4086-89fe-669983dc07d1</Key>\r\n    <Node>\r\n      <Id>935aa53f-a73a-4086-89fe-669983dc07d1</Id>\r\n     
     <Name>HasEnoughAttribute</Name>\r\n      <Comment></Comment>\r\n      <Graph>6a0aa560-18d9-4996-91bb-7d793caff0ca</Graph>\r\n     
@@ -2289,7 +2262,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">985799304092766270</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">357552999048584920</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>939cdd2c-7a11-4f2a-9808-41ca007dfcdd</Key>\r\n    <Node>\r\n      <Id>939cdd2c-7a11-4f2a-9808-41ca007dfcdd</Id>\r\n     
     <Name>Aim Attack</Name>\r\n      <Comment></Comment>\r\n      <Graph>069ac016-3ad7-42e8-8db4-264148cc5e09</Graph>\r\n     
@@ -2304,7 +2277,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4369605410972705643</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3068590202057243040</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>93a9d475-8b5b-460e-8f2a-04ae9ad03684</Key>\r\n    <Node>\r\n      <Id>93a9d475-8b5b-460e-8f2a-04ae9ad03684</Id>\r\n     
     <Name>ReleaseAttack</Name>\r\n      <Comment></Comment>\r\n      <Graph>a96ec3de-1268-4ebe-bd29-c251b6339c9b</Graph>\r\n     
@@ -2331,7 +2304,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">4294518815207657167</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3361085752585328955</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>941f2c28-c525-4dbc-a2d9-db18381076de</Key>\r\n   
     <Node>\r\n      <Id>941f2c28-c525-4dbc-a2d9-db18381076de</Id>\r\n      <Name>Transition</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>bb4bb129-8bea-4844-952f-f51df79013cf</Graph>\r\n     
@@ -2364,7 +2337,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1619849597552785632</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3953354772335811805</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>947d597b-3693-46e1-b510-a624da5253b4</Key>\r\n    <Node>\r\n      <Id>947d597b-3693-46e1-b510-a624da5253b4</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>2ae1d21e-94ff-4fd5-8bb4-3e8c98792b72</Graph>\r\n     
@@ -2421,7 +2394,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">889541811314314907</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">938831942023746117</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>9879572d-bbb2-4390-97b9-0192e36b4164</Key>\r\n    <Node>\r\n      <Id>9879572d-bbb2-4390-97b9-0192e36b4164</Id>\r\n     
     <Name>CoverSpotPosition</Name>\r\n      <Comment></Comment>\r\n      <Graph>db01f3d0-f52a-4e51-99e1-3bd23abcd2b5</Graph>\r\n     
@@ -2476,7 +2449,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">3709991139252210712</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">1526297779675086730</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>a152f546-9a4f-4563-b21f-660ba893c1d4</Key>\r\n   
     <Node>\r\n      <Id>a152f546-9a4f-4563-b21f-660ba893c1d4</Id>\r\n      <Name>Transition</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>c99bc0c1-7820-4e9e-9aae-99efc0a2b59b</Graph>\r\n     
@@ -2506,7 +2479,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"5\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">656673741363234259</Value>\r\n        </Data>\r\n       
+    Type=\"System.Int64, mscorlib\">4118516151719007024</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>IsCollapsed</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>IsBreakpoint</Name>\r\n         
     <Value Type=\"@boolean\">False</Value>\r\n        </Data>\r\n        <Data>\r\n         
@@ -2571,7 +2544,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">564773971618299910</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">592201774759527265</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>a3c4af17-871f-4b9c-91e2-f7041173d91e</Key>\r\n    <Node>\r\n      <Id>a3c4af17-871f-4b9c-91e2-f7041173d91e</Id>\r\n     
     <Name>ReachedChosenBush</Name>\r\n      <Comment></Comment>\r\n      <Graph>18bd98e8-8075-40b0-890e-6a49780337aa</Graph>\r\n     
@@ -2594,7 +2567,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2736381699673107417</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2897801877380666333</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>a4a8b0d1-02ae-4041-899a-78cf5ce2f42d</Key>\r\n    <Node>\r\n      <Id>a4a8b0d1-02ae-4041-899a-78cf5ce2f42d</Id>\r\n     
     <Name>SelectCollectible</Name>\r\n      <Comment></Comment>\r\n      <Graph>a59bb1bf-984b-4a34-835e-fc5e4416dabc</Graph>\r\n     
@@ -2617,7 +2590,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">717889061831074022</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">2970887058541014519</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>a59bb1bf-984b-4a34-835e-fc5e4416dabc</Key>\r\n   
     <Node>\r\n      <Id>a59bb1bf-984b-4a34-835e-fc5e4416dabc</Id>\r\n      <Name>Choose
     Best Coin</Name>\r\n      <Comment></Comment>\r\n      <Graph>e621dfd1-9300-47c1-be92-513d144d95e9</Graph>\r\n     
@@ -2632,10 +2605,10 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">51452369355932896</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">389687496738597814</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>a5e3c905-9b8d-451a-89c9-83dc02b7b579</Key>\r\n    <Node>\r\n      <Id>a5e3c905-9b8d-451a-89c9-83dc02b7b579</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>228|78||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -2702,7 +2675,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4082715001513652262</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3414387319425410520</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>a904fb00-f984-45a5-b986-95e279d25200</Key>\r\n    <Node>\r\n      <Id>a904fb00-f984-45a5-b986-95e279d25200</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>e621dfd1-9300-47c1-be92-513d144d95e9</Graph>\r\n     
@@ -2748,10 +2721,10 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">632731760627810489</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1585899975517008131</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>aa6a0d3d-3438-4ade-a544-69a27af13f27</Key>\r\n    <Node>\r\n      <Id>aa6a0d3d-3438-4ade-a544-69a27af13f27</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>254|50||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -2796,11 +2769,11 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">392935653677245522</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">3427917729838785660</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>af406d83-38e5-469e-b8eb-34f8c22a69c2</Key>\r\n    <Node>\r\n     
     <Id>af406d83-38e5-469e-b8eb-34f8c22a69c2</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>241|78||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -2820,7 +2793,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>b01cfb25-2a3b-4212-8892-0bbadf93a805</Key>\r\n    <Node>\r\n     
     <Id>b01cfb25-2a3b-4212-8892-0bbadf93a805</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>206|74||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n     
@@ -2934,7 +2907,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">3765890874703331716</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">1878336943083620642</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>b783d53d-f73d-44bb-9708-31508d8515ed</Key>\r\n   
     <Node>\r\n      <Id>b783d53d-f73d-44bb-9708-31508d8515ed</Id>\r\n      <Name>ObjectivePoint</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>25e2174d-c887-4f7a-8f6b-955c98b74e5d</Graph>\r\n     
@@ -2954,7 +2927,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>bb7740ef-2862-48f1-98a8-66a53a96967b</Key>\r\n    <Node>\r\n     
     <Id>bb7740ef-2862-48f1-98a8-66a53a96967b</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>670|354||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\"
@@ -3012,7 +2985,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>bf56066d-08a9-418e-8b71-05aafee4d3da</Key>\r\n   
     <Node>\r\n      <Id>bf56066d-08a9-418e-8b71-05aafee4d3da</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>234|49||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n     
@@ -3050,10 +3023,10 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">240310924545506722</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">1973822312021000235</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>c18626d9-ff9c-4d7f-b204-f0d39f3aa678</Key>\r\n   
     <Node>\r\n      <Id>c18626d9-ff9c-4d7f-b204-f0d39f3aa678</Id>\r\n      <Name>BlackboardVar</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>653|63||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n     
@@ -3093,7 +3066,7 @@ MonoBehaviour:
     <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
     <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2845191321566471761</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3869140584232133425</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>c453386b-506c-4932-b5ef-049b6fd3356c</Key>\r\n    <Node>\r\n      <Id>c453386b-506c-4932-b5ef-049b6fd3356c</Id>\r\n     
     <Name>Event</Name>\r\n      <Comment></Comment>\r\n      <Graph>c99bc0c1-7820-4e9e-9aae-99efc0a2b59b</Graph>\r\n     
@@ -3130,10 +3103,10 @@ MonoBehaviour:
     <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
     <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">110881735735757697</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1132902526206431593</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>c5a1848f-5e3a-46a7-b176-73a754b891e4</Key>\r\n    <Node>\r\n      <Id>c5a1848f-5e3a-46a7-b176-73a754b891e4</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>51|107||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -3175,7 +3148,7 @@ MonoBehaviour:
     <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
     <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3095690521343793230</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1437084862896924237</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>c6c2aebf-c4e6-42e0-bfb2-3af08f0334d8</Key>\r\n    <Node>\r\n      <Id>c6c2aebf-c4e6-42e0-bfb2-3af08f0334d8</Id>\r\n     
     <Name>Event</Name>\r\n      <Comment></Comment>\r\n      <Graph>e271451c-4834-4a67-93ef-9e94eec44618</Graph>\r\n     
@@ -3190,7 +3163,7 @@ MonoBehaviour:
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>c7b1c48b-cee1-4c6c-b9b7-11704fbcbf23</Key>\r\n    <Node>\r\n     
     <Id>c7b1c48b-cee1-4c6c-b9b7-11704fbcbf23</Id>\r\n      <Name>Constant</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>-41|63||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -3253,7 +3226,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2633994286248010157</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2086519461478357473</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>cd36ac1e-05fc-4d97-a96d-ccb9ffbed962</Key>\r\n    <Node>\r\n      <Id>cd36ac1e-05fc-4d97-a96d-ccb9ffbed962</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>5d00c2c9-54ae-46bb-ac49-c8a4c7fd1cc6</Graph>\r\n     
@@ -3295,10 +3268,10 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2474792436750218396</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3265805949550367205</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>d1cfb33c-1474-4e1a-93b7-089c09b2721c</Key>\r\n    <Node>\r\n      <Id>d1cfb33c-1474-4e1a-93b7-089c09b2721c</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>115|70||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$value</Id>\r\n         
@@ -3342,7 +3315,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">673037110695195242</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">1673509078368991419</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>d3d052a1-44d4-4b21-b636-b438d8146e4b</Key>\r\n   
     <Node>\r\n      <Id>d3d052a1-44d4-4b21-b636-b438d8146e4b</Id>\r\n      <Name>MaxAttackInterval</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>cf5f1715-ad12-4a16-9960-b1c5ae5483ff</Graph>\r\n     
@@ -3403,7 +3376,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4131505141256797869</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1614197366415093445</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>d7412f59-260f-4f76-9ac2-566f49cbdeb3</Key>\r\n    <Node>\r\n      <Id>d7412f59-260f-4f76-9ac2-566f49cbdeb3</Id>\r\n     
     <Name>HasLoS</Name>\r\n      <Comment></Comment>\r\n      <Graph>9a2edde5-dc4f-457a-9f42-0c85bf75c318</Graph>\r\n     
@@ -3425,7 +3398,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3518814693749671133</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3152019130861651281</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>da0ccf16-bd36-4925-90d1-baae98169b2e</Key>\r\n    <Node>\r\n      <Id>da0ccf16-bd36-4925-90d1-baae98169b2e</Id>\r\n     
     <Name>AttackErrorSpecial</Name>\r\n      <Comment></Comment>\r\n      <Graph>d19c8406-9d74-417c-9320-dc7b8715859f</Graph>\r\n     
@@ -3464,7 +3437,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3107127238390518079</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">958985887453300316</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>da26f738-d9e6-4636-988a-58295ff742bf</Key>\r\n    <Node>\r\n      <Id>da26f738-d9e6-4636-988a-58295ff742bf</Id>\r\n     
     <Name>*ANY*</Name>\r\n      <Comment></Comment>\r\n      <Graph>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Graph>\r\n     
@@ -3522,7 +3495,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3328109370693637274</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2749855273526100938</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>dce94a80-b88b-44a6-870f-0e4028481fd2</Key>\r\n    <Node>\r\n      <Id>dce94a80-b88b-44a6-870f-0e4028481fd2</Id>\r\n     
     <Name>TimerDecision</Name>\r\n      <Comment></Comment>\r\n      <Graph>b384ed17-e7f1-48a2-ab1e-20fa68347822</Graph>\r\n     
@@ -3540,7 +3513,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">2264419070888763053</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2261387832483465804</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>de59baf5-0ce4-4ca5-b683-65db814fa506</Key>\r\n    <Node>\r\n      <Id>de59baf5-0ce4-4ca5-b683-65db814fa506</Id>\r\n     
     <Name>(Logical) AND</Name>\r\n      <Comment></Comment>\r\n      <Graph>c1e8ac84-fa0f-4c43-8fce-1aff2e290775</Graph>\r\n     
@@ -3559,7 +3532,7 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">4135481938419584820</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">4053504888388178204</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>dea89e1b-839b-40c8-a2ba-923b5292ace4</Key>\r\n    <Node>\r\n     
     <Id>dea89e1b-839b-40c8-a2ba-923b5292ace4</Id>\r\n      <Name>HasChosenBush</Name>\r\n     
@@ -3579,7 +3552,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">3766368253814376987</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3110648812173832628</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>df7e806d-948c-4f83-a8ba-60cf86128a20</Key>\r\n    <Node>\r\n      <Id>df7e806d-948c-4f83-a8ba-60cf86128a20</Id>\r\n     
     <Name>Actions</Name>\r\n      <Comment></Comment>\r\n      <Graph>933db320-fd56-493e-9db6-70ea790a9a41</Graph>\r\n     
@@ -3633,7 +3606,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1895469767971881413</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1852421025809411913</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>e2ca7863-cb2d-4638-b577-a55c7590166a</Key>\r\n    <Node>\r\n      <Id>e2ca7863-cb2d-4638-b577-a55c7590166a</Id>\r\n     
     <Name>TimerDecision</Name>\r\n      <Comment></Comment>\r\n      <Graph>cf5f1715-ad12-4a16-9960-b1c5ae5483ff</Graph>\r\n     
@@ -3651,7 +3624,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1614759564548035257</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3872564368539252193</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>e53b9d81-95ee-4efd-a5e3-0c8f43758e09</Key>\r\n    <Node>\r\n      <Id>e53b9d81-95ee-4efd-a5e3-0c8f43758e09</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>a2444778-2170-4fdb-86c2-2d3dfc84e183</Graph>\r\n     
@@ -3678,7 +3651,7 @@ MonoBehaviour:
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">False</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">659295081795218608</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1046358519791698855</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>3</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>e6c6bf1a-6a00-4d59-9ac6-cf4504f53d27</Key>\r\n    <Node>\r\n      <Id>e6c6bf1a-6a00-4d59-9ac6-cf4504f53d27</Id>\r\n     
     <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>25e2174d-c887-4f7a-8f6b-955c98b74e5d</Graph>\r\n     
@@ -3694,9 +3667,30 @@ MonoBehaviour:
     <Type>@int32</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticIn>\r\n      <StaticOut
     Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"0\" />\r\n     
-    <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>ea445b32-252c-4dde-9d88-bbacaf9e79c0</Key>\r\n   
-    <Node>\r\n      <Id>ea445b32-252c-4dde-9d88-bbacaf9e79c0</Id>\r\n      <Name>Transition</Name>\r\n     
-    <Comment></Comment>\r\n      <Graph>735f6ab1-4c5f-4ff2-96b5-7860d94fc97f</Graph>\r\n     
+    <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>e8790bfa-57f4-41a3-9321-cfd02964ccab</Key>\r\n   
+    <Node>\r\n      <Id>e8790bfa-57f4-41a3-9321-cfd02964ccab</Id>\r\n      <Name>FindPayload</Name>\r\n     
+    <Comment />\r\n      <Graph>a399ae8d-9a12-4734-ada8-8f4f09663228</Graph>\r\n     
+    <Parent>FindPayload</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>0</Flags>\r\n     
+    <Position>520|-41||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
+    <Id>$exec</Id>\r\n          <Name></Name>\r\n          <Value />\r\n         
+    <Type>$exec</Type>\r\n          <Mode>In</Mode>\r\n          <Flags>2</Flags>\r\n         
+    <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n        <Slot>\r\n         
+    <Id>ObjectivePoint</Id>\r\n          <Name>ObjectivePoint</Name>\r\n         
+    <Value Type=\"Quantum.AIBlackboardValueKey, Quantum.BotSDK.Core\">Quantum.AIBlackboardValueKey</Value>\r\n         
+    <Type>Quantum.AIBlackboardValueKey, Quantum.BotSDK.Core</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n       
+    <Slot>\r\n          <Id>Label</Id>\r\n          <Name>Label</Name>\r\n         
+    <Value />\r\n          <Type>@string</Type>\r\n          <Mode>In</Mode>\r\n         
+    <Flags>512</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n     
+    </StaticIn>\r\n      <StaticOut Count=\"1\">\r\n        <Slot>\r\n          <Id>$exec</Id>\r\n         
+    <Name></Name>\r\n          <Value />\r\n          <Type>$exec</Type>\r\n         
+    <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
+    </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
+    Count=\"1\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
+    Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n     
+    </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
+    <Key>ea445b32-252c-4dde-9d88-bbacaf9e79c0</Key>\r\n    <Node>\r\n      <Id>ea445b32-252c-4dde-9d88-bbacaf9e79c0</Id>\r\n     
+    <Name>Transition</Name>\r\n      <Comment></Comment>\r\n      <Graph>735f6ab1-4c5f-4ff2-96b5-7860d94fc97f</Graph>\r\n     
     <Parent>$transition</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n      <Flags>129</Flags>\r\n     
     <Position>56|28||0</Position>\r\n      <StaticIn Count=\"3\">\r\n        <Slot>\r\n         
     <Id>$eventIn</Id>\r\n          <Name>Events</Name>\r\n          <Value />\r\n         
@@ -3731,10 +3725,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">1455834522321946313</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2007784384898096495</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>ec2dbf84-819d-4522-b7c0-b459efd282c0</Key>\r\n    <Node>\r\n      <Id>ec2dbf84-819d-4522-b7c0-b459efd282c0</Id>\r\n     
-    <Name>BlackboardVar</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>BlackboardVar</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$blackboardVarData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>654|256||0</Position>\r\n      <StaticIn
     Count=\"0\" />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\"
@@ -3776,7 +3770,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">4358663461125497705</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">3263350750998839996</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>eef6b933-c5d5-4f75-8469-1e63f1e9be12</Key>\r\n   
     <Node>\r\n      <Id>eef6b933-c5d5-4f75-8469-1e63f1e9be12</Id>\r\n      <Name>(Logical)
     AND</Name>\r\n      <Comment></Comment>\r\n      <Graph>6a0aa560-18d9-4996-91bb-7d793caff0ca</Graph>\r\n     
@@ -3795,7 +3789,7 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">1120094250205908760</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">2558286497336498680</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>efcb3c96-2f2b-4b6b-a146-5134ea554bbd</Key>\r\n    <Node>\r\n     
     <Id>efcb3c96-2f2b-4b6b-a146-5134ea554bbd</Id>\r\n      <Name>TimerDecision</Name>\r\n     
@@ -3814,7 +3808,7 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">4135078681316121642</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">1845518357211110676</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>efefd27a-5e94-4649-a543-d465e69882a2</Key>\r\n    <Node>\r\n      <Id>efefd27a-5e94-4649-a543-d465e69882a2</Id>\r\n     
     <Name>RunToEscapeRoute</Name>\r\n      <Comment></Comment>\r\n      <Graph>8e5948a6-e5ab-4789-937e-ae4457247a6e</Graph>\r\n     
@@ -3837,7 +3831,7 @@ MonoBehaviour:
     Count=\"2\">\r\n        <Data>\r\n          <Name>$guid</Name>\r\n          <Value
     Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n        </Data>\r\n       
     <Data>\r\n          <Name>Guid</Name>\r\n          <Value Type=\"System.Int64,
-    mscorlib\">1773665628317679491</Value>\r\n        </Data>\r\n      </Data>\r\n     
+    mscorlib\">2022285322213720469</Value>\r\n        </Data>\r\n      </Data>\r\n     
     <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n    <Key>f2380679-2421-4101-bb3b-0a284ce484a2</Key>\r\n   
     <Node>\r\n      <Id>f2380679-2421-4101-bb3b-0a284ce484a2</Id>\r\n      <Name>CheckBoolean</Name>\r\n     
     <Comment></Comment>\r\n      <Graph>3f483a13-335b-49b2-8f26-f43cd92cf795</Graph>\r\n     
@@ -3855,10 +3849,10 @@ MonoBehaviour:
     <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n          <TypeMode>Value</TypeMode>\r\n       
     </Slot>\r\n      </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data
     Count=\"1\">\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">256724130957965146</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3860629156074348296</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>f265cd22-082d-44ec-94ca-e23fb4d9dfd1</Key>\r\n    <Node>\r\n      <Id>f265cd22-082d-44ec-94ca-e23fb4d9dfd1</Id>\r\n     
-    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n     
+    <Name>Constant</Name>\r\n      <Comment></Comment>\r\n      <Graph>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Graph>\r\n     
     <Parent>$constantData</Parent>\r\n      <DebugIndex>-1</DebugIndex>\r\n     
     <Flags>8</Flags>\r\n      <Position>193|78||0</Position>\r\n      <StaticIn Count=\"0\"
     />\r\n      <StaticOut Count=\"0\" />\r\n      <Groups Count=\"0\" />\r\n     
@@ -3902,7 +3896,7 @@ MonoBehaviour:
     </StaticOut>\r\n      <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n       
     <Data>\r\n          <Name>$default</Name>\r\n          <Value Type=\"@boolean\">True</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">693065746221081023</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">3059962973720089616</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>f4626f4a-0546-48a8-95c4-f58698b01f1c</Key>\r\n    <Node>\r\n      <Id>f4626f4a-0546-48a8-95c4-f58698b01f1c</Id>\r\n     
     <Name>FunctionGetRandomFP</Name>\r\n      <Comment></Comment>\r\n      <Graph>ec7d7e67-c04f-486b-98af-ebf8c3057582</Graph>\r\n     
@@ -3927,7 +3921,7 @@ MonoBehaviour:
     <Groups Count=\"0\" />\r\n      <Data Count=\"2\">\r\n        <Data>\r\n         
     <Name>$guid</Name>\r\n          <Value Type=\"@string\">00000000-0000-0000-0000-000000000000</Value>\r\n       
     </Data>\r\n        <Data>\r\n          <Name>Guid</Name>\r\n          <Value
-    Type=\"System.Int64, mscorlib\">887319108899371517</Value>\r\n        </Data>\r\n     
+    Type=\"System.Int64, mscorlib\">2699781432217721666</Value>\r\n        </Data>\r\n     
     </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n    </Node>\r\n   
     <Key>f5b21879-ec13-4dda-b667-be4fd6f252f5</Key>\r\n    <Node>\r\n      <Id>f5b21879-ec13-4dda-b667-be4fd6f252f5</Id>\r\n     
     <Name>AttackErrorSpecial</Name>\r\n      <Comment></Comment>\r\n      <Graph>d4d10014-918d-440f-87e5-176ac6435664</Graph>\r\n     
@@ -3953,7 +3947,7 @@ MonoBehaviour:
     <Type>$decision</Type>\r\n          <Mode>Out</Mode>\r\n          <Flags>0</Flags>\r\n         
     <TypeMode>Value</TypeMode>\r\n        </Slot>\r\n      </StaticOut>\r\n     
     <Groups Count=\"0\" />\r\n      <Data Count=\"1\">\r\n        <Data>\r\n         
-    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">1701697085986560974</Value>\r\n       
+    <Name>Guid</Name>\r\n          <Value Type=\"System.Int64, mscorlib\">401799580867933690</Value>\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n    <Key>f8b529bd-e3f4-4332-aa64-9dc749fa0fa4</Key>\r\n    <Node>\r\n     
     <Id>f8b529bd-e3f4-4332-aa64-9dc749fa0fa4</Id>\r\n      <Name>Actions</Name>\r\n     
@@ -3999,7 +3993,14 @@ MonoBehaviour:
     </Data>\r\n        <Data>\r\n          <Name></Name>\r\n          <Value />\r\n       
     </Data>\r\n      </Data>\r\n      <ChildrenStatesCount>0</ChildrenStatesCount>\r\n   
     </Node>\r\n  </Nodes>\r\n  <Types Count=\"0\" />\r\n  <Links Count=\"154\">\r\n   
-    <Link>\r\n      <Id>980ef435-d5f3-411d-a72a-2e9b250ad8aa</Id>\r\n      <FromNode>bf490793-2128-4d2b-8e31-b60a60516f29</FromNode>\r\n     
+    <Link>\r\n      <Id>4a6d7088-acf9-46e3-9b9a-b1ac0f6f509b</Id>\r\n      <FromNode>b18c2dad-60ad-4ad9-844c-2b87b7d69798</FromNode>\r\n     
+    <FromSlot>$keyOut</FromSlot>\r\n      <ToNode>e8790bfa-57f4-41a3-9321-cfd02964ccab</ToNode>\r\n     
+    <ToSlot>ObjectivePoint</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
+    </Link>\r\n    <Link>\r\n      <Id>a7ce3c5a-5475-4232-acf0-a87e080ed1b7</Id>\r\n     
+    <FromNode>abc93ccd-7ad2-4ee9-ae3a-2e0e401af2ab</FromNode>\r\n      <FromSlot>$enter</FromSlot>\r\n     
+    <ToNode>e8790bfa-57f4-41a3-9321-cfd02964ccab</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
+    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
+    <Id>980ef435-d5f3-411d-a72a-2e9b250ad8aa</Id>\r\n      <FromNode>bf490793-2128-4d2b-8e31-b60a60516f29</FromNode>\r\n     
     <FromSlot>$update</FromSlot>\r\n      <ToNode>16b7e216-05e4-47ed-a858-7c35046306d3</ToNode>\r\n     
     <ToSlot>$exec</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
     </Link>\r\n    <Link>\r\n      <Id>b7f97b25-b722-41b2-9e85-fc874444feab</Id>\r\n     
@@ -4233,16 +4234,9 @@ MonoBehaviour:
     <Id>27b08888-1629-4042-b56f-5173e494f5e5</Id>\r\n      <FromNode>b18c2dad-60ad-4ad9-844c-2b87b7d69798</FromNode>\r\n     
     <FromSlot>$keyOut</FromSlot>\r\n      <ToNode>433b30a4-638b-475b-8308-d815b47f0f2e</ToNode>\r\n     
     <ToSlot>ObjectivePoint</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
-    </Link>\r\n    <Link>\r\n      <Id>a7fd1a55-54cc-44f8-aacf-974a395e537c</Id>\r\n     
-    <FromNode>b18c2dad-60ad-4ad9-844c-2b87b7d69798</FromNode>\r\n      <FromSlot>$keyOut</FromSlot>\r\n     
-    <ToNode>45e2b208-69c5-46c5-aef1-258680b7d81b</ToNode>\r\n      <ToSlot>ObjectivePoint</ToSlot>\r\n     
-    <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
-    <Id>8dcaaac5-054f-45ce-8b0b-055280dd56e3</Id>\r\n      <FromNode>abc93ccd-7ad2-4ee9-ae3a-2e0e401af2ab</FromNode>\r\n     
-    <FromSlot>$update</FromSlot>\r\n      <ToNode>433b30a4-638b-475b-8308-d815b47f0f2e</ToNode>\r\n     
-    <ToSlot>$exec</ToSlot>\r\n      <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n   
-    </Link>\r\n    <Link>\r\n      <Id>2ed68dbb-652a-4aa5-ad84-7359ea374622</Id>\r\n     
-    <FromNode>abc93ccd-7ad2-4ee9-ae3a-2e0e401af2ab</FromNode>\r\n      <FromSlot>$enter</FromSlot>\r\n     
-    <ToNode>45e2b208-69c5-46c5-aef1-258680b7d81b</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
+    </Link>\r\n    <Link>\r\n      <Id>8dcaaac5-054f-45ce-8b0b-055280dd56e3</Id>\r\n     
+    <FromNode>abc93ccd-7ad2-4ee9-ae3a-2e0e401af2ab</FromNode>\r\n      <FromSlot>$update</FromSlot>\r\n     
+    <ToNode>433b30a4-638b-475b-8308-d815b47f0f2e</ToNode>\r\n      <ToSlot>$exec</ToSlot>\r\n     
     <Flags>4</Flags>\r\n      <DebugIndex>-1</DebugIndex>\r\n    </Link>\r\n    <Link>\r\n     
     <Id>933c1bbc-6a72-4c0d-9656-393d0ff80226</Id>\r\n      <FromNode>578acc77-cdbe-474d-9905-c4159cadfa68</FromNode>\r\n     
     <FromSlot>$decisionOut</FromSlot>\r\n      <ToNode>cc6f1291-01e0-400f-82ab-68ec1bd84ff4</ToNode>\r\n     
@@ -4560,9 +4554,6 @@ MonoBehaviour:
     </GraphData>\r\n    <Key>18bd98e8-8075-40b0-890e-6a49780337aa</Key>\r\n    <GraphData>\r\n     
     <Id>18bd98e8-8075-40b0-890e-6a49780337aa</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>895|357||0</PanOffset>\r\n   
-    </GraphData>\r\n    <Key>1c0e0ae6-888e-4709-89de-417d5f9dc355</Key>\r\n    <GraphData>\r\n     
-    <Id>1c0e0ae6-888e-4709-89de-417d5f9dc355</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
-    <ZoomOffset>49|26||0</ZoomOffset>\r\n      <PanOffset>297|74||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>1e62d898-eb6d-4172-b8c8-0220a5e3d06c</Key>\r\n    <GraphData>\r\n     
     <Id>1e62d898-eb6d-4172-b8c8-0220a5e3d06c</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>264|321||0</PanOffset>\r\n   
@@ -4616,7 +4607,7 @@ MonoBehaviour:
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>687|326||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Key>\r\n    <GraphData>\r\n     
     <Id>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
-    <ZoomOffset>-930|-419||0</ZoomOffset>\r\n      <PanOffset>-146|284||0</PanOffset>\r\n   
+    <ZoomOffset>-930|-419||0</ZoomOffset>\r\n      <PanOffset>195|331||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>8e5948a6-e5ab-4789-937e-ae4457247a6e</Key>\r\n    <GraphData>\r\n     
     <Id>8e5948a6-e5ab-4789-937e-ae4457247a6e</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>133|161||0</PanOffset>\r\n   
@@ -4671,6 +4662,9 @@ MonoBehaviour:
     </GraphData>\r\n    <Key>d4d10014-918d-440f-87e5-176ac6435664</Key>\r\n    <GraphData>\r\n     
     <Id>d4d10014-918d-440f-87e5-176ac6435664</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>297|232||0</PanOffset>\r\n   
+    </GraphData>\r\n    <Key>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Key>\r\n    <GraphData>\r\n     
+    <Id>d9dcfd2f-ad3c-45d9-a5ff-845be236563d</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
+    <ZoomOffset>49|26||0</ZoomOffset>\r\n      <PanOffset>297|74||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>db01f3d0-f52a-4e51-99e1-3bd23abcd2b5</Key>\r\n    <GraphData>\r\n     
     <Id>db01f3d0-f52a-4e51-99e1-3bd23abcd2b5</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>98|308||0</PanOffset>\r\n   
@@ -4697,8 +4691,8 @@ MonoBehaviour:
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>549|323||0</PanOffset>\r\n   
     </GraphData>\r\n  </GraphData>\r\n  <Tracks Count=\"0\" />\r\n</Document>"
   DocumentType: $statemachine
-  DocumentId: 1c0e0ae6-888e-4709-89de-417d5f9dc355
+  DocumentId: d9dcfd2f-ad3c-45d9-a5ff-845be236563d
   DocumentNameOverride: 
   History: []
-  LastCompiledHistoryID: 8dc690a4-7339-4048-8141-cefdcc4550af
-  IsOutdated: 0
+  LastCompiledHistoryID: 
+  IsOutdated: 1
