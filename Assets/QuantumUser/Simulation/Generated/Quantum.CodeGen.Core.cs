@@ -1447,7 +1447,7 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct _globals_ {
-    public const Int32 SIZE = 1712;
+    public const Int32 SIZE = 1720;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public AssetRef<Map> Map;
@@ -1474,18 +1474,20 @@ namespace Quantum {
     private fixed Byte _input_[960];
     [FieldOffset(1568)]
     public BitSet6 PlayerLastConnectionState;
-    [FieldOffset(1608)]
+    [FieldOffset(1616)]
     public FP TimeToFillWithBots;
-    [FieldOffset(1600)]
+    [FieldOffset(1608)]
     public FP MatchTimer;
-    [FieldOffset(1592)]
+    [FieldOffset(1600)]
     public FP MatchDuration;
     [FieldOffset(1580)]
     public QBoolean ControllersEnabled;
     [FieldOffset(1576)]
     public GameState State;
-    [FieldOffset(1616)]
+    [FieldOffset(1624)]
     public HFSMData GameManagerHFSM;
+    [FieldOffset(1592)]
+    public EntityRef PayloadEntity;
     [FieldOffset(1584)]
     public QDictionaryPtr<Int32, EntityRef> InvisibilitySpots;
     [FieldOffset(1588)]
@@ -1516,6 +1518,7 @@ namespace Quantum {
         hash = hash * 31 + ControllersEnabled.GetHashCode();
         hash = hash * 31 + (Int32)State;
         hash = hash * 31 + GameManagerHFSM.GetHashCode();
+        hash = hash * 31 + PayloadEntity.GetHashCode();
         hash = hash * 31 + InvisibilitySpots.GetHashCode();
         hash = hash * 31 + TeamsData.GetHashCode();
         return hash;
@@ -1543,6 +1546,7 @@ namespace Quantum {
         QBoolean.Serialize(&p->ControllersEnabled, serializer);
         QDictionary.Serialize(&p->InvisibilitySpots, serializer, Statics.SerializeInt32, Statics.SerializeEntityRef);
         QList.Serialize(&p->TeamsData, serializer, Statics.SerializeTeamData);
+        EntityRef.Serialize(&p->PayloadEntity, serializer);
         FP.Serialize(&p->MatchDuration, serializer);
         FP.Serialize(&p->MatchTimer, serializer);
         FP.Serialize(&p->TimeToFillWithBots, serializer);

@@ -85,7 +85,8 @@ namespace Quantum
 
         public void OnAdded(Frame f, EntityRef entity, Payload* component)
         {
-            // Setup physics2D range based on payload settings
+            // Setup physics2D range based on payload settings and set globals
+            f.Global->PayloadEntity = entity;
         }
     }
 }
