@@ -1,0 +1,3151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9182603812139028752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1084331888, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMNotDecision_oQ6GtjhaK0iPj5J
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMNotDecision_oQ6GtjhaK0iPj5J
+    Guid:
+      Value: 401799580867933690
+  Label: 
+  Decisions:
+  - Id:
+      Value: 1337384820063042927
+--- !u!114 &-8742039305470175674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd374c5a078748bfc0e2eb87a054b, type: 3}
+  m_Name: FunctionGetRandomFP_mT0-daNZg0qS-5G
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FunctionGetRandomFP_mT0-daNZg0qS-5G
+    Guid:
+      Value: 1132902526206431593
+  Min:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+  Max:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 6553600
+    FunctionRef:
+      Id:
+        Value: 0
+  IsInclusive: 1
+--- !u!114 &-8526039887091209670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b7f75074e90e948ab6b263c224dca6, type: 3}
+  m_Name: ReleaseAttack_Rr4ArqSJ60G2OgR
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReleaseAttack_Rr4ArqSJ60G2OgR
+    Guid:
+      Value: 3263350750998839996
+  Label: 
+  BasicAttackError:
+    Source: 2
+    Key: AttackErrorBasic
+    DefaultValue:
+      RawValue: 65536
+    FunctionRef:
+      Id:
+        Value: 0
+  SpecialAttackError:
+    Source: 2
+    Key: AttackErrorSpecial
+    DefaultValue:
+      RawValue: 196608
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-8330907827993149590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96627c2144c727344a89fbf443af2ff7, type: 3}
+  m_Name: TargetIsInRange_51Vu3nCj-Ey6-rw
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TargetIsInRange_51Vu3nCj-Ey6-rw
+    Guid:
+      Value: 54615520042610469
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  ExpectedRange:
+    Source: 2
+    Key: AttackRange
+    DefaultValue:
+      RawValue: 491520
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-7218763896410423168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc2abe19d7a4b46891cbef964938e2, type: 3}
+  m_Name: FindCoverSpot_HQfQu5COQkG3Gi_
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindCoverSpot_HQfQu5COQkG3Gi_
+    Guid:
+      Value: 1673509078368991419
+  Label: 
+  CoverSpot:
+    Key: CoverSpotPosition
+  ChooseCoverSpotIntervalTicks:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 2949120
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-6798259298395833029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72cf08bef4713ff41be5d2bd1da7c450, type: 3}
+  m_Name: SelectCollectible_FLcOf3MW4kyAYxj
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|SelectCollectible_FLcOf3MW4kyAYxj
+    Guid:
+      Value: 2970887058541014519
+  Label: 
+  TargetCollectible:
+    Key: TargetCollectible
+--- !u!114 &-6379299517789296114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036e5a9a9edc9294f8e4b6a3e358c71a, type: 3}
+  m_Name: RunToEscapeRoute_XGFLeTq3FUeIwVg
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|RunToEscapeRoute_XGFLeTq3FUeIwVg
+    Guid:
+      Value: 2022285322213720469
+  Label: 
+  EscapeRoute:
+    Key: EscapeRoute
+--- !u!114 &-6357145758796788885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700305ad88e8d90428984e6e41f21ec8, type: 3}
+  m_Name: HoldAttack_tl6wJGsx70WHE5I
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HoldAttack_tl6wJGsx70WHE5I
+    Guid:
+      Value: 3953354772335811805
+  Label: 
+--- !u!114 &-6331828934571670152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96627c2144c727344a89fbf443af2ff7, type: 3}
+  m_Name: TargetIsInRange_ayqJD9GE0EuedVe
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TargetIsInRange_ayqJD9GE0EuedVe
+    Guid:
+      Value: 2348277800387445596
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  ExpectedRange:
+    Source: 2
+    Key: AttackRange
+    DefaultValue:
+      RawValue: 491520
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-6034709432991290687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Run in Bush_tg4YDGqshEucac1
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Run
+      in Bush_tg4YDGqshEucac1
+    Guid:
+      Value: 3776881686914360249
+  Label: Run in Bush
+  Index: 11
+  OnUpdateLinks:
+  - Id:
+      Value: 1973822312021000235
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions: []
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 4142489634998045667
+  Level: 0
+--- !u!114 &-5712090215166750908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f44176329a53b44b875de134da358f, type: 3}
+  m_Name: RunToCoverSpot_g-Ic85dtD0-lqN5
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|RunToCoverSpot_g-Ic85dtD0-lqN5
+    Guid:
+      Value: 4020624127868631316
+  Label: 
+  CoverSpot:
+    Key: CoverSpotPosition
+--- !u!114 &-5605275218827592721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e27dacb0c8b3e6499338f56f1b8250b, type: 3}
+  m_Name: HasEnoughAttribute_SQFXEhxbvEifMpd
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasEnoughAttribute_SQFXEhxbvEifMpd
+    Guid:
+      Value: 958985887453300316
+  Label: 
+  AttributeType: 2
+  ExpectedAmount:
+    RawValue: 65536
+  IsPercentage: 0
+--- !u!114 &-5481076309207560406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc31a19869c8c4d48a315376ef78510c, type: 3}
+  m_Name: ChaseCollectible_YxyH1G9Q-ECD5yV
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ChaseCollectible_YxyH1G9Q-ECD5yV
+    Guid:
+      Value: 3046784888645730863
+  Label: 
+  TargetCollectible:
+    Key: TargetCollectible
+--- !u!114 &-5109416272928060153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Find Bush to Hide in_XWScQBxltUCPxwE
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Find
+      Bush to Hide in_XWScQBxltUCPxwE
+    Guid:
+      Value: 3059962973720089616
+  Label: Find Bush to Hide in
+  Index: 0
+  OnUpdateLinks: []
+  OnEnterLinks:
+  - Id:
+      Value: 3681922820885974282
+  OnExitLinks: []
+  Transitions:
+  - Id: 1a841ea4-06e7-48a3-ab35-c0c5b365612b
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2261387832483465804
+    StateLink:
+      Id:
+        Value: 3059962973720089616
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 105292e4-a6ce-4eed-b994-dc31fb2ea006
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 3110648812173832628
+    StateLink:
+      Id:
+        Value: 2551506220899162583
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 4142489634998045667
+  Level: 0
+--- !u!114 &-4951907075250287224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6781ffe6e4d395479f9252c5162a901, type: 3}
+  m_Name: ReachedEscapeRoute_M_OjjDDT30SWVBN
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReachedEscapeRoute_M_OjjDDT30SWVBN
+    Guid:
+      Value: 504299618820134617
+  Label: 
+  EscapeRoute:
+    Key: EscapeRoute
+  MinDistance:
+    RawValue: 13107
+--- !u!114 &-4815944482697441148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822516949, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMAndDecision_wADT39zqYUS57m-
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMAndDecision_wADT39zqYUS57m-
+    Guid:
+      Value: 4053504888388178204
+  Label: 
+  Decisions:
+  - Id:
+      Value: 958985887453300316
+  - Id:
+      Value: 2348277800387445596
+  - Id:
+      Value: 1074344961864123245
+--- !u!114 &-4519043438182774656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f376ab33288e4cfaaed41d10370d1322, type: 3}
+  m_Name: FindPayload_oZ3rooscnkeec6l
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindPayload_oZ3rooscnkeec6l
+    Guid:
+      Value: 3298813854352671806
+  Label: 
+  ObjectivePoint:
+    Key: ObjectivePoint
+--- !u!114 &-4393459971013769874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_msw5jCOSzEi4jfy
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_msw5jCOSzEi4jfy
+    Guid:
+      Value: 3872564368539252193
+  Label: 
+  TimeToTrueState:
+    Source: 4
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 4437547858456868102
+--- !u!114 &-4251024324375074819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Attack Delay_7a-5_IRP70y-ACc
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Attack
+      Delay_7a-5_IRP70y-ACc
+    Guid:
+      Value: 4137536807548524500
+  Label: Attack Delay
+  Index: 23
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 17f9ba30-4bad-4365-b562-da762ecf0be8
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2803370180632864266
+    StateLink:
+      Id:
+        Value: 4118516151719007024
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 623515082628363324
+  Level: 0
+--- !u!114 &-3569631795110323682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_oxWHKYPhqkSJciG
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_oxWHKYPhqkSJciG
+    Guid:
+      Value: 3414387319425410520
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 196608
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-3427148416993728351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822516949, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMAndDecision_R6RVCjZfVUOb8f_
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMAndDecision_R6RVCjZfVUOb8f_
+    Guid:
+      Value: 1049853953762025318
+  Label: 
+  Decisions:
+  - Id:
+      Value: 3427917729838785660
+  - Id:
+      Value: 1933976907405031522
+--- !u!114 &-3392764705813469308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_IE0dVqhz8kydksu
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_IE0dVqhz8kydksu
+    Guid:
+      Value: 3456194487327193057
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 196608
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-3299396705993617720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Hide in Bush_OZ55PGQZQ0qstpU
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Hide
+      in Bush_OZ55PGQZQ0qstpU
+    Guid:
+      Value: 2551506220899162583
+  Label: Hide in Bush
+  Index: 21
+  OnUpdateLinks:
+  - Id:
+      Value: 1526297779675086730
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: f9194f98-94f5-446b-8fae-710c4ce8cec4
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2897801877380666333
+    StateLink:
+      Id:
+        Value: 3776881686914360249
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 4142489634998045667
+  Level: 0
+--- !u!114 &-3253584639647415880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Guard Objective_s54dB4dXxUaqcnG
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Guard
+      Objective_s54dB4dXxUaqcnG
+    Guid:
+      Value: 2552956651689622734
+  Label: Guard Objective
+  Index: 17
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 592201774759527265
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &-2766327570158744078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a971d4b27820a5e46aacabf0d013476e, type: 3}
+  m_Name: CheckBoolean_SgE50tOGu0eY8xU
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|CheckBoolean_SgE50tOGu0eY8xU
+    Guid:
+      Value: 3860629156074348296
+  Label: 
+  Boolean:
+    Source: 2
+    Key: EngagesInCover
+    DefaultValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-2746819514726491725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1124702037, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMOrDecision_MOcbq1Anfkmcze6
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMOrDecision_MOcbq1Anfkmcze6
+    Guid:
+      Value: 2086519461478357473
+  Label: 
+  Decisions:
+  - Id:
+      Value: 3456194487327193057
+  - Id:
+      Value: 385971871080069809
+--- !u!114 &-2683788151411942598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1084331888, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMNotDecision_aORnXFyedkW4o1l
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMNotDecision_aORnXFyedkW4o1l
+    Guid:
+      Value: 63889691467924622
+  Label: 
+  Decisions:
+  - Id:
+      Value: 2045107113794552914
+--- !u!114 &-2579227815969705346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Hide_jUblz4mYBUGfUc9
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Hide_jUblz4mYBUGfUc9
+    Guid:
+      Value: 4142489634998045667
+  Label: Hide
+  Index: 22
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks:
+  - Id:
+      Value: 3942299695660803536
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 3059962973720089616
+  - Id:
+      Value: 3776881686914360249
+  - Id:
+      Value: 2551506220899162583
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &-2364191736455665274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd374c5a078748bfc0e2eb87a054b, type: 3}
+  m_Name: FunctionGetRandomFP_GzWzwLZh-0eOaHg
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FunctionGetRandomFP_GzWzwLZh-0eOaHg
+    Guid:
+      Value: 2699781432217721666
+  Min:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+  Max:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 6553600
+    FunctionRef:
+      Id:
+        Value: 0
+  IsInclusive: 1
+--- !u!114 &-2259227065392767889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc2abe19d7a4b46891cbef964938e2, type: 3}
+  m_Name: FindCoverSpot_HZzaMMbQBUKZuCM
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindCoverSpot_HZzaMMbQBUKZuCM
+    Guid:
+      Value: 3236664982309112261
+  Label: 
+  CoverSpot:
+    Key: CoverSpotPosition
+  ChooseCoverSpotIntervalTicks:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 2949120
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-2068801229917704918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Choose Best Coin_b88gQETuO0a3Bds
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Choose
+      Best Coin_b88gQETuO0a3Bds
+    Guid:
+      Value: 389687496738597814
+  Label: Choose Best Coin
+  Index: 6
+  OnUpdateLinks: []
+  OnEnterLinks:
+  - Id:
+      Value: 2970887058541014519
+  OnExitLinks: []
+  Transitions:
+  - Id: da9c95c1-fc9f-4223-b321-7ca08f3152aa
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 3872564368539252193
+    StateLink:
+      Id:
+        Value: 471736494608154367
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 1046358519791698855
+  Level: 0
+--- !u!114 &-1448467548574412541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_F6g3KjsGEEqmITI
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_F6g3KjsGEEqmITI
+    Guid:
+      Value: 900009266715815493
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 327680
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &-1216277119309674352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf0293f823f8534abc8f293cb780128, type: 3}
+  m_Name: HasChosenBush_vWzI_zLdYEiS4qb
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasChosenBush_vWzI_zLdYEiS4qb
+    Guid:
+      Value: 3110648812173832628
+  Label: 
+  ChosenBush:
+    Key: ChosenBush
+--- !u!114 &-1013462668933545687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 43192859, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TrueDecision_A3jLZ3y77EG9brl
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TrueDecision_A3jLZ3y77EG9brl
+    Guid:
+      Value: 938831942023746117
+  Label: 
+--- !u!114 &-926660013580819112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Release Attack_MSItGhKlOUiydol
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Release
+      Attack_MSItGhKlOUiydol
+    Guid:
+      Value: 3265805949550367205
+  Label: Release Attack
+  Index: 4
+  OnUpdateLinks:
+  - Id:
+      Value: 3263350750998839996
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: e53b9d81-95ee-4efd-a5e3-0c8f43758e09
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 938831942023746117
+    StateLink:
+      Id:
+        Value: 389687496738597814
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 1046358519791698855
+  Level: 0
+--- !u!114 &-308542874140537460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822516949, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMAndDecision_R6NE4bKANkiZuHH
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMAndDecision_R6NE4bKANkiZuHH
+    Guid:
+      Value: 1203007804028441852
+  Label: 
+  Decisions:
+  - Id:
+      Value: 2440017295828204241
+  - Id:
+      Value: 54615520042610469
+  - Id:
+      Value: 3152019130861651281
+--- !u!114 &-93400792854073664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 43192859, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TrueDecision_OVxAQgvouUmUvx4
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TrueDecision_OVxAQgvouUmUvx4
+    Guid:
+      Value: 3341409879586412481
+  Label: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1727795870, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: Payload Bot FSM
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM
+    Guid:
+      Value: 2853805058985264526
+  Label: 
+  StatesLinks:
+  - Id:
+      Value: 1497247055225815060
+  EventsNames:
+  - OnTacticCollect
+  - OnTacticEngage
+  - OnTacticGuardObjective
+  - OnTacticHide
+  - OnTacticRun
+  - OnTacticTakeCover
+--- !u!114 &261260798282939524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3b030cc5904ef4eaebdc50e3da0282, type: 3}
+  m_Name: FindEscapeRoute_hR6s97a7pU6knXS
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindEscapeRoute_hR6s97a7pU6knXS
+    Guid:
+      Value: 4376443438257112604
+  Label: 
+  EscapeRoute:
+    Key: EscapeRoute
+  MinDistance:
+    RawValue: 131072
+--- !u!114 &323021177566337886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_Y7jqAGF6skGDm_O
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_Y7jqAGF6skGDm_O
+    Guid:
+      Value: 2803370180632864266
+  Label: 
+  TimeToTrueState:
+    Source: 4
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 1437084862896924237
+--- !u!114 &395697606909232016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b7f75074e90e948ab6b263c224dca6, type: 3}
+  m_Name: ReleaseAttack_9l0KzsPvNESXqfu
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReleaseAttack_9l0KzsPvNESXqfu
+    Guid:
+      Value: 3621432999656331222
+  Label: 
+  BasicAttackError:
+    Source: 2
+    Key: AttackErrorBasic
+    DefaultValue:
+      RawValue: 65536
+    FunctionRef:
+      Id:
+        Value: 0
+  SpecialAttackError:
+    Source: 2
+    Key: AttackErrorSpecial
+    DefaultValue:
+      RawValue: 196608
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &545119539437439433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a192cd8ed2e69743b4d9afc18b3eb3b, type: 3}
+  m_Name: RunInBush_ziV4gxyC90K7BSG
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|RunInBush_ziV4gxyC90K7BSG
+    Guid:
+      Value: 1973822312021000235
+  Label: 
+  MinRunawayDistance:
+    RawValue: 393216
+--- !u!114 &986439014719569317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d858e96670bf1574788364d95742556c, type: 3}
+  m_Name: HideInBush_B_HsCyPbR0-owo4
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HideInBush_B_HsCyPbR0-owo4
+    Guid:
+      Value: 1526297779675086730
+  Label: 
+  ChosenBush:
+    Key: ChosenBush
+--- !u!114 &1270539234189790120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Recover Energy_7Uwf9qHhMkSmJCI
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Recover
+      Energy_7Uwf9qHhMkSmJCI
+    Guid:
+      Value: 2738406748779077841
+  Label: Recover Energy
+  Index: 15
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 121f6865-0a51-4c64-badb-7399cc11e8eb
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2307154329691970746
+    StateLink:
+      Id:
+        Value: 4118516151719007024
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 623515082628363324
+  Level: 0
+--- !u!114 &1521684936139971729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822516949, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMAndDecision_Q8BMjmv9PU-20LN
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMAndDecision_Q8BMjmv9PU-20LN
+    Guid:
+      Value: 4296746822362431635
+  Label: 
+  Decisions:
+  - Id:
+      Value: 63889691467924622
+  - Id:
+      Value: 1852421025809411913
+--- !u!114 &1530491259614324035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e27dacb0c8b3e6499338f56f1b8250b, type: 3}
+  m_Name: HasEnoughAttribute_JCI_boK7IkefQ1r
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasEnoughAttribute_JCI_boK7IkefQ1r
+    Guid:
+      Value: 357552999048584920
+  Label: 
+  AttributeType: 2
+  ExpectedAmount:
+    RawValue: 65536
+  IsPercentage: 0
+--- !u!114 &1806430940336091596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96627c2144c727344a89fbf443af2ff7, type: 3}
+  m_Name: TargetIsInRange_bx13sOxKxEuYmaM
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TargetIsInRange_bx13sOxKxEuYmaM
+    Guid:
+      Value: 2007784384898096495
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  ExpectedRange:
+    Source: 2
+    Key: AttackRange
+    DefaultValue:
+      RawValue: 491520
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &1843298859268736047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43647b69d6277304fb9d56c2954a364c, type: 3}
+  m_Name: HasLoS_6mu3YNGwa0e9uT5
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasLoS_6mu3YNGwa0e9uT5
+    Guid:
+      Value: 1074344961864123245
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  IgnoreLoS:
+    Source: 2
+    Key: IgnoreLoS
+    DefaultValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &2488739263559266712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b055b9eb8a1e94bbbc4b6e5049487d, type: 3}
+  m_Name: ClearChosenBush_VK1NLPj8N0a9siJ
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ClearChosenBush_VK1NLPj8N0a9siJ
+    Guid:
+      Value: 3942299695660803536
+  Label: 
+  ChosenBush:
+    Key: ChosenBush
+--- !u!114 &2613150453332772825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_TakeCover_dwGofKAHW0mH6Na
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_TakeCover_dwGofKAHW0mH6Na
+    Guid:
+      Value: 2984897195521779095
+  Label: TakeCover
+  Index: 18
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 2749855273526100938
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &2664006729656213668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Run Loop_O-7zkEwtfU-NW2b
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Run
+      Loop_O-7zkEwtfU-NW2b
+    Guid:
+      Value: 88602710256197751
+  Label: Run Loop
+  Index: 9
+  OnUpdateLinks:
+  - Id:
+      Value: 2022285322213720469
+  OnEnterLinks:
+  - Id:
+      Value: 4376443438257112604
+  OnExitLinks: []
+  Transitions:
+  - Id: 941f2c28-c525-4dbc-a2d9-db18381076de
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 4583404226533412209
+    StateLink:
+      Id:
+        Value: 88602710256197751
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 4268181558313974882
+  Level: 0
+--- !u!114 &2760217012406418289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3fcdffc2859d5e43879113ccd0ee157, type: 3}
+  m_Name: RunToObjectivePoint_oSmVbEEycES-bra
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|RunToObjectivePoint_oSmVbEEycES-bra
+    Guid:
+      Value: 3862719661760149733
+  Label: 
+  ObjectivePoint:
+    Key: ObjectivePoint
+--- !u!114 &2765736761216019833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcacf0623a6435438e1d160dc4b8b4f, type: 3}
+  m_Name: EngagementSteering_APF0MJEHrkmkQYF
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|EngagementSteering_APF0MJEHrkmkQYF
+    Guid:
+      Value: 1878336943083620642
+  Label: 
+  ThreatDistance:
+    Source: 2
+    Key: ThreatDistance
+    DefaultValue:
+      RawValue: 524288
+    FunctionRef:
+      Id:
+        Value: 0
+  RunDistance:
+    Source: 2
+    Key: RunDistance
+    DefaultValue:
+      RawValue: 327680
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &2987246293582760003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1124702037, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMOrDecision_dRI06oM4b0G0QHU
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMOrDecision_dRI06oM4b0G0QHU
+    Guid:
+      Value: 4583404226533412209
+  Label: 
+  Decisions:
+  - Id:
+      Value: 3414387319425410520
+  - Id:
+      Value: 504299618820134617
+--- !u!114 &3006949763973034676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Main_KTVLx8-IuUCRtko
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Main_KTVLx8-IuUCRtko
+    Guid:
+      Value: 1497247055225815060
+  Label: Main
+  Index: 12
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions: []
+  ChildrenLinks:
+  - Id:
+      Value: 623515082628363324
+  - Id:
+      Value: 4268181558313974882
+  - Id:
+      Value: 1046358519791698855
+  - Id:
+      Value: 2552956651689622734
+  - Id:
+      Value: 2984897195521779095
+  - Id:
+      Value: 4142489634998045667
+  - Id:
+      Value: 2227645530651662880
+  ParentLink:
+    Id:
+      Value: 0
+  Level: 0
+--- !u!114 &3012390994542679825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e27dacb0c8b3e6499338f56f1b8250b, type: 3}
+  m_Name: HasEnoughAttribute_kb1zOUnVLUmeq3p
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasEnoughAttribute_kb1zOUnVLUmeq3p
+    Guid:
+      Value: 2440017295828204241
+  Label: 
+  AttributeType: 2
+  ExpectedAmount:
+    RawValue: 65536
+  IsPercentage: 0
+--- !u!114 &3037202996975520054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Aim Attack_UeLZaTrvRUGYtfm
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Aim
+      Attack_UeLZaTrvRUGYtfm
+    Guid:
+      Value: 4118516151719007024
+  Label: Aim Attack
+  Index: 8
+  OnUpdateLinks:
+  - Id:
+      Value: 3953354772335811805
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 4ab95c46-3d9a-4102-b255-c8a13d5e6ce0
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 4053504888388178204
+    StateLink:
+      Id:
+        Value: 1614197366415093445
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 623515082628363324
+  Level: 0
+--- !u!114 &3121909037454905672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Attack Delay_jozryRwI4kCmo7m
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Attack
+      Delay_jozryRwI4kCmo7m
+    Guid:
+      Value: 1523360386050836165
+  Label: Attack Delay
+  Index: 20
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 63bf0b67-beff-4883-909f-0916960bd405
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 1845518357211110676
+    StateLink:
+      Id:
+        Value: 3068590202057243040
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2227645530651662880
+  Level: 0
+--- !u!114 &3158356081857310371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1084331888, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMNotDecision_VBoMzjom_EuXqmb
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMNotDecision_VBoMzjom_EuXqmb
+    Guid:
+      Value: 3427917729838785660
+  Label: 
+  Decisions:
+  - Id:
+      Value: 4108818008046451545
+--- !u!114 &3307300785973738662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43647b69d6277304fb9d56c2954a364c, type: 3}
+  m_Name: HasLoS_cIZdkyu6LUaY6p6
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasLoS_cIZdkyu6LUaY6p6
+    Guid:
+      Value: 3152019130861651281
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  IgnoreLoS:
+    Source: 2
+    Key: IgnoreLoS
+    DefaultValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &3553350998555887247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Aim Attack_jcuXYXQbnkigtTZ
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Aim
+      Attack_jcuXYXQbnkigtTZ
+    Guid:
+      Value: 3068590202057243040
+  Label: Aim Attack
+  Index: 10
+  OnUpdateLinks:
+  - Id:
+      Value: 1097197950760366078
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: a3063784-0b38-4dd5-b0e1-5d2463783df7
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2558286497336498680
+    StateLink:
+      Id:
+        Value: 1585899975517008131
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2227645530651662880
+  Level: 0
+--- !u!114 &3600141776482132033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Engage_VmH1i_LehUKz578
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Engage_VmH1i_LehUKz578
+    Guid:
+      Value: 623515082628363324
+  Label: Engage
+  Index: 16
+  OnUpdateLinks:
+  - Id:
+      Value: 1878336943083620642
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 4118516151719007024
+  - Id:
+      Value: 1614197366415093445
+  - Id:
+      Value: 2738406748779077841
+  - Id:
+      Value: 4137536807548524500
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &3735123871953142455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594dd52ca3570b42a6cc18cf2da6c93, type: 3}
+  m_Name: ReachedObjectivePoint_5lvZjLe8uUm1MMC
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReachedObjectivePoint_5lvZjLe8uUm1MMC
+    Guid:
+      Value: 385971871080069809
+  Label: 
+  ObjectivePoint:
+    Key: ObjectivePoint
+  MinDistance:
+    RawValue: 65536
+--- !u!114 &3759691265219929193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Aim Attack_OsZKQOj0nEO58Lm
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Aim
+      Attack_OsZKQOj0nEO58Lm
+    Guid:
+      Value: 471736494608154367
+  Label: Aim Attack
+  Index: 19
+  OnUpdateLinks:
+  - Id:
+      Value: 417599570899617344
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 952f0d85-88a1-4e41-a562-454c3dd7044b
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 1203007804028441852
+    StateLink:
+      Id:
+        Value: 3265805949550367205
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 947d597b-3693-46e1-b510-a624da5253b4
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 3061267241582340256
+    StateLink:
+      Id:
+        Value: 389687496738597814
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 1046358519791698855
+  Level: 0
+--- !u!114 &3760056254390361067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd374c5a078748bfc0e2eb87a054b, type: 3}
+  m_Name: FunctionGetRandomFP_H37YiT2rVUWD755
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FunctionGetRandomFP_H37YiT2rVUWD755
+    Guid:
+      Value: 4437547858456868102
+  Min:
+    Source: 2
+    Key: MinAttackInterval
+    DefaultValue:
+      RawValue: 42598
+    FunctionRef:
+      Id:
+        Value: 0
+  Max:
+    Source: 2
+    Key: MaxAttackInterval
+    DefaultValue:
+      RawValue: 131072
+    FunctionRef:
+      Id:
+        Value: 0
+  IsInclusive: 1
+--- !u!114 &4165262274659925121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b7f75074e90e948ab6b263c224dca6, type: 3}
+  m_Name: ReleaseAttack_NOFRH0p1ukiq6R-
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReleaseAttack_NOFRH0p1ukiq6R-
+    Guid:
+      Value: 3361085752585328955
+  Label: 
+  BasicAttackError:
+    Source: 2
+    Key: AttackErrorBasic
+    DefaultValue:
+      RawValue: 65536
+    FunctionRef:
+      Id:
+        Value: 0
+  SpecialAttackError:
+    Source: 2
+    Key: AttackErrorSpecial
+    DefaultValue:
+      RawValue: 196608
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &4801637248143702041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Take Cover Loop_vfVEiF_mGUKawZd
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Take
+      Cover Loop_vfVEiF_mGUKawZd
+    Guid:
+      Value: 2749855273526100938
+  Label: Take Cover Loop
+  Index: 2
+  OnUpdateLinks:
+  - Id:
+      Value: 1673509078368991419
+  - Id:
+      Value: 4020624127868631316
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions: []
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2984897195521779095
+  Level: 0
+--- !u!114 &4836841094202573862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Release Attack__D8ZPUfOPkitoLS
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Release
+      Attack__D8ZPUfOPkitoLS
+    Guid:
+      Value: 1614197366415093445
+  Label: Release Attack
+  Index: 3
+  OnUpdateLinks:
+  - Id:
+      Value: 3621432999656331222
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: ea445b32-252c-4dde-9d88-bbacaf9e79c0
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 1049853953762025318
+    StateLink:
+      Id:
+        Value: 2738406748779077841
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b01e4fb2-a850-40e8-acef-d3f12c32e5d9
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 3683217494005512743
+    StateLink:
+      Id:
+        Value: 4137536807548524500
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 623515082628363324
+  Level: 0
+--- !u!114 &4973369957341431102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Release Attack_uCsGJMVumUS5UTn
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Release
+      Attack_uCsGJMVumUS5UTn
+    Guid:
+      Value: 1585899975517008131
+  Label: Release Attack
+  Index: 5
+  OnUpdateLinks:
+  - Id:
+      Value: 3361085752585328955
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 78a13921-92af-4958-a498-5fd0a9d00a09
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 4296746822362431635
+    StateLink:
+      Id:
+        Value: 1969034112613492228
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 34b25d11-e33b-4d85-95f3-3c10dc6d2b36
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 3341409879586412481
+    StateLink:
+      Id:
+        Value: 1523360386050836165
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2227645530651662880
+  Level: 0
+--- !u!114 &5388206289736977631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f44176329a53b44b875de134da358f, type: 3}
+  m_Name: RunToCoverSpot_W6E2b86bcEqo6Lp
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|RunToCoverSpot_W6E2b86bcEqo6Lp
+    Guid:
+      Value: 570335244956465206
+  Label: 
+  CoverSpot:
+    Key: CoverSpotPosition
+--- !u!114 &5905429377458768729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Guard Objective Loop_hlKsWHl0XUa1BEt
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Guard
+      Objective Loop_hlKsWHl0XUa1BEt
+    Guid:
+      Value: 592201774759527265
+  Label: Guard Objective Loop
+  Index: 7
+  OnUpdateLinks:
+  - Id:
+      Value: 3862719661760149733
+  OnEnterLinks:
+  - Id:
+      Value: 3298813854352671806
+  OnExitLinks: []
+  Transitions:
+  - Id: e6c6bf1a-6a00-4d59-9ac6-cf4504f53d27
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 2086519461478357473
+    StateLink:
+      Id:
+        Value: 592201774759527265
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2552956651689622734
+  Level: 0
+--- !u!114 &6078582669418668963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460156c179b683e45bcfac606e6f6684, type: 3}
+  m_Name: DiceRoll_cy-hT3rCekmKld5
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|DiceRoll_cy-hT3rCekmKld5
+    Guid:
+      Value: 1852421025809411913
+  Label: 
+  Input:
+    Source: 4
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 2699781432217721666
+  SuccessThreshold:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 2621440
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &6102631345226528467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_57ljVpDEhEep40Z
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_57ljVpDEhEep40Z
+    Guid:
+      Value: 3061267241582340256
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 131072
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &6150586415751613054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16530ab8f38bf1b4ca7716fa67231b60, type: 3}
+  m_Name: ReachedChosenBush_w879JULn3Eikp-A
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|ReachedChosenBush_w879JULn3Eikp-A
+    Guid:
+      Value: 2897801877380666333
+  Label: 
+  ChosenBush:
+    Key: ChosenBush
+  MinDistance:
+    RawValue: 16384
+--- !u!114 &6263673541360510067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 43192859, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TrueDecision_pOOWhq4qHUOt4IL
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TrueDecision_pOOWhq4qHUOt4IL
+    Guid:
+      Value: 3683217494005512743
+  Label: 
+--- !u!114 &6450711097991341749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_v9AoaYyHHE-WzJM
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_v9AoaYyHHE-WzJM
+    Guid:
+      Value: 1845518357211110676
+  Label: 
+  TimeToTrueState:
+    Source: 4
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 3869140584232133425
+--- !u!114 &6593565961264155569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_HlXhMYQGN0uUw_1
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_HlXhMYQGN0uUw_1
+    Guid:
+      Value: 2261387832483465804
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 131072
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &6994233649136687787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Engage In Cover_YkYtgkSzu0-WejW
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Engage
+      In Cover_YkYtgkSzu0-WejW
+    Guid:
+      Value: 2227645530651662880
+  Label: Engage In Cover
+  Index: 24
+  OnUpdateLinks:
+  - Id:
+      Value: 3236664982309112261
+  - Id:
+      Value: 570335244956465206
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 3068590202057243040
+  - Id:
+      Value: 1585899975517008131
+  - Id:
+      Value: 1969034112613492228
+  - Id:
+      Value: 1523360386050836165
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &7006963516674190612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51bf4b0196d1b694cbefcbab0abc3bb6, type: 3}
+  m_Name: FindBushToHide_TiOworrdr0e1f8D
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindBushToHide_TiOworrdr0e1f8D
+    Guid:
+      Value: 3681922820885974282
+  Label: 
+  ChosenBush:
+    Key: ChosenBush
+  MinDistToEnemy:
+    RawValue: 557056
+--- !u!114 &7126105488326002853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1627827125, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: TimerDecision_U0ccCU8txkq4cF1
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|TimerDecision_U0ccCU8txkq4cF1
+    Guid:
+      Value: 2307154329691970746
+  Label: 
+  TimeToTrueState:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 327680
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &7564261404257673348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700305ad88e8d90428984e6e41f21ec8, type: 3}
+  m_Name: HoldAttack_c5agAANi00KT-AS
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HoldAttack_c5agAANi00KT-AS
+    Guid:
+      Value: 1097197950760366078
+  Label: 
+--- !u!114 &7671921509559355977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Collect_MCAJfQH1jkK7IhN
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Collect_MCAJfQH1jkK7IhN
+    Guid:
+      Value: 1046358519791698855
+  Label: Collect
+  Index: 1
+  OnUpdateLinks:
+  - Id:
+      Value: 3046784888645730863
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 389687496738597814
+  - Id:
+      Value: 3265805949550367205
+  - Id:
+      Value: 471736494608154367
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &7811589099781544629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Run_q7_Z_ArmfkqAjHj
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Run_q7_Z_ArmfkqAjHj
+    Guid:
+      Value: 4268181558313974882
+  Label: Run
+  Index: 14
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 69361aaf-7b04-4dc6-8c60-c89957bf1536
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 3860629156074348296
+    StateLink:
+      Id:
+        Value: 2227645530651662880
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: b5a4a2dd-2c96-4de1-8483-33cb0a405237
+    EventKey: 3
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2552956651689622734
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 381b2c83-8d7e-460d-8900-a0d1b6a4e984
+    EventKey: 4
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4142489634998045667
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 3fa45b8f-c909-4f83-bd5d-c9efa64692a2
+    EventKey: 5
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 4268181558313974882
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: a152f546-9a4f-4563-b21f-660ba893c1d4
+    EventKey: 6
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 2984897195521779095
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 316b5718-ce50-44dd-b589-a56a6ecda8f5
+    EventKey: 1
+    DecisionLink:
+      Id:
+        Value: 0
+    StateLink:
+      Id:
+        Value: 1046358519791698855
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 57398466-78e5-486d-bc19-5b92d78c36f1
+    EventKey: 2
+    DecisionLink:
+      Id:
+        Value: 401799580867933690
+    StateLink:
+      Id:
+        Value: 623515082628363324
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks:
+  - Id:
+      Value: 88602710256197751
+  ParentLink:
+    Id:
+      Value: 1497247055225815060
+  Level: 0
+--- !u!114 &7844751124551606692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700305ad88e8d90428984e6e41f21ec8, type: 3}
+  m_Name: HoldAttack_hbiqpH2G5EKBpjM
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HoldAttack_hbiqpH2G5EKBpjM
+    Guid:
+      Value: 417599570899617344
+  Label: 
+--- !u!114 &8116928986527597173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e27dacb0c8b3e6499338f56f1b8250b, type: 3}
+  m_Name: HasEnoughAttribute_zerwbLvnjUuNAu7
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasEnoughAttribute_zerwbLvnjUuNAu7
+    Guid:
+      Value: 4108818008046451545
+  Label: 
+  AttributeType: 2
+  ExpectedAmount:
+    RawValue: 65536
+  IsPercentage: 0
+--- !u!114 &8212112021811853096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460156c179b683e45bcfac606e6f6684, type: 3}
+  m_Name: DiceRoll_JS08XBFwHUuofoE
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|DiceRoll_JS08XBFwHUuofoE
+    Guid:
+      Value: 1933976907405031522
+  Label: 
+  Input:
+    Source: 4
+    Key: 
+    DefaultValue:
+      RawValue: 0
+    FunctionRef:
+      Id:
+        Value: 1132902526206431593
+  SuccessThreshold:
+    Source: 1
+    Key: 
+    DefaultValue:
+      RawValue: 2621440
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &8249302265397703814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a971d4b27820a5e46aacabf0d013476e, type: 3}
+  m_Name: CheckBoolean_XM0Bb5gh6kmbp5_
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|CheckBoolean_XM0Bb5gh6kmbp5_
+    Guid:
+      Value: 1337384820063042927
+  Label: 
+  Boolean:
+    Source: 2
+    Key: EngagesInCover
+    DefaultValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &8354736110633208569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd374c5a078748bfc0e2eb87a054b, type: 3}
+  m_Name: FunctionGetRandomFP_XgkGKP7KyUqjRGX
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FunctionGetRandomFP_XgkGKP7KyUqjRGX
+    Guid:
+      Value: 3869140584232133425
+  Min:
+    Source: 2
+    Key: MinAttackInterval
+    DefaultValue:
+      RawValue: 42598
+    FunctionRef:
+      Id:
+        Value: 0
+  Max:
+    Source: 2
+    Key: MaxAttackInterval
+    DefaultValue:
+      RawValue: 131072
+    FunctionRef:
+      Id:
+        Value: 0
+  IsInclusive: 1
+--- !u!114 &8410374379383656491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd374c5a078748bfc0e2eb87a054b, type: 3}
+  m_Name: FunctionGetRandomFP_ORuUu5PIg0ux4U_
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FunctionGetRandomFP_ORuUu5PIg0ux4U_
+    Guid:
+      Value: 1437084862896924237
+  Min:
+    Source: 2
+    Key: MinAttackInterval
+    DefaultValue:
+      RawValue: 42598
+    FunctionRef:
+      Id:
+        Value: 0
+  Max:
+    Source: 2
+    Key: MaxAttackInterval
+    DefaultValue:
+      RawValue: 131072
+    FunctionRef:
+      Id:
+        Value: 0
+  IsInclusive: 1
+--- !u!114 &8446790108750671798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43647b69d6277304fb9d56c2954a364c, type: 3}
+  m_Name: HasLoS_S4V8ni4sW0Gg-c3
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasLoS_S4V8ni4sW0Gg-c3
+    Guid:
+      Value: 1856574502547219247
+  Label: 
+  TargetEntity:
+    Key: TargetEntity
+  IgnoreLoS:
+    Source: 2
+    Key: IgnoreLoS
+    DefaultValue: 0
+    FunctionRef:
+      Id:
+        Value: 0
+--- !u!114 &8588146068590909891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e27dacb0c8b3e6499338f56f1b8250b, type: 3}
+  m_Name: HasEnoughAttribute_SE7SOhN22kebOMo
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HasEnoughAttribute_SE7SOhN22kebOMo
+    Guid:
+      Value: 2045107113794552914
+  Label: 
+  AttributeType: 2
+  ExpectedAmount:
+    RawValue: 65536
+  IsPercentage: 0
+--- !u!114 &8624741834247809923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822516949, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: HFSMAndDecision_yJHJuokKBE-MoCE
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|HFSMAndDecision_yJHJuokKBE-MoCE
+    Guid:
+      Value: 2558286497336498680
+  Label: 
+  Decisions:
+  - Id:
+      Value: 357552999048584920
+  - Id:
+      Value: 2007784384898096495
+  - Id:
+      Value: 1856574502547219247
+--- !u!114 &8977727436205849077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1943870150, guid: 19b3f061e0d562b4a97261f0aa32250f, type: 3}
+  m_Name: State_Recover Energy_2OtW4zbyb02ng7v
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|State_Recover
+      Energy_2OtW4zbyb02ng7v
+    Guid:
+      Value: 1969034112613492228
+  Label: Recover Energy
+  Index: 13
+  OnUpdateLinks: []
+  OnEnterLinks: []
+  OnExitLinks: []
+  Transitions:
+  - Id: 45b82565-176c-4be0-89af-68056017e0c9
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 900009266715815493
+    StateLink:
+      Id:
+        Value: 3068590202057243040
+    TransitionSetLink:
+      Id:
+        Value: 0
+  ChildrenLinks: []
+  ParentLink:
+    Id:
+      Value: 2227645530651662880
+  Level: 0

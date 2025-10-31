@@ -17,8 +17,8 @@ namespace Quantum
 		[Header("View Configuration", order = 9)]
 		public Sound SFX;
 		public EPreviewType AttackPreviewType;
-		[Header("Quantum Simulation Configuration", order = 10)]
 #endif
+		[Header("Quantum Simulation Configuration", order = 10)]
 		public AssetRef<EntityPrototype> SkillPrototype;
 		public AssetRef<EntityPrototype> AttackPrototype;
 
@@ -83,7 +83,7 @@ namespace Quantum
 				attackTransform->Position = skillTransform.Position;
 				attackTransform->Rotation = skillTransform.Rotation;
 			}
-
+			
 			Attack* attack = frame.Unsafe.GetPointer<Attack>(attackEntity);
 			attack->Source = source;
 			AttackData data = frame.FindAsset<AttackData>(attack->AttackData.Id);

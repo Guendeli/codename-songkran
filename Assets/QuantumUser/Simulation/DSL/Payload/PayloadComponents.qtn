@@ -1,0 +1,9 @@
+component PayloadObjectivePoint
+{
+    Int32 TeamId;
+}
+
+component Payload
+{
+    AssetRef<PayloadData> PayloadData;
+}

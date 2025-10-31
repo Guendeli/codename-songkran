@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1722638350, guid: b156eeaae3f741b40af66649a4748430, type: 3}
-  m_Name: Map1
+  m_Name: PayloadMap
   m_EditorClassIdentifier: 
   Identifier:
-    Path: QuantumUser/Resources/GameplayData/MapData/Map1
+    Path: QuantumUser/Resources/GameplayData/MapData/PayloadMap
     Guid:
-      Value: 1710471675203725834
+      Value: 374539242273556992
   UserAsset:
     Id:
       Value: 2449210160412791733
@@ -32,16 +32,13 @@ MonoBehaviour:
   TriangleMeshCellSize: -1
   StaticColliders3DTrianglesData:
     Id:
-      Value: 2945514319945900036
+      Value: 292428883553419743
   SerializeTrianglesMetadata: 0
-  GridSizeX: 32
-  GridSizeY: 32
+  GridSizeX: 64
+  GridSizeY: 64
   GridNodeSize: 4
-  NavMeshLinks:
-  - Id:
-      Value: 2449210160412791733
-  Regions:
-  - MainArea
+  NavMeshLinks: []
+  Regions: []
   StaticColliders2D:
   - Rotation:
       RawValue: -205887
@@ -18710,12 +18707,6 @@ MonoBehaviour:
     - rid: 3397810400232734720
     - rid: 3397810400232734721
   - Components:
-    - rid: 1402728276547338240
-    - rid: 1402728276547338241
-  - Components:
-    - rid: 4804244144782311424
-    - rid: 4804244144782311425
-  - Components:
     - rid: 2088927822675443712
     - rid: 2088927822675443713
   - Components:
@@ -19139,20 +19130,6 @@ MonoBehaviour:
         SouthNeighborId: 246
         EastNeighborId: 248
         WestNeighborId: -1
-    - rid: 1402728276547338240
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 869662
-        Rotation:
-          RawValue: 0
-    - rid: 1402728276547338241
-      type: {class: PayloadObjectivePointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        TeamId: 0
     - rid: 1410679676203958272
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
@@ -20215,20 +20192,6 @@ MonoBehaviour:
         SouthNeighborId: -1
         EastNeighborId: 300
         WestNeighborId: 298
-    - rid: 4804244144782311424
-      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: -810680
-        Rotation:
-          RawValue: 0
-    - rid: 4804244144782311425
-      type: {class: PayloadObjectivePointPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        TeamId: 1
     - rid: 4908980098423586816
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:

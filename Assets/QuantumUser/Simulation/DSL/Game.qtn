@@ -16,6 +16,8 @@ global
 	GameState State;
 
 	HFSMData GameManagerHFSM;
+	// Payload Globals
+	EntityRef PayloadEntity;
 }
 
 signal OnCharacterSelectionStart();
