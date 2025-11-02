@@ -9,7 +9,8 @@ namespace Quantum
 		None = 0,
 		Linear,
 		Ballistic,
-		Angle
+		Angle,
+		Auto
 	}
 	
 	public abstract unsafe  partial class SkillData : AssetObject

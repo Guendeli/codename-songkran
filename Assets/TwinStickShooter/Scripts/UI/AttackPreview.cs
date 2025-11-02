@@ -50,6 +50,11 @@ namespace TwinStickShooter
     [SerializeField] private Color _standardAimMaterialColor;
     [SerializeField] private Color _blockedMaterialColor;
 
+    public bool IsAutoAttack()
+    {
+      return !_enableUpdate;
+    }
+    
     private bool _enableUpdate = true;
     private void Awake()
     {
@@ -77,14 +82,14 @@ namespace TwinStickShooter
         SpecialPreviewType = specialSkill.AttackPreviewType;
         if (basicSkill.AutoAttack)
         {
-          _autoAttackPreview.SetActive(true);
-          _autoAttackPreview.transform.localScale = new Vector3(basicSkill.AutoAimRadius.AsFloat,1,basicSkill.AutoAimRadius.AsFloat);
+          TogglePreviews(basicSkill.AttackPreviewType);
+          _autoAttackPreview.transform.localScale =
+            new Vector3(basicSkill.AutoAimRadius.AsFloat, 1, basicSkill.AutoAimRadius.AsFloat);
           _enableUpdate = false;
         }
         else
         {
           _enableUpdate = true;
-          _autoAttackPreview.SetActive(false);
           transform.SetParent(null, true);
         }
       }
@@ -98,17 +103,22 @@ namespace TwinStickShooter
           _linearPreview.SetActive(false);
           _ballisticPreview.SetActive(false);
           _anglePreview.SetActive(false);
+          _autoAttackPreview.SetActive(false);
+
           break;
         case EPreviewType.Linear:
           _ballisticPreview.SetActive(false);
           _ballisticPreviewCircle.SetActive(false);
           _anglePreview.SetActive(false);
+          _autoAttackPreview.SetActive(false);
+
 
           _linearPreview.SetActive(true);
           break;
         case EPreviewType.Ballistic:
           _linearPreview.SetActive(false);
           _anglePreview.SetActive(false);
+          _autoAttackPreview.SetActive(false);
 
           _ballisticPreview.SetActive(true);
           _ballisticPreviewCircle.SetActive(true);
@@ -117,8 +127,17 @@ namespace TwinStickShooter
           _linearPreview.SetActive(false);
           _ballisticPreviewCircle.SetActive(false);
           _ballisticPreview.SetActive(false);
+          _autoAttackPreview.SetActive(false);
 
           _anglePreview.SetActive(true);
+          break;
+        case EPreviewType.Auto:
+          _linearPreview.SetActive(false);
+          _ballisticPreviewCircle.SetActive(false);
+          _ballisticPreview.SetActive(false);
+          _anglePreview.SetActive(false);
+
+          _autoAttackPreview.SetActive(true);
           break;
       }
     }
