@@ -41,7 +41,7 @@ namespace Quantum
         
         if (canAutoAim)
         {
-            bool foundTarget = EnemyPositionsHelper.TryGetClosestCharacterDirectionRaw(frame, filter.Entity, *filter.Transform, skillData.AutoAimRadius, true, skillData.AutoAimCheckSight, out var direction);
+            bool foundTarget = EnemyPositionsHelper.TryGetClosestCharacterDirectionRaw(frame, filter.Entity, *filter.Transform, skillData.AutoAimRadius, true, skillData.AutoAttack, out var direction);
             if (foundTarget == true)
             {
               if (direction == FPVector2.Zero)

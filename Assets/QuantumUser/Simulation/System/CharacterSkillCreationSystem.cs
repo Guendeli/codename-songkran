@@ -54,7 +54,7 @@ namespace Quantum
       if(filter.InputContainer->TimeSinceAutoAim > 0)
         filter.InputContainer->TimeSinceAutoAim -= frame.DeltaTime;
       bool canAutoAim = CharacterHelpers.CanAutoAim(frame, entity, data, filter.InputContainer);
-      bool shouldCast = EnemyPositionsHelper.TryGetClosestCharacterDirection(frame, filter.Entity, *filter.Transform, data.AutoAimRadius, true, data.AutoAimCheckSight, out var direction);
+      bool shouldCast = EnemyPositionsHelper.TryGetClosestCharacterDirection(frame, filter.Entity, *filter.Transform, data.AutoAimRadius, true, data.AutoAttack, out var direction);
       
       bool actionReleased = button.WasReleased || (shouldCast && canAutoAim);
 
@@ -69,6 +69,10 @@ namespace Quantum
           movementData->DirectionTimer = data.RotationLockDuration;
           frame.Signals.OnCreateSkill(entity, entityPos, data, aimDirection);
           movementData->MovementTimer = data.MovementLockDuration;
+          if (canAutoAim)
+          {
+            filter.InputContainer->TimeSinceAutoAim = data.AutoAimInterval;
+          }
         }
       }
 
@@ -81,33 +85,6 @@ namespace Quantum
       {
         movementData->MovementTimer -= frame.DeltaTime;
       }
-    }
-
-    
-    private bool GetClosestEnemyDirection(Frame frame, EntityRef source, FPVector2 sourcePos, FP radius)
-    {
-      // TeamInfo sourceTeamInfo = frame.Get<TeamInfo>(source);
-      // Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(source);
-      //
-      // var layerMask = frame.Layers.GetLayerMask(AIConstants.LAYER_CHARACTER);
-      // var hits = PhysicsHelper.OverlapShape(frame, attackTransform, layerMask, );
-      // for (int i = 0; i < hits.Count; i++)
-      // {
-      //   EntityRef target = hits[i].Entity;
-      //   TeamInfo* teamInfo = frame.Unsafe.GetPointer<TeamInfo>(target);
-      //
-      //   if (HitAlies == false && sourceTeamInfo.Index == teamInfo->Index)
-      //   {
-      //     continue;
-      //   }
-      //
-      //   if (IgnoreOwner == true && target.Equals(attack.Source) == true)
-      //   {
-      //     continue;
-      //   }
-      //   OnApplyEffectAll(frame, attack.Source, target);
-
-      return false;
     }
   }
 }

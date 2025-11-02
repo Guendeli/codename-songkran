@@ -8,7 +8,7 @@
             if (bot->IsActive)
                 return false;
 
-            if (skillData.AutoAimCheckSight && inputContainer->TimeSinceAutoAim <= 0)
+            if (skillData.AutoAttack && inputContainer->TimeSinceAutoAim <= 0)
             {
                 return true;
             }

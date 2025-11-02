@@ -75,7 +75,7 @@ namespace TwinStickShooter
 
         PreviewType = basicSkill.AttackPreviewType;
         SpecialPreviewType = specialSkill.AttackPreviewType;
-        if (basicSkill.AutoAimCheckSight)
+        if (basicSkill.AutoAttack)
         {
           _autoAttackPreview.SetActive(true);
           _autoAttackPreview.transform.localScale = new Vector3(basicSkill.AutoAimRadius.AsFloat,1,basicSkill.AutoAimRadius.AsFloat);
