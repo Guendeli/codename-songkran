@@ -78,7 +78,7 @@ namespace TwinStickShooter
                                                    (_playerInput.actions[VECTOR_AIM_BASIC].ReadValue<Vector2>() != Vector2.zero 
                                                     || _playerInput.actions[VECTOR_AIM_SPECIAL].ReadValue<Vector2>() != Vector2.zero));
       
-      if (_attackPreview != null && noAttackPressed)
+      if (_attackPreview != null && _attackPreview.IsAutoAttack() == false && noAttackPressed)
       {
           _attackPreview.gameObject.SetActive(false);  
       }
