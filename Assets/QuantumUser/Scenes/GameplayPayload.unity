@@ -11660,7 +11660,7 @@ MonoBehaviour:
     Seed: 0
     Map:
       Id:
-        Value: 1710471675203725834
+        Value: 334369925548965633
     SimulationConfig:
       Id:
         Value: 5
@@ -75142,7 +75142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssetRef:
     Id:
-      Value: 1710471675203725834
+      Value: 334369925548965633
   BakeAllMode: -1
   NavMeshSerializeType: 0
   StaticCollider2DReferences:
