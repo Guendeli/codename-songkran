@@ -2356,20 +2356,24 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct InputContainer : Quantum.IComponent {
-    public const Int32 SIZE = 144;
+    public const Int32 SIZE = 152;
     public const Int32 ALIGNMENT = 8;
-    [FieldOffset(0)]
+    [FieldOffset(8)]
     [HideInInspector()]
     public QuantumDemoInputTopDown Input;
+    [FieldOffset(0)]
+    public FP TimeSinceAutoAim;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 17387;
         hash = hash * 31 + Input.GetHashCode();
+        hash = hash * 31 + TimeSinceAutoAim.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (InputContainer*)ptr;
+        FP.Serialize(&p->TimeSinceAutoAim, serializer);
         Quantum.QuantumDemoInputTopDown.Serialize(&p->Input, serializer);
     }
   }

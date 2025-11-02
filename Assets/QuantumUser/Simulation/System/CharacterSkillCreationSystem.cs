@@ -37,7 +37,7 @@ namespace Quantum
         entity,
         entityPos,
         movementData,
-        characterAttacks->BasicSkillData);
+        characterAttacks->BasicSkillData, filter);
 
       ApplyAttackInput(frame,
         input,
@@ -45,24 +45,34 @@ namespace Quantum
         entity,
         entityPos,
         movementData,
-        characterAttacks->SpecialSkillData);
+        characterAttacks->SpecialSkillData, filter);
     }
 
-    private void ApplyAttackInput(Frame frame, QuantumDemoInputTopDown input, Button button, EntityRef entity, FPVector2 entityPos, MovementData* movementData, AssetRef<SkillData> dataRef)
+    private void ApplyAttackInput(Frame frame, QuantumDemoInputTopDown input, Button button, EntityRef entity, FPVector2 entityPos, MovementData* movementData, AssetRef<SkillData> dataRef, Filter filter)
     {
-      bool actionReleased = button.WasReleased;
+      SkillData data = frame.FindAsset<SkillData>(dataRef.Id);
+      if(filter.InputContainer->TimeSinceAutoAim > 0)
+        filter.InputContainer->TimeSinceAutoAim -= frame.DeltaTime;
+      bool canAutoAim = CharacterHelpers.CanAutoAim(frame, entity, data, filter.InputContainer);
+      bool shouldCast = EnemyPositionsHelper.TryGetClosestCharacterDirection(frame, filter.Entity, *filter.Transform, data.AutoAimRadius, true, data.AutoAttack, out var direction);
+      
+      bool actionReleased = button.WasReleased || (shouldCast && canAutoAim);
 
       if (actionReleased == true && movementData->IsOnAttackLock == false)
       {
-        SkillData data = frame.FindAsset<SkillData>(dataRef.Id);
         EAttributeType costType = data.CostType;
         
         FP energyAttribute = AttributesHelper.GetCurrentValue(frame, entity, costType);
         if (energyAttribute >= data.Cost)
         {
+          FPVector2 aimDirection = canAutoAim ? movementData->LastAutoAimDirection : input.AimDirection;
           movementData->DirectionTimer = data.RotationLockDuration;
-          frame.Signals.OnCreateSkill(entity, entityPos, data, input.AimDirection);
+          frame.Signals.OnCreateSkill(entity, entityPos, data, aimDirection);
           movementData->MovementTimer = data.MovementLockDuration;
+          if (canAutoAim)
+          {
+            filter.InputContainer->TimeSinceAutoAim = data.AutoAimInterval;
+          }
         }
       }
 
