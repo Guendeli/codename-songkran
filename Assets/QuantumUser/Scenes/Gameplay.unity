@@ -11646,7 +11646,7 @@ MonoBehaviour:
         Value: 3466109437456970911
     RoomFillInterval:
       RawValue: 6554
-    FillWithBots: 0
+    FillWithBots: 1
   UseRandomSeed: 0
   SessionConfig: {fileID: 11400000, guid: a5e4bad82ac5a1743880cbac1223a7df, type: 2}
   LocalPlayers:
