@@ -159,6 +159,25 @@ MonoBehaviour:
   Label: 
   TargetCollectible:
     Key: TargetCollectible
+--- !u!114 &-6641282794009855491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f376ab33288e4cfaaed41d10370d1322, type: 3}
+  m_Name: FindPayload_zVDLHuSdG0SElfU
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindPayload_zVDLHuSdG0SElfU
+    Guid:
+      Value: 2698358272494240878
+  Label: 
+  ObjectivePoint:
+    Key: ObjectivePoint
 --- !u!114 &-6379299517789296114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +259,7 @@ MonoBehaviour:
     Guid:
       Value: 3776881686914360249
   Label: Run in Bush
-  Index: 11
+  Index: 9
   OnUpdateLinks:
   - Id:
       Value: 1973822312021000235
@@ -408,25 +427,6 @@ MonoBehaviour:
       Value: 2348277800387445596
   - Id:
       Value: 1074344961864123245
---- !u!114 &-4519043438182774656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f376ab33288e4cfaaed41d10370d1322, type: 3}
-  m_Name: FindPayload_oZ3rooscnkeec6l
-  m_EditorClassIdentifier: 
-  Identifier:
-    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindPayload_oZ3rooscnkeec6l
-    Guid:
-      Value: 3298813854352671806
-  Label: 
-  ObjectivePoint:
-    Key: ObjectivePoint
 --- !u!114 &-4393459971013769874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,7 +1069,7 @@ MonoBehaviour:
     Guid:
       Value: 3265805949550367205
   Label: Release Attack
-  Index: 4
+  Index: 3
   OnUpdateLinks:
   - Id:
       Value: 3263350750998839996
@@ -1295,7 +1295,7 @@ MonoBehaviour:
     Guid:
       Value: 2738406748779077841
   Label: Recover Energy
-  Index: 15
+  Index: 14
   OnUpdateLinks: []
   OnEnterLinks: []
   OnExitLinks: []
@@ -1555,7 +1555,7 @@ MonoBehaviour:
     Guid:
       Value: 88602710256197751
   Label: Run Loop
-  Index: 9
+  Index: 11
   OnUpdateLinks:
   - Id:
       Value: 2022285322213720469
@@ -2043,17 +2043,6 @@ MonoBehaviour:
   OnEnterLinks: []
   OnExitLinks: []
   Transitions:
-  - Id: 952f0d85-88a1-4e41-a562-454c3dd7044b
-    EventKey: 0
-    DecisionLink:
-      Id:
-        Value: 1203007804028441852
-    StateLink:
-      Id:
-        Value: 3265805949550367205
-    TransitionSetLink:
-      Id:
-        Value: 0
   - Id: 947d597b-3693-46e1-b510-a624da5253b4
     EventKey: 0
     DecisionLink:
@@ -2062,6 +2051,17 @@ MonoBehaviour:
     StateLink:
       Id:
         Value: 389687496738597814
+    TransitionSetLink:
+      Id:
+        Value: 0
+  - Id: 952f0d85-88a1-4e41-a562-454c3dd7044b
+    EventKey: 0
+    DecisionLink:
+      Id:
+        Value: 1203007804028441852
+    StateLink:
+      Id:
+        Value: 3265805949550367205
     TransitionSetLink:
       Id:
         Value: 0
@@ -2186,7 +2186,7 @@ MonoBehaviour:
     Guid:
       Value: 1614197366415093445
   Label: Release Attack
-  Index: 3
+  Index: 4
   OnUpdateLinks:
   - Id:
       Value: 3621432999656331222
@@ -2315,7 +2315,7 @@ MonoBehaviour:
       Value: 3862719661760149733
   OnEnterLinks:
   - Id:
-      Value: 3298813854352671806
+      Value: 2698358272494240878
   OnExitLinks: []
   Transitions:
   - Id: e6c6bf1a-6a00-4d59-9ac6-cf4504f53d27
@@ -2789,7 +2789,7 @@ MonoBehaviour:
     Guid:
       Value: 4268181558313974882
   Label: Run
-  Index: 14
+  Index: 15
   OnUpdateLinks: []
   OnEnterLinks: []
   OnExitLinks: []
