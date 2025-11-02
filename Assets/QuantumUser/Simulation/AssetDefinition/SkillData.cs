@@ -1,5 +1,6 @@
 ﻿using Photon.Deterministic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Quantum
 {
@@ -27,9 +28,10 @@ namespace Quantum
 		public int ActionAmount;
 		public FP RotationLockDuration;
 		public FP MovementLockDuration;
-		public bool AutoAimCheckSight = true;
 		public FP Cost = 1;
 		public EAttributeType CostType;
+		[FormerlySerializedAs("AutoAimCheckSight")] [Header("Auto Attack Settings")]
+		public bool AutoAttack = true;
 		public FP AutoAimRadius = 10;
 		public FP AutoAimInterval = 1;
 
