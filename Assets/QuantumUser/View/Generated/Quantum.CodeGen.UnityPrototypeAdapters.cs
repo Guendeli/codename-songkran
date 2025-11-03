@@ -145,6 +145,7 @@ namespace Quantum.Prototypes.Unity {
     public Quantum.Prototypes.Unity.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
     public Quantum.Prototypes.Unity.SniperBasicAttackRDPrototype SniperBasicAttackRD;
     public Quantum.Prototypes.DruidSpecialAttackRDPrototype DruidSpecialAttackRD;
+    public Quantum.Prototypes.Unity.SummonAttackRDPrototype SummonAttackRD;
     partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.AttackRuntimeDataPrototype prototype);
     public override Quantum.Prototypes.AttackRuntimeDataPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
       var result = new Quantum.Prototypes.AttackRuntimeDataPrototype();
@@ -156,6 +157,7 @@ namespace Quantum.Prototypes.Unity {
       converter.Convert(this.KnightSpecialAttackRD, out result.KnightSpecialAttackRD);
       converter.Convert(this.SniperBasicAttackRD, out result.SniperBasicAttackRD);
       converter.Convert(this.DruidSpecialAttackRD, out result.DruidSpecialAttackRD);
+      converter.Convert(this.SummonAttackRD, out result.SummonAttackRD);
       ConvertUser(converter, ref result);
       return result;
     }
@@ -335,6 +337,17 @@ namespace Quantum.Prototypes.Unity {
       converter.Convert(this.CharacterRef, out result.CharacterRef);
       converter.Convert(this.RunDistance, out result.RunDistance);
       converter.Convert(this.ThreatDistance, out result.ThreatDistance);
+      ConvertUser(converter, ref result);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
+  public unsafe partial class SummonAttackRDPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.SummonAttackRDPrototype> {
+    public Quantum.QuantumEntityPrototype SummonedEntity;
+    partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.SummonAttackRDPrototype prototype);
+    public override Quantum.Prototypes.SummonAttackRDPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.SummonAttackRDPrototype();
+      converter.Convert(this.SummonedEntity, out result.SummonedEntity);
       ConvertUser(converter, ref result);
       return result;
     }

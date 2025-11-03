@@ -31,6 +31,8 @@ union AttackRuntimeData
 	SniperBasicAttackRD SniperBasicAttackRD;
 	
 	DruidSpecialAttackRD DruidSpecialAttackRD;
+	
+	SummonAttackRD SummonAttackRD;
 }
 
 // -- Archer
@@ -77,6 +79,12 @@ struct SniperBasicAttackRD
     EntityRef SkillEntity;
     FP StartPosition;       // The position the attack started
     FP EndPosition;         // the position of the rist hitscan hit
+}
+
+// Summoner
+struct SummonAttackRD
+{
+    EntityRef SummonedEntity;
 }
 
 // -- SIGNALS

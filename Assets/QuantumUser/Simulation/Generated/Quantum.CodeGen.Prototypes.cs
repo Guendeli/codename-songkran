@@ -200,6 +200,7 @@ namespace Quantum.Prototypes {
     public Quantum.Prototypes.KnightSpecialAttackRDPrototype KnightSpecialAttackRD;
     public Quantum.Prototypes.SniperBasicAttackRDPrototype SniperBasicAttackRD;
     public Quantum.Prototypes.DruidSpecialAttackRDPrototype DruidSpecialAttackRD;
+    public Quantum.Prototypes.SummonAttackRDPrototype SummonAttackRD;
     public void Materialize(Frame frame, ref Quantum.AttackRuntimeData result, in PrototypeMaterializationContext context = default) {
         switch (_field_used_) {
           case "ARCHERSPECIALATTACKRD": this.ArcherSpecialAttackRD.Materialize(frame, ref *result.ArcherSpecialAttackRD, in context); break;
@@ -209,6 +210,7 @@ namespace Quantum.Prototypes {
           case "KNIGHTSPECIALATTACKRD": this.KnightSpecialAttackRD.Materialize(frame, ref *result.KnightSpecialAttackRD, in context); break;
           case "SNIPERBASICATTACKRD": this.SniperBasicAttackRD.Materialize(frame, ref *result.SniperBasicAttackRD, in context); break;
           case "DRUIDSPECIALATTACKRD": this.DruidSpecialAttackRD.Materialize(frame, ref *result.DruidSpecialAttackRD, in context); break;
+          case "SUMMONATTACKRD": this.SummonAttackRD.Materialize(frame, ref *result.SummonAttackRD, in context); break;
           case "": case null: break;
           default: PrototypeValidator.UnknownUnionField(_field_used_, in context); break;
         }
@@ -1055,6 +1057,14 @@ namespace Quantum.Prototypes {
     public void Materialize(Frame frame, ref Quantum.SteeringEntryNavMesh result, in PrototypeMaterializationContext context = default) {
         result.NavMeshDirection = this.NavMeshDirection;
         MaterializeUser(frame, ref result, in context);
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.Prototype(typeof(Quantum.SummonAttackRD))]
+  public unsafe class SummonAttackRDPrototype : StructPrototype {
+    public MapEntityId SummonedEntity;
+    public void Materialize(Frame frame, ref Quantum.SummonAttackRD result, in PrototypeMaterializationContext context = default) {
+        PrototypeValidator.FindMapEntity(this.SummonedEntity, in context, out result.SummonedEntity);
     }
   }
   [System.SerializableAttribute()]
