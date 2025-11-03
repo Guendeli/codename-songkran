@@ -15,7 +15,7 @@ namespace Quantum
 			public Invisibility* Invisibility;
 		}
 
-		private readonly FP EXPOSURE_TIME = FP._2;
+		private readonly FP EXPOSURE_TIME = FP._2; // TODO - Remove magic numbers dude
 
 		public void OnAdded(Frame f, EntityRef entity, Invisibility* component)
 		{
