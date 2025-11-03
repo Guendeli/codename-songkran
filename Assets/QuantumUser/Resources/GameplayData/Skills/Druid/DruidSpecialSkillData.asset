@@ -19,7 +19,7 @@ MonoBehaviour:
   SFX:
     Clip: {fileID: 0}
     Volume: 1
-  AttackPreviewType: 1
+  AttackPreviewType: 0
   SkillPrototype:
     Id:
       Value: 1453428013509854888
@@ -34,10 +34,10 @@ MonoBehaviour:
     RawValue: 65536
   MovementLockDuration:
     RawValue: 0
-  AutoAimCheckSight: 0
   Cost:
     RawValue: 65536
   CostType: 4
+  AutoAttack: 0
   AutoAimRadius:
     RawValue: 655360
   AutoAimInterval:
