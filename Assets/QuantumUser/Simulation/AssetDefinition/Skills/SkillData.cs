@@ -1,4 +1,5 @@
 ﻿using Photon.Deterministic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -32,8 +33,10 @@ namespace Quantum
 		public FP Cost = 1;
 		public EAttributeType CostType;
 		[FormerlySerializedAs("AutoAimCheckSight")] [Header("Auto Attack Settings")]
-		public bool AutoAttack = true;
+		public bool AutoAttack;
+		[ShowIf("AutoAttack",true)]
 		public FP AutoAimRadius = 10;
+		[ShowIf("AutoAttack",true)]
 		public FP AutoAimInterval = 1;
 
 		public virtual EntityRef OnCreate(Frame frame, EntityRef source, SkillData data,

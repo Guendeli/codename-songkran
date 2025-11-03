@@ -1382,6 +1382,24 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct SummonAttackRD {
+    public const Int32 SIZE = 8;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public EntityRef SummonedEntity;
+    public override readonly Int32 GetHashCode() {
+      unchecked { 
+        var hash = 21391;
+        hash = hash * 31 + SummonedEntity.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (SummonAttackRD*)ptr;
+        EntityRef.Serialize(&p->SummonedEntity, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct TeamData {
     public const Int32 SIZE = 72;
     public const Int32 ALIGNMENT = 8;
@@ -1588,6 +1606,10 @@ namespace Quantum {
     [FieldOverlap(8)]
     [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.DRUIDSPECIALATTACKRD)]
     private DruidSpecialAttackRD _DruidSpecialAttackRD;
+    [FieldOffset(8)]
+    [FieldOverlap(8)]
+    [FramePrinter.PrintIf("_field_used_", Quantum.AttackRuntimeData.SUMMONATTACKRD)]
+    private SummonAttackRD _SummonAttackRD;
     public const Int32 ARCHERSPECIALATTACKRD = 1;
     public const Int32 SPELLCASTERBASICATTACKRD = 2;
     public const Int32 SPELLCASTERSPECIALATTACKRD = 3;
@@ -1595,6 +1617,7 @@ namespace Quantum {
     public const Int32 KNIGHTSPECIALATTACKRD = 5;
     public const Int32 SNIPERBASICATTACKRD = 6;
     public const Int32 DRUIDSPECIALATTACKRD = 7;
+    public const Int32 SUMMONATTACKRD = 8;
     public readonly Int32 Field {
       get {
         return _field_used_;
@@ -1677,6 +1700,17 @@ namespace Quantum {
         }
       }
     }
+    public SummonAttackRD* SummonAttackRD {
+      get {
+        fixed (SummonAttackRD* p = &_SummonAttackRD) {
+          if (_field_used_ != SUMMONATTACKRD) {
+            Native.Utils.Clear(p, 8);
+            _field_used_ = SUMMONATTACKRD;
+          }
+          return p;
+        }
+      }
+    }
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 7573;
@@ -1688,6 +1722,7 @@ namespace Quantum {
         hash = hash * 31 + _KnightSpecialAttackRD.GetHashCode();
         hash = hash * 31 + _SniperBasicAttackRD.GetHashCode();
         hash = hash * 31 + _DruidSpecialAttackRD.GetHashCode();
+        hash = hash * 31 + _SummonAttackRD.GetHashCode();
         return hash;
       }
     }
@@ -1723,6 +1758,9 @@ namespace Quantum {
         }
         if (p->_field_used_ == SPELLCASTERSPECIALATTACKRD) {
           Quantum.SpellcasterSpecialAttackRD.Serialize(&p->_SpellcasterSpecialAttackRD, serializer);
+        }
+        if (p->_field_used_ == SUMMONATTACKRD) {
+          Quantum.SummonAttackRD.Serialize(&p->_SummonAttackRD, serializer);
         }
     }
   }
@@ -3259,6 +3297,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum.SteeringData), Quantum.SteeringData.SIZE);
       typeRegistry.Register(typeof(Quantum.SteeringEntryContext), Quantum.SteeringEntryContext.SIZE);
       typeRegistry.Register(typeof(Quantum.SteeringEntryNavMesh), Quantum.SteeringEntryNavMesh.SIZE);
+      typeRegistry.Register(typeof(Quantum.SummonAttackRD), Quantum.SummonAttackRD.SIZE);
       typeRegistry.Register(typeof(Quantum.TeamData), Quantum.TeamData.SIZE);
       typeRegistry.Register(typeof(Quantum.TeamInfo), Quantum.TeamInfo.SIZE);
       typeRegistry.Register(typeof(Transform2D), Transform2D.SIZE);
