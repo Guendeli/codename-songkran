@@ -94,7 +94,7 @@ namespace TwinStickShooter
       FPVector2 actionVector = default;
       
       #region Manual Input
-      /*
+      
 #if UNITY_ANDROID
 		input.Fire = _playerInput.actions["Fire"].IsPressed();
 		input.AltFire = _playerInput.actions["Special"].IsPressed();
@@ -124,11 +124,11 @@ namespace TwinStickShooter
           _lastDirection *= AimSensitivity;
         }
       }
-      */
+      
       #endregion
       
       #region Manual Aim
-      /*
+      
       if (_isUsingGamepad)
       {
         actionVector = IsInverseControl ? -_lastDirection : _lastDirection;
@@ -145,7 +145,7 @@ namespace TwinStickShooter
         _attackPreview.gameObject.SetActive(true);
         _attackPreview.UpdateAttackPreview(actionVector, input.AltFire);
       }
-      */
+      
       #endregion
 
       callback.SetInput(input, DeterministicInputFlags.Repeatable);
