@@ -95,12 +95,14 @@ namespace Quantum
 		// We then store that information on the steering data, so it can be used by the context steering
 		public void OnNavMeshMoveAgent(Frame frame, EntityRef entity, FPVector2 desiredDirection)
 		{
-			AISteering* aiSteering = frame.Unsafe.GetPointer<AISteering>(entity);
-
-			if (aiSteering->IsNavMeshSteering == true)
+			if (frame.Unsafe.TryGetPointer<AISteering>(entity, out AISteering* steering))
 			{
-				aiSteering->MainSteeringData.SteeringEntryNavMesh->SetData(desiredDirection);
+				if (steering->IsNavMeshSteering == true)
+				{
+					steering->MainSteeringData.SteeringEntryNavMesh->SetData(desiredDirection);
+				}
 			}
+
 		}
 
 		// The context steering takes into consideration many things: what is the character main target, what are the threats, etc

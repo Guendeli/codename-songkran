@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.BasicSkillData.Id.Value
-      value: 530909615354710699
+      value: 188361654829394838
       objectReference: {fileID: 0}
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.SpecialSkillData.Id.Value
-      value: 518894756588238370
+      value: 530909615354710699
       objectReference: {fileID: 0}
     - target: {fileID: 2581867916178211373, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}

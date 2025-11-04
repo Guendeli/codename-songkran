@@ -17,6 +17,8 @@ namespace Quantum
         public override void OnCreate(Frame frame, EntityRef attackEntity, EntityRef source, Attack* attack)
         {
             base.OnCreate(frame, attackEntity, source, attack);
+            TeamInfo* teamInfo = frame.Unsafe.GetPointer<TeamInfo>(source);
+            
             SummonAttackRD* attackRuntimeData = attack->AttackRuntimeData.SummonAttackRD;
             Transform2D* attackTransform = frame.Unsafe.GetPointer<Transform2D>(attackEntity);
             FPVector2 spawnPos = attackTransform->Position + attackTransform->Up * SummonDistance;
@@ -26,8 +28,9 @@ namespace Quantum
             {
                 spawnPos = hits[0].Point;
             }
-            
-            EntityRef summonEntity = frame.Create(SpawnPrototype);
+
+            int playerRef = frame.RNG->Next(7, 69);
+            EntityRef summonEntity = AISetupHelper.SpawnBot(frame, playerRef, teamInfo->Index, SpawnPrototype);
             frame.Unsafe.GetPointer<Transform2D>(summonEntity)->Position = spawnPos;
 
             // Cache the Summonned Entity Reference to despawn it

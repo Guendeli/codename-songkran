@@ -55,8 +55,10 @@ namespace Quantum
 
 		private void SetCharacterExposed(Frame frame, EntityRef character)
 		{
-			Invisibility* invisibility = frame.Unsafe.GetPointer<Invisibility>(character);
-			invisibility->ExposureTimer = EXPOSURE_TIME;
+			if (frame.Unsafe.TryGetPointer<Invisibility>(character, out var invisibility))
+			{
+				invisibility->ExposureTimer = EXPOSURE_TIME;
+			}
 		}
 
 		public void OnTriggerEnter2D(Frame frame, TriggerInfo2D info)

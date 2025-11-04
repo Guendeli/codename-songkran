@@ -22,6 +22,9 @@ namespace TwinStickShooter
 
     private void SetColors()
     {
+      if(_ownerEntity.IsValid == false)
+        return;
+      
       if (IsLocal == true)
       {
         for (int i = 0; i < _colorSetters.Length; i++)
