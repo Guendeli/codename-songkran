@@ -56,6 +56,9 @@ namespace Quantum
 			FPVector2 desiredDirection = default;
 
 			FPVector2 agentPosition = frame.Unsafe.GetPointer<Transform2D>(agent)->Position;
+			if (entry->CharacterRef.IsValid == false)
+				return default;
+			
 			FPVector2 targetPosition = frame.Unsafe.GetPointer<Transform2D>(entry->CharacterRef)->Position;
 			FPVector2 dirToTarget = (targetPosition - agentPosition).Normalized;
 

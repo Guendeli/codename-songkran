@@ -91,22 +91,32 @@ PrefabInstance:
     - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[0].Value.MaxValue.RawValue
-      value: 393216000
+      value: 131072000
       objectReference: {fileID: 0}
     - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[2].Value.MaxValue.RawValue
-      value: 180224
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.MaxValue.RawValue
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[0].Value.InitialValue.RawValue
-      value: 393216000
+      value: 131072000
       objectReference: {fileID: 0}
     - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
       propertyPath: Prototype.DataDictionary.Array.data[2].Value.InitialValue.RawValue
-      value: 180224
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
+        type: 3}
+      propertyPath: Prototype.DataDictionary.Array.data[7].Value.InitialValue.RawValue
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 509537540572923398, guid: 3338789d9bdbc4a4ba0b70c238caad48,
         type: 3}
@@ -293,7 +303,10 @@ PrefabInstance:
       propertyPath: Prototype.MaxEvasionDuration.RawValue
       value: 65536
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7207597890430518502, guid: 3338789d9bdbc4a4ba0b70c238caad48, type: 3}
+    - {fileID: 2935371558801385549, guid: 3338789d9bdbc4a4ba0b70c238caad48, type: 3}
+    - {fileID: 1049527850380851599, guid: 3338789d9bdbc4a4ba0b70c238caad48, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 531577883783781303, guid: 3338789d9bdbc4a4ba0b70c238caad48,
