@@ -70,6 +70,23 @@ namespace Quantum
 
 			Botify(frame, botCharacter);
 		}
+		
+		public static EntityRef SpawnBot(Frame frame, PlayerRef playerRef, int teamId, AssetRef<EntityPrototype> botPrototype)
+		{
+			EntityRef botCharacter = frame.Create(botPrototype);
+
+			// Store it's PlayerRef so we can later use it for input polling
+			PlayerLink* playerLink = frame.Unsafe.GetPointer<PlayerLink>(botCharacter);
+			playerLink->PlayerRef = playerRef;
+
+			// Save the character's team, also defined on the Menu
+			TeamInfo* teamInfo = frame.Unsafe.GetPointer<TeamInfo>(botCharacter);
+			teamInfo->Index = teamId;
+
+			Botify(frame, botCharacter);
+
+			return botCharacter;
+		}
 
 		public static void Botify(Frame frame, EntityRef entity)
 		{
@@ -93,8 +110,8 @@ namespace Quantum
 			}
 
 			// -- BLACKBOARD
-			frame.Add<AIBlackboardComponent>(entity, out var blackboardComponent);
-			var blackboardInitializer = frame.FindAsset<AIBlackboardInitializer>(bot->BlackboardInitializer.Id);
+			frame.Add<AIBlackboardComponent>(entity, out AIBlackboardComponent* blackboardComponent);
+			AIBlackboardInitializer blackboardInitializer = frame.FindAsset<AIBlackboardInitializer>(bot->BlackboardInitializer.Id);
 			AIBlackboardInitializer.InitializeBlackboard(frame, blackboardComponent, blackboardInitializer);
 
 			// -- HFSM AGENT
@@ -104,7 +121,6 @@ namespace Quantum
 			hfsmAgent->Config = bot->AIConfig;
 
 			bot->IsActive = true;
-
 			Quantum.BotSDK.BotSDKDebuggerSystem.AddToDebugger<HFSMAgent>(frame, entity, *hfsmAgent);
 		}
 

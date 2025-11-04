@@ -18,7 +18,7 @@ MonoBehaviour:
       Value: 441717741946168399
   DefaultConfig:
     Id:
-      Value: 458874347423990089
+      Value: 371474735487913752
   KeyValuePairs:
   - Key: AttackErrorBasic
     Type: 4
@@ -76,30 +76,6 @@ MonoBehaviour:
       Byte: 0
       FP:
         RawValue: 589824
-      FPVector2:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      FPVector3:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      String: 
-      AssetRef:
-        Id:
-          Value: 0
-  - Key: EngagesInCover
-    Type: 2
-    Value:
-      Integer: 0
-      Boolean: 0
-      Byte: 0
-      FP:
-        RawValue: 0
       FPVector2:
         X:
           RawValue: 0
@@ -188,55 +164,7 @@ MonoBehaviour:
       AssetRef:
         Id:
           Value: 0
-  - Key: RunDistance
-    Type: 4
-    Value:
-      Integer: 0
-      Boolean: 0
-      Byte: 0
-      FP:
-        RawValue: 327680
-      FPVector2:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      FPVector3:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      String: 
-      AssetRef:
-        Id:
-          Value: 0
-  - Key: ThreatDistance
-    Type: 4
-    Value:
-      Integer: 0
-      Boolean: 0
-      Byte: 0
-      FP:
-        RawValue: 524288
-      FPVector2:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-      FPVector3:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      String: 
-      AssetRef:
-        Id:
-          Value: 0
   SensorsRefs:
   - Id:
       Value: 1558216052182201464
-  DebugEnabled: 0
+  DebugEnabled: 1

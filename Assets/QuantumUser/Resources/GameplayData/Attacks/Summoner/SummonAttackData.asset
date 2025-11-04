@@ -18,7 +18,7 @@ MonoBehaviour:
       Value: 355613890790162109
   CosmeticData: {fileID: 0}
   TTL:
-    RawValue: 327680
+    RawValue: 1310720
   IgnoreOwner: 0
   HitEnemies: 0
   HitAlies: 0
@@ -31,4 +31,4 @@ MonoBehaviour:
     RawValue: 131072
   SpawnPrototype:
     Id:
-      Value: 1513344781588717773
+      Value: 1299752220158870414

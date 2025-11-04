@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Player Replacement HFSM
   m_EditorClassIdentifier: 
   Xml: "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<Document>\r\n  <Id>1c0e0ae6-888e-4709-89de-417d5f9dc355</Id>\r\n 
-    <Version>2</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>1c0e0ae6-888e-4709-89de-417d5f9dc355</Graph>\r\n 
-    <DebugKey>2e35ea7c-0474-4e45-94eb-8d2e0c7b12d4</DebugKey>\r\n  <Flags>0</Flags>\r\n 
+    <Version>2</Version>\r\n  <Meta>false</Meta>\r\n  <Graph>4debecac-0f84-4508-b042-2c6db66e3be5</Graph>\r\n 
+    <DebugKey>9f96aa5c-2269-4c41-a1a0-d49c4bd7b917</DebugKey>\r\n  <Flags>0</Flags>\r\n 
     <Parent>$statemachine</Parent>\r\n  <Error Count=\"0\" />\r\n  <Comments Count=\"1\">\r\n   
     <Key>cd05d78d-c88f-4578-979b-4f2d7122cf88</Key>\r\n    <Comment>\r\n      <Id>cd05d78d-c88f-4578-979b-4f2d7122cf88</Id>\r\n     
     <Text>Always choosing stuff: character entry, point entry, nav mesh entry</Text>\r\n     
@@ -4616,7 +4616,7 @@ MonoBehaviour:
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>687|326||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Key>\r\n    <GraphData>\r\n     
     <Id>8760b69f-4925-4cbd-a4b3-9e1c42d3d0aa</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
-    <ZoomOffset>-930|-419||0</ZoomOffset>\r\n      <PanOffset>-146|284||0</PanOffset>\r\n   
+    <ZoomOffset>-930|-419||0</ZoomOffset>\r\n      <PanOffset>1022|561||0</PanOffset>\r\n   
     </GraphData>\r\n    <Key>8e5948a6-e5ab-4789-937e-ae4457247a6e</Key>\r\n    <GraphData>\r\n     
     <Id>8e5948a6-e5ab-4789-937e-ae4457247a6e</Id>\r\n      <ZoomLevel>1</ZoomLevel>\r\n     
     <ZoomOffset>0|0||0</ZoomOffset>\r\n      <PanOffset>133|161||0</PanOffset>\r\n   

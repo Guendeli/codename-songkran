@@ -41,7 +41,14 @@ namespace TwinStickShooter
         asset = DefaultTextAsset;
       
       string[] names = asset.text.Split(';');
-      return names[id];
+      if(id >= names.Length || id < 0)
+      {
+        return "Bot_" + (id + 1);
+      }
+      else
+      {
+        return names[id];
+      }
     }
   }
 }

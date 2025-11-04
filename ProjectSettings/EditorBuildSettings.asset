@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/QuantumUser/Scenes/MenuPrototype.unity
     guid: b8223d2b5886ae64f99aeb0abfc8d62a
   - enabled: 1
-    path: Assets/QuantumUser/Scenes/Gameplay.unity
+    path: Assets/QuantumUser/Scenes/GameplayCoinGrab.unity
     guid: dc56afaaab8e8f948a3e328a9a2cd765
   - enabled: 1
     path: Assets/QuantumUser/Scenes/GameplayPayload.unity

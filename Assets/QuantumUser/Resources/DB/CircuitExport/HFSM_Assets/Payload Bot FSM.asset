@@ -159,25 +159,6 @@ MonoBehaviour:
   Label: 
   TargetCollectible:
     Key: TargetCollectible
---- !u!114 &-6641282794009855491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f376ab33288e4cfaaed41d10370d1322, type: 3}
-  m_Name: FindPayload_zVDLHuSdG0SElfU
-  m_EditorClassIdentifier: 
-  Identifier:
-    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindPayload_zVDLHuSdG0SElfU
-    Guid:
-      Value: 2698358272494240878
-  Label: 
-  ObjectivePoint:
-    Key: ObjectivePoint
 --- !u!114 &-6379299517789296114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,6 +1258,25 @@ MonoBehaviour:
   Label: 
   ChosenBush:
     Key: ChosenBush
+--- !u!114 &1063920940487903450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f376ab33288e4cfaaed41d10370d1322, type: 3}
+  m_Name: FindPayload_x_mKmlJNqkOsH_0
+  m_EditorClassIdentifier: 
+  Identifier:
+    Path: QuantumUser/Resources/DB/CircuitExport/HFSM_Assets/Payload Bot FSM|FindPayload_x_mKmlJNqkOsH_0
+    Guid:
+      Value: 761299261723399771
+  Label: 
+  ObjectivePoint:
+    Key: ObjectivePoint
 --- !u!114 &1270539234189790120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2315,7 +2315,7 @@ MonoBehaviour:
       Value: 3862719661760149733
   OnEnterLinks:
   - Id:
-      Value: 2698358272494240878
+      Value: 761299261723399771
   OnExitLinks: []
   Transitions:
   - Id: e6c6bf1a-6a00-4d59-9ac6-cf4504f53d27

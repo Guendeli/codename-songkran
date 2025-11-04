@@ -7760,7 +7760,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2039
 --- !u!114 &264704223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11814,7 +11814,7 @@ MonoBehaviour:
         Value: 3466109437456970911
     RoomFillInterval:
       RawValue: 6554
-    FillWithBots: 1
+    FillWithBots: 0
   UseRandomSeed: 0
   SessionConfig: {fileID: 11400000, guid: a5e4bad82ac5a1743880cbac1223a7df, type: 2}
   LocalPlayers:
@@ -67257,7 +67257,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2039
 --- !u!114 &1832767320
 MonoBehaviour:
   m_ObjectHideFlags: 0

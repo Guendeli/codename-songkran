@@ -26,8 +26,9 @@ namespace Quantum
             {
                 spawnPos = hits[0].Point;
             }
-            
-            EntityRef summonEntity = frame.Create(SpawnPrototype);
+
+            int playerRef = frame.RNG->Next(7, 69);
+            EntityRef summonEntity = AISetupHelper.SpawnBot(frame, playerRef, 1, SpawnPrototype);
             frame.Unsafe.GetPointer<Transform2D>(summonEntity)->Position = spawnPos;
 
             // Cache the Summonned Entity Reference to despawn it
