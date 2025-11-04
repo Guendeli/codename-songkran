@@ -19,8 +19,8 @@ MonoBehaviour:
   UserAsset:
     Id:
       Value: 2449210160412791733
-  Scene: Gameplay
-  ScenePath: Assets/QuantumUser/Scenes/Gameplay.unity
+  Scene: GameplayCoinGrab
+  ScenePath: Assets/QuantumUser/Scenes/GameplayCoinGrab.unity
   SceneGuid: dc56afaaab8e8f948a3e328a9a2cd765
   WorldSize: 256
   BucketsCount: 16
