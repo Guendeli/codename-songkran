@@ -296,6 +296,8 @@ namespace Quantum
 		{
 			FPVector2 runawayDirection = default;
 
+			if(entry->Entity.IsValid == false)
+				return default;
 			// Run to the perpendicular direction considering the attack
 			Transform2D attackerTransform = frame.Get<Transform2D>(entry->Entity);
 			FPVector2 dir = frame.Get<Transform2D>(agent).Position - frame.Get<Transform2D>(entry->Entity).Position;
